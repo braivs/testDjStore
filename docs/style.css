@@ -1,4 +1,58 @@
 body {
-  background: #E5E5E5; }
+  background: #E5E5E5;
+  font-family: 'Montserrat', sans-serif; }
+
+header {
+  width: 1920px;
+  height: 91px;
+  background: #EBEEF5; }
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 390px; }
+  .header-container .logo-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 20px; }
+    .header-container .logo-container .img-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .header-container .logo-container .img-container img:first-of-type {
+        margin-right: 5.89px; }
+    .header-container .logo-container .first {
+      position: relative;
+      width: 149.1px;
+      height: 15.38px;
+      margin-top: 3.85px;
+      background: #2D3786;
+      border-radius: 3.92357px; }
+      .header-container .logo-container .first .second {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: absolute;
+        width: 147.13px;
+        height: 15.38px;
+        left: 4.9px;
+        top: 3.85px;
+        background: #397DFF;
+        border-radius: 3.92357px; }
+        .header-container .logo-container .first .second p {
+          font-size: 9.80892px;
+          color: #FFFFFF;
+          margin: 0 auto;
+          -ms-flex-item-align: center;
+          align-self: center; }
 
 /*# sourceMappingURL=style.css.map */
