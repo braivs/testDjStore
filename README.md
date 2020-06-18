@@ -1,1 +1,1 @@
-# testDjStore
+https://brightwiths.github.io/testDjStore
