@@ -7,7 +7,7 @@ var
 	autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass-compile', function(){
-	return gulp.src('source/sass/*.sass')
+	return gulp.src('source/*.sass')
 	.pipe(sourcemaps.init())
 	.pipe(sass().on('error', sass.logError))
 	.pipe(autoprefixer({
@@ -15,7 +15,7 @@ gulp.task('sass-compile', function(){
 		cascade: false
 	}))
 	.pipe(sourcemaps.write('./'))
-	.pipe(gulp.dest('docs/css/'))
+	.pipe(gulp.dest('docs/'))
 })
 
 gulp.task('pug', function(){
@@ -27,7 +27,7 @@ gulp.task('pug', function(){
 })
 
 gulp.task('reload-css', function() {
-	return gulp.src('docs/css/*.css')
+	return gulp.src('docs/*.css')
 	.pipe(livereload())
 });
 
@@ -39,9 +39,9 @@ gulp.task('reload-html', function() {
 
 
 gulp.task('default', function(){
-	gulp.watch('source/sass/*.sass', gulp.series('sass-compile'))
+	gulp.watch('source/*.sass', gulp.series('sass-compile'))
 	gulp.watch('source/**/*.pug', gulp.series('pug'))
 	livereload.listen()
-	gulp.watch('docs/css/*.css', gulp.series('reload-css'))
+	gulp.watch('docs/*.css', gulp.series('reload-css'))
 	gulp.watch('docs/*.html', gulp.series('reload-html'))
 })
