@@ -11,6 +11,9 @@ header {
   height: 91px;
   background: #EBEEF5; }
 
+a {
+  text-decoration: none; }
+
 .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -68,7 +71,6 @@ header {
     margin-left: 29.96px; }
     .header-container .menu-container a {
       color: rgba(43, 45, 58, 0.7);
-      text-decoration: none;
       font-size: 14px;
       margin-left: 33px; }
       .header-container .menu-container a:first-of-type {
@@ -83,5 +85,46 @@ header {
         border-top: 3px solid #397DFF;
         margin-top: 34px;
         visibility: hidden; }
+  .header-container .email-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 27px; }
+    .header-container .email-container a img {
+      margin-top: 5px; }
+    .header-container .email-container a:nth-of-type(2) {
+      text-decoration: none;
+      margin-left: 10px;
+      font-size: 13px;
+      color: #000;
+      font-weight: 600; }
+  .header-container .phone-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 24px; }
+    .header-container .phone-container .tel-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      margin-top: 10px;
+      margin-left: 10px; }
+      .header-container .phone-container .tel-container a {
+        color: #397DFF;
+        font-size: 11px; }
+      .header-container .phone-container .tel-container p {
+        margin-top: 0;
+        font-size: 13px;
+        font-weight: 600; }
 
 /*# sourceMappingURL=style.css.map */

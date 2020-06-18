@@ -6,7 +6,10 @@ header
     display: flex
     width: 1920px
     height: 91px
-    background: #EBEEF5    
+    background: #EBEEF5
+a 
+    text-decoration: none
+    
 .header-container
     display: flex
     margin-left: 390px
@@ -46,7 +49,7 @@ header
         margin-left: 29.96px
         a 
             color: rgba(43, 45, 58, 0.7)
-            text-decoration: none
+            
             font-size: 14px
             margin-left: 33px
             &:first-of-type
@@ -61,3 +64,32 @@ header
                 border-top: 3px solid #397DFF
                 margin-top: 34px
                 visibility: hidden
+    .email-container
+        display: flex
+        align-items: center
+        margin-left: 27px
+        a
+            img 
+                margin-top: 5px
+        a:nth-of-type(2)
+            text-decoration: none
+            margin-left: 10px
+            font-size: 13px
+            color: #000
+            font-weight: 600
+    .phone-container
+        display: flex
+        align-items: center
+        margin-left: 24px
+        .tel-container
+            display: flex
+            flex-direction: column
+            margin-top: 10px
+            margin-left: 10px
+            a
+                color: #397DFF
+                font-size: 11px
+            p
+                margin-top: 0 
+                font-size: 13px
+                font-weight: 600
