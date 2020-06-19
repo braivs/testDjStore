@@ -12,3 +12,7 @@ popup2.onclick = function() {
 popup3.onclick = function() {
     popupWindow.classList.remove('hidden');
   };
+addEventListener("keydown", function(event) {
+    if (event.keyCode === 27)
+        popupWindow.classList.add('hidden');
+  });
