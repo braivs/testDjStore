@@ -35,10 +35,10 @@ html(lang="ru")
                     a(href="#") info@sld-store.ru
                 .phone-container
                     a(href="")
-                        a(href="#")
+                        a(href="#", id="open1")
                             img(src="img/phone_icon.png", alt="")
                     .tel-container
-                        a(href="#") Обратный звонок
+                        a(href="#", id="open2") Обратный звонок
                         p 8 812 615-62-79
         body
             section.slider
@@ -52,9 +52,9 @@ html(lang="ru")
                             предназначено для проведения и организации презентаций,<br> 
                             совещаний, бизнес-тренингов и онлайн-трансляции контента.
                         .buttons-container
-                            button(type="button") Обратный звонок
+                            button(type="button", id="open3") Обратный звонок
                             button(type="button") Заполнить бриф
-                    section.popup
+                    section.popup.hidden
                         .popup-container
                             p Готовы обсудить проект?
                             p Заполните форму ниже и мы свяжемся с вами.
@@ -64,7 +64,8 @@ html(lang="ru")
                                 input(type="checkbox",id="checkbox")
                                 label(for="checkbox") Я согласен с условиями обработки <span>персональных данных</span>
                                 button(type="button") Отправить
-                        
+        footer
+            script(src='script.js')
 
                     
 

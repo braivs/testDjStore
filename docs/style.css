@@ -168,6 +168,8 @@ section.slider .main-image {
           background: #397DFF;
           border: none;
           margin-left: 24px; }
+  section.slider .main-image section.popup.hidden {
+    visibility: hidden; }
   section.slider .main-image section.popup {
     position: absolute;
     top: 50%;
@@ -179,8 +181,7 @@ section.slider .main-image {
     height: 407px;
     background: white;
     z-index: 1;
-    border-radius: 16px;
-    visibility: hidden; }
+    border-radius: 16px; }
     section.slider .main-image section.popup .popup-container {
       margin-top: 32px;
       margin-left: 42px; }
