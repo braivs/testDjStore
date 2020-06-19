@@ -54,7 +54,15 @@ html(lang="ru")
                         .buttons-container
                             button(type="button") Обратный звонок
                             button(type="button") Заполнить бриф
-                    //- section.popup
+                    section.popup
+                        .popup-container
+                            p Готовы обсудить проект?
+                            p Заполните форму ниже и мы свяжемся с вами.
+                            form(action="", method="get")
+                                input(type="text", placeholder="Имя*", required)
+                                input(type="text", placeholder="Телефон*", required)
+                                //- label
+                                //-     <input type="checkbox" checked="checked" name="remember"> Remember me
 
 
                     
