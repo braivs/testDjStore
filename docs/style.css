@@ -179,7 +179,8 @@ section.slider .main-image {
     height: 407px;
     background: white;
     z-index: 1;
-    border-radius: 16px; }
+    border-radius: 16px;
+    visibility: hidden; }
     section.slider .main-image section.popup .popup-container {
       margin-top: 32px;
       margin-left: 42px; }
@@ -235,8 +236,6 @@ section.slider .main-image {
           background: #397DFF;
           border-radius: 8px;
           border: none;
-          -webkit-box-sizing: border-box;
-          box-sizing: border-box;
           font-size: 18px;
           font-weight: 600;
           color: white; }
