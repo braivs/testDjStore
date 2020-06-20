@@ -54,8 +54,8 @@ html(lang="ru")
                         .buttons-container
                             button(type="button", id="open3") Обратный звонок
                             button(type="button") Заполнить бриф
-                    section.popup
-                        a(href="#")
+                    section.popup.hidden
+                        a(href="#", id="close")
                             img(src="img/close_icon.png", alt="")
                         .popup-container
                             p Готовы обсудить проект?
