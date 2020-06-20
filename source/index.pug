@@ -66,8 +66,8 @@ html(lang="ru")
                                 <br>
                                 input(type="checkbox", class="checkbox", id="checkbox")
                                 label(for="checkbox") Я согласен с условиями обработки <span>персональных данных</span>
-                                button(type="button") Отправить
-                    section.popup.popup2
+                                button(type="button", id="send") Отправить
+                    section.popup.popup2.hidden
                         a(href="#", id="close2")
                             img(src="img/close_icon.png", alt="")
                         .popup-container
@@ -76,7 +76,7 @@ html(lang="ru")
                                 Ваша заявка успешно отправлена.<br>
                                 Ожидайте звонка в ближайшее время!
                             form
-                                button(type="button") Ок
+                                button(type="button", id="close22") Ок
                             
         footer
             script(src='script.js')
