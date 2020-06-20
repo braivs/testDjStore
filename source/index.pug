@@ -54,14 +54,17 @@ html(lang="ru")
                         .buttons-container
                             button(type="button", id="open3") Обратный звонок
                             button(type="button") Заполнить бриф
-                    section.popup.hidden
+                    section.popup
+                        a(href="#")
+                            img(src="img/close_icon.png", alt="")
                         .popup-container
                             p Готовы обсудить проект?
                             p Заполните форму ниже и мы свяжемся с вами.
                             form(action="", method="get")
                                 input(type="text", placeholder="Имя*", required)
                                 input(type="text", placeholder="Телефон*", required)
-                                input(type="checkbox",id="checkbox")
+                                <br>
+                                input(type="checkbox", class="checkbox", id="checkbox")
                                 label(for="checkbox") Я согласен с условиями обработки <span>персональных данных</span>
                                 button(type="button") Отправить
         footer

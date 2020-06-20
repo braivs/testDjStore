@@ -1,8 +1,10 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
 body 
     background: #E5E5E5
     font-family: 'Montserrat', sans-serif;
-    margin: 0
-    box-sizing: border-box
 header
     display: flex
     width: 1920px
@@ -47,6 +49,7 @@ a
         display: flex
         align-items: flex-end
         margin-left: 29.96px
+
         a 
             color: rgba(43, 45, 58, 0.7)
             
@@ -144,6 +147,9 @@ section.slider
             background: white
             z-index: 1
             border-radius: 16px
+            img 
+                position: absolute
+                margin: 16px 0 0 496px
             .popup-container
                 margin-top: 32px
                 margin-left: 42px
@@ -170,14 +176,15 @@ section.slider
                             font-size: 16px
                         &:nth-of-type(2)
                             margin-top: 24px
-                        &:nth-of-type(3)
-                            width: 16px
-                            height: 16px
-                            margin-top: 32px
-                            margin-left: 10px
-                            border: 1px solid red
+                    input.checkbox
+                        width: 16px
+                        height: 16px
+                        margin-top: 32px
                     label
+                        display: block
                         font-size: 14px
+                        margin-top: -22px
+                        margin-left: 24px
                         span
                             color: #397DFF
                     button
