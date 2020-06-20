@@ -279,10 +279,11 @@ section.sound .soundContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 620px; }
+  height: 620px;
+  width: 1920px; }
   section.sound .soundContainer .leftPart {
     position: relative;
-    width: 920px;
+    width: 960px;
     background: #DAE3F6; }
     section.sound .soundContainer .leftPart img:nth-of-type(1) {
       position: absolute;
@@ -297,6 +298,6 @@ section.sound .soundContainer {
       top: 413px;
       left: 232px; }
   section.sound .soundContainer .rightPart {
-    width: 920px; }
+    width: 960px; }
 
 /*# sourceMappingURL=style.css.map */
