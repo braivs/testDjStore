@@ -270,4 +270,33 @@ section.slider .main-image {
         section.slider .main-image section.popup2 .popup-container form button {
           margin-top: 8px; }
 
+section.separator {
+  width: 1920px;
+  height: 82px;
+  background: #EBEEF5; }
+
+section.sound .soundContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 620px; }
+  section.sound .soundContainer .leftPart {
+    position: relative;
+    width: 920px;
+    background: #DAE3F6; }
+    section.sound .soundContainer .leftPart img:nth-of-type(1) {
+      position: absolute;
+      top: 210px;
+      left: 210px; }
+    section.sound .soundContainer .leftPart img:nth-of-type(2) {
+      position: absolute;
+      top: 132px;
+      left: 476px; }
+    section.sound .soundContainer .leftPart img:nth-of-type(3) {
+      position: absolute;
+      top: 413px;
+      left: 232px; }
+  section.sound .soundContainer .rightPart {
+    width: 920px; }
+
 /*# sourceMappingURL=style.css.map */
