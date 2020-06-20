@@ -25,7 +25,7 @@ addEventListener("keydown", function(event) {
     popupWindow.classList.add('hidden');
     popupWindow2.classList.add('hidden');
   });
-send.onclick = function() {
+send.onsubmit = function() {
   popupWindow.classList.add('hidden');
   popupWindow2.classList.remove('hidden');
 }

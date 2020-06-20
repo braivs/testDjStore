@@ -60,13 +60,13 @@ html(lang="ru")
                         .popup-container
                             p Готовы обсудить проект?
                             p Заполните форму ниже и мы свяжемся с вами.
-                            form(action="", method="get")
+                            form(id="send")
                                 input(type="text", placeholder="Имя*", required)
                                 input(type="text", placeholder="Телефон*", required)
                                 <br>
-                                input(type="checkbox", class="checkbox", id="checkbox")
+                                input(type="checkbox", class="checkbox", id="checkbox", required)
                                 label(for="checkbox") Я согласен с условиями обработки <span>персональных данных</span>
-                                button(type="button", id="send") Отправить
+                                button(type="submit") Отправить
                     section.popup.popup2.hidden
                         a(href="#", id="close2")
                             img(src="img/close_icon.png", alt="")
