@@ -298,6 +298,31 @@ section.sound .soundContainer {
       top: 413px;
       left: 232px; }
   section.sound .soundContainer .rightPart {
-    width: 960px; }
+    width: 960px;
+    position: relative; }
+    section.sound .soundContainer .rightPart img.speakerLeft {
+      position: absolute;
+      top: 58px;
+      left: 184px; }
+    section.sound .soundContainer .rightPart img.EllipseBigLeft {
+      position: absolute;
+      top: 73px;
+      left: 172px; }
+    section.sound .soundContainer .rightPart img.crossLeft {
+      position: absolute;
+      top: 96px;
+      left: 195px; }
+    section.sound .soundContainer .rightPart img.speakerRight {
+      position: absolute;
+      top: 58px;
+      left: 693px; }
+    section.sound .soundContainer .rightPart img.EllipseBigRight {
+      position: absolute;
+      top: 72px;
+      left: 689px; }
+    section.sound .soundContainer .rightPart img.EllipseSmallRight {
+      position: absolute;
+      top: 95px;
+      left: 712px; }
 
 /*# sourceMappingURL=style.css.map */
