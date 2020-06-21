@@ -349,5 +349,15 @@ section.sound .soundContainer {
           position: absolute;
           border: 5x solid red;
           z-index: 2; }
+      section.sound .soundContainer .rightPart .popup .popupContainer::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -20px;
+        -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+        border: 10px solid transparent;
+        border-top: 10px solid white; }
 
 /*# sourceMappingURL=style.css.map */
