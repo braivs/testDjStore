@@ -1,6 +1,6 @@
-let popup1 = document.querySelector("#open1");
-let popup2 = document.querySelector("#open2");
-let popup3 = document.querySelector('#open3');
+let openClick11 = document.querySelector("#openClick11");
+let openClick12 = document.querySelector("#openClick12");
+let openClick13 = document.querySelector('#openClick13');
 let close = document.querySelector('#close');
 let popupWindow = document.querySelector('.popup');
 let send = document.querySelector('#send');
@@ -8,13 +8,13 @@ let popupWindow2 = document.querySelector('.popup2');
 let close2 = document.querySelector('#close2');
 let close22 = document.querySelector('#close22');
 
-popup1.onclick = function() {
+openClick11.onclick = function() {
   popupWindow.classList.remove('hidden');
   };
-popup2.onclick = function() {
+openClick12.onclick = function() {
   popupWindow.classList.remove('hidden');
   };
-popup3.onclick = function() {
+openClick13.onclick = function() {
    popupWindow.classList.remove('hidden');
   };
 close.onclick = function() {
