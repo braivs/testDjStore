@@ -4,7 +4,7 @@ let openClick13 = document.querySelector('#openClick13');
 let close = document.querySelector('#close');
 let popupWindow1 = document.querySelector('#popupWindow1');
 let send = document.querySelector('#send');
-let popupWindow2 = document.querySelector('.popup2');
+let popupWindow2 = document.querySelector('#popupWindow2');
 let close2 = document.querySelector('#close2');
 let close22 = document.querySelector('#close22');
 
