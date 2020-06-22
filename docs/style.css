@@ -325,6 +325,7 @@ section.sound .soundContainer {
       top: 95px;
       left: 712px; }
     section.sound .soundContainer .rightPart .popup {
+      visibility: hidden;
       position: absolute;
       z-index: 1;
       background: white;
