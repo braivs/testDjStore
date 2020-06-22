@@ -54,7 +54,7 @@ html(lang="ru")
                         .buttons-container
                             button(type="button", id="openClick13") Обратный звонок
                             button(type="button") Заполнить бриф
-                    section.popup.hidden
+                    section.popup.hidden(id="popupWindow1")
                         a(href="#", id="close")
                             img(src="img/close_icon.png", alt="")
                         .popup-container
@@ -67,7 +67,7 @@ html(lang="ru")
                                 input(type="checkbox", class="checkbox", id="checkbox", required)
                                 label(for="checkbox") Я согласен с условиями обработки <span>персональных данных</span>
                                 button(type="submit") Отправить
-                    section.popup.popup2.hidden
+                    section.popup.popup2.hidden(id="popupWindow2")
                         a(href="#", id="close2")
                             img(src="img/close_icon.png", alt="")
                         .popup-container
