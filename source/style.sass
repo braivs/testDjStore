@@ -2,15 +2,15 @@
     margin: 0
     padding: 0
     box-sizing: border-box
-body 
+body
     background: #E5E5E5
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif 
 header
     display: flex
     width: 1920px
     height: 91px
     background: #EBEEF5
-a 
+a
     text-decoration: none
 .header-container
     display: flex
@@ -118,7 +118,7 @@ section.slider
                     font-size: 16px
                     line-height: 148%
                     margin-top: 24px
-                    color: rgba(255, 255, 255, 0.8);
+                    color: rgba(255, 255, 255, 0.8) 
             .buttons-container
                 margin-top: 54px
                 button
@@ -176,10 +176,48 @@ section.slider
                             font-size: 16px
                         &:nth-of-type(2)
                             margin-top: 24px
-                    input.checkbox
-                        width: 16px
-                        height: 16px
-                        margin-top: 32px
+                    .input
+                        margin-top: 52px
+                        position: relative
+                        input.checkbox
+                            width: 16px
+                            height: 16px
+                            //checkbox stylisation
+                            position: absolute 
+                            left: -9999px 
+                        input.checkbox:checked + label:before, 
+                        input.checkbox:not(:checked) + label:before
+                            //checkbox stylisation
+                            content: "" 
+                            position: absolute
+                            left: 0px 
+                            top: 0px 
+                            width: 16px 
+                            height: 16px 
+                            border: 1px solid #dddddd 
+                            background-color: #ffffff 
+                            border-radius: 2px
+                        input.checkbox:checked + label:after, 
+                        input.checkbox:not(:checked) + label:after
+                            //makr inside stylisation
+                            content: "";
+                            position: absolute
+                            left: 3px;
+                            top: 4px;
+                            width: 10px;
+                            height: 5px;
+                            border-radius: 1px;
+                            border-left: 4px solid #e145a3;
+                            border-bottom: 4px solid #e145a3;
+                            -webkit-transform: rotate(-45deg);
+                            -moz-transform: rotate(-45deg);
+                            -o-transform: rotate(-45deg);
+                            -ms-transform: rotate(-45deg);
+                            transform: rotate(-45deg);
+                        input.checkbox:not(:checked) + label:after 
+                            opacity: 0                        
+                        input.checkbox:checked + label:after
+                            opacity: 1
                     label
                         display: block
                         font-size: 14px

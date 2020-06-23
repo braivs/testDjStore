@@ -226,10 +226,43 @@ section.slider .main-image {
             font-size: 16px; }
           section.slider .main-image section.popup .popup-container form input:nth-of-type(2) {
             margin-top: 24px; }
-        section.slider .main-image section.popup .popup-container form input.checkbox {
-          width: 16px;
-          height: 16px;
-          margin-top: 32px; }
+        section.slider .main-image section.popup .popup-container form .input {
+          margin-top: 52px;
+          position: relative; }
+          section.slider .main-image section.popup .popup-container form .input input.checkbox {
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            left: -9999px; }
+          section.slider .main-image section.popup .popup-container form .input input.checkbox:checked + label:before,
+          section.slider .main-image section.popup .popup-container form .input input.checkbox:not(:checked) + label:before {
+            content: "";
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 16px;
+            height: 16px;
+            border: 1px solid #dddddd;
+            background-color: #ffffff;
+            border-radius: 2px; }
+          section.slider .main-image section.popup .popup-container form .input input.checkbox:checked + label:after,
+          section.slider .main-image section.popup .popup-container form .input input.checkbox:not(:checked) + label:after {
+            content: "";
+            position: absolute;
+            left: 3px;
+            top: 4px;
+            width: 10px;
+            height: 5px;
+            border-radius: 1px;
+            border-left: 4px solid #e145a3;
+            border-bottom: 4px solid #e145a3;
+            -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+          section.slider .main-image section.popup .popup-container form .input input.checkbox:not(:checked) + label:after {
+            opacity: 0; }
+          section.slider .main-image section.popup .popup-container form .input input.checkbox:checked + label:after {
+            opacity: 1; }
         section.slider .main-image section.popup .popup-container form label {
           display: block;
           font-size: 14px;
