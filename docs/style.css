@@ -242,8 +242,8 @@ section.slider .main-image {
             top: 0px;
             width: 16px;
             height: 16px;
-            border: 1px solid #dddddd;
-            background-color: #ffffff;
+            border: 1px solid #397DFF;
+            background-color: #EBEEF5;
             border-radius: 2px; }
           section.slider .main-image section.popup .popup-container form .input input.checkbox:checked + label:after,
           section.slider .main-image section.popup .popup-container form .input input.checkbox:not(:checked) + label:after {
@@ -254,8 +254,8 @@ section.slider .main-image {
             width: 10px;
             height: 5px;
             border-radius: 1px;
-            border-left: 4px solid #e145a3;
-            border-bottom: 4px solid #e145a3;
+            border-left: 2px solid #397DFF;
+            border-bottom: 2px solid #397DFF;
             -webkit-transform: rotate(-45deg);
             -ms-transform: rotate(-45deg);
             transform: rotate(-45deg); }
