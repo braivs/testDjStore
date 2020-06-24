@@ -5,6 +5,8 @@ html(lang="ru")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="style.css")
         link(href!="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet")
+        link(rel="stylesheet", href="swiper.css")
+        link(rel="stylesheet", href="swiper.min.css")
         title test
     body
         header
@@ -54,7 +56,7 @@ html(lang="ru")
                         .buttons-container
                             button(type="button", id="openClick13") Обратный звонок
                             button(type="button") Заполнить бриф
-                    section.popup <!--.hidden(id="popupWindow1") -->
+                    section.popup.hidden(id="popupWindow1")
                         a(href="#", id="close")
                             img(src="img/close_icon.png", alt="")
                         .popup-container
@@ -110,6 +112,8 @@ html(lang="ru")
                                         li Пиковая мощность — 400 Вт.
                                         li Степень влагозащищенности IP34.
         footer
+            script(src='swiper.js')
+            script(src='swiper.min.js')
             script(src='script.js')
 
                     
