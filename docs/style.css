@@ -175,8 +175,7 @@ section.slider .main-image {
     position: absolute;
     top: 214px;
     left: 1405px;
-    width: 515px;
-    border: 1px solid green; }
+    width: 515px; }
     section.slider .main-image .swiper-container .swiper-wrapper .swiper-slide {
       width: 70%; }
       section.slider .main-image .swiper-container .swiper-wrapper .swiper-slide h1 {
