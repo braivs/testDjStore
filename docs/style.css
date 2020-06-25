@@ -174,16 +174,36 @@ section.slider .main-image {
   section.slider .main-image .swiper-container {
     position: absolute;
     top: 214px;
-    left: 1405px; }
-    section.slider .main-image .swiper-container h1 {
-      font-size: 64px;
-      color: #397DFF;
-      margin-bottom: 24px; }
-    section.slider .main-image .swiper-container p {
-      font-size: 14px;
-      color: rgba(255, 255, 255, 0.7);
-      width: 282px;
-      line-height: 160%; }
+    left: 1405px;
+    width: 515px;
+    border: 1px solid green; }
+    section.slider .main-image .swiper-container .swiper-wrapper .swiper-slide {
+      width: 70%; }
+      section.slider .main-image .swiper-container .swiper-wrapper .swiper-slide h1 {
+        font-size: 64px;
+        color: #397DFF;
+        margin-bottom: 12px; }
+      section.slider .main-image .swiper-container .swiper-wrapper .swiper-slide p {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.7);
+        width: 282px;
+        line-height: 160%; }
+    section.slider .main-image .swiper-container .swiperButtonsContainer .swiper-button-prev::after,
+    section.slider .main-image .swiper-container .swiperButtonsContainer .swiper-button-next::after {
+      display: none; }
+    section.slider .main-image .swiper-container .swiperButtonsContainer .swiper-button-prev,
+    section.slider .main-image .swiper-container .swiperButtonsContainer .swiper-button-next {
+      width: 32px;
+      height: 32px;
+      position: static; }
+    section.slider .main-image .swiper-container .swiperButtonsContainer .swiper-button-prev {
+      margin-top: +10px;
+      margin-right: 43px;
+      background-image: url("img/swiperLeft.png"); }
+    section.slider .main-image .swiper-container .swiperButtonsContainer .swiper-button-next {
+      margin-top: -32px;
+      margin-left: 83px;
+      background-image: url("img/swiperRight.png"); }
   section.slider .main-image section.popup.hidden {
     visibility: hidden; }
   section.slider .main-image section.popup {
