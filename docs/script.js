@@ -67,6 +67,7 @@ var mySwiper = new Swiper ('.swiper-container', {
   slidesPerView: 'auto',
   direction: 'horizontal',
   loop: true,
+  watchSlidesVisibility: true,
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',

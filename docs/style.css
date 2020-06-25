@@ -187,6 +187,8 @@ section.slider .main-image {
         color: rgba(255, 255, 255, 0.7);
         width: 282px;
         line-height: 160%; }
+    section.slider .main-image .swiper-container .swiper-wrapper .swiper-slide-visible + * {
+      opacity: 0.3; }
     section.slider .main-image .swiper-container .swiperButtonsContainer .swiper-button-prev::after,
     section.slider .main-image .swiper-container .swiperButtonsContainer .swiper-button-next::after {
       display: none; }
