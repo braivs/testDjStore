@@ -73,8 +73,15 @@ var mySwiper = new Swiper ('.swiper-container', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
+})
+var mySwiperBig = new Swiper ('.swiper-container-BIG', {
+  slidesPerView: 1,
+  direction: 'horizontal',
+  loop: true,
+  effect: 'fade',
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 })
