@@ -178,7 +178,8 @@ section.slider .swiper-container-BIG .swiper-container {
   left: 1405px;
   width: 515px; }
   section.slider .swiper-container-BIG .swiper-container .swiper-wrapper .swiper-slide {
-    width: 70%; }
+    width: 70%;
+    position: relative; }
     section.slider .swiper-container-BIG .swiper-container .swiper-wrapper .swiper-slide h1 {
       font-size: 64px;
       color: #397DFF;
@@ -188,6 +189,15 @@ section.slider .swiper-container-BIG .swiper-container {
       color: rgba(255, 255, 255, 0.7);
       width: 282px;
       line-height: 160%; }
+    section.slider .swiper-container-BIG .swiper-container .swiper-wrapper .swiper-slide .separator {
+      position: absolute;
+      top: 0;
+      left: 450px;
+      width: 450px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg); }
   section.slider .swiper-container-BIG .swiper-container .swiper-wrapper .swiper-slide-visible + * {
     opacity: 0.3; }
   section.slider .swiper-container-BIG .swiper-container .swiperButtonsContainer .swiper-button-prev::after,

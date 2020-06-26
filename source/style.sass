@@ -143,6 +143,7 @@ section.slider
             .swiper-wrapper
                 .swiper-slide
                     width: 70%
+                    position: relative
                     h1
                         font-size: 64px
                         color: #397DFF
@@ -152,6 +153,13 @@ section.slider
                         color: rgba(255, 255, 255, 0.7)
                         width: 282px
                         line-height: 160%
+                    .separator
+                        position: absolute
+                        top: 0
+                        left: 450px
+                        width: 450px
+                        border: 1px solid rgba(255, 255, 255, 0.1)
+                        transform: rotate(90deg)
                 .swiper-slide-visible + *
                     opacity: 0.3
             .swiperButtonsContainer
