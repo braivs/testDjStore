@@ -68,20 +68,22 @@ var mySwiper = new Swiper ('.swiper-container', {
   direction: 'horizontal',
   loop: true,
   watchSlidesVisibility: true,
+  // longSwipes = false,
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
-  },
+  },  
 })
 var mySwiperBig = new Swiper ('.swiper-container-BIG', {
   slidesPerView: 1,
   direction: 'horizontal',
   loop: true,
   effect: 'fade',
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+  touchRatio: 3,
+  slideToClickedSlide: true,
 })
+
+mySwiper.controller.by = 'container';
+mySwiper.controller.control = mySwiperBig;
+// mySwiperBig.controller.control = mySwiper;
