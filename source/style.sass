@@ -98,6 +98,27 @@ section.slider
     width: 1920px
     height: 624px
     .swiper-container-BIG
+        position: relative
+        .buttons-container
+            position: absolute
+            z-index: 2
+            top: 368px
+            left: 390px
+            // margin-top: 54px
+            button
+                width: 186px
+                height: 48px
+                border-radius: 8px
+                box-sizing: border-box
+                font-size: 16px
+                color: white
+                &:nth-of-type(1)
+                    border: 1px solid #FFFFFF
+                    background: none
+                &:nth-of-type(2)
+                    background: #397DFF
+                    border: none
+                    margin-left: 24px        
         .swiper-wrapper
             position: relative
             .swiper-slide
@@ -121,22 +142,6 @@ section.slider
                             line-height: 148%
                             margin-top: 24px
                             color: rgba(255, 255, 255, 0.8) 
-                    .buttons-container
-                        margin-top: 54px
-                        button
-                            width: 186px
-                            height: 48px
-                            border-radius: 8px
-                            box-sizing: border-box
-                            font-size: 16px
-                            color: white
-                            &:nth-of-type(1)
-                                border: 1px solid #FFFFFF
-                                background: none
-                            &:nth-of-type(2)
-                                background: #397DFF
-                                border: none
-                                margin-left: 24px
         .swiper-container
             position: absolute
             top: 214px
@@ -195,7 +200,7 @@ section.slider
             width: 538px
             height: 407px 
             background: white
-            z-index: 1
+            z-index: 3
             border-radius: 16px
             img 
                 position: absolute
@@ -287,7 +292,7 @@ section.slider
                         color: white
         section.popup2 
             display: flex
-            z-index: 2
+            z-index: 4
             .popup-container
                 margin: 0
                 width: 100%
