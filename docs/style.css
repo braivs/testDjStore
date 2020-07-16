@@ -133,51 +133,47 @@ a {
         font-weight: 600; }
 
 section.slider {
-  border: 1px solid red;
   width: 1920px;
   height: 624px; }
   section.slider .swiper-container-BIG .swiper-wrapper {
     position: relative; }
-    section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide {
-      border: 1px solid orange; }
-      section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide .mainText-container {
-        position: absolute;
-        top: 123px;
-        left: 390px; }
-        section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide .mainText-container p {
-          color: white;
-          margin: 0; }
-          section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide .mainText-container p:first-of-type {
-            font-size: 18px;
-            line-height: 22px; }
-          section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide .mainText-container p:nth-of-type(2) {
-            font-size: 52px;
-            line-height: 63px;
-            margin-top: 12px;
-            margin-left: -5px; }
-          section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide .mainText-container p:nth-of-type(3) {
-            font-size: 16px;
-            line-height: 148%;
-            margin-top: 24px;
-            color: rgba(255, 255, 255, 0.8); }
-        section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide .mainText-container .buttons-container {
-          margin-top: 54px;
-          border: 1px solid green; }
-          section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide .mainText-container .buttons-container button {
-            width: 186px;
-            height: 48px;
-            border-radius: 8px;
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-            font-size: 16px;
-            color: white; }
-            section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide .mainText-container .buttons-container button:nth-of-type(1) {
-              border: 1px solid #FFFFFF;
-              background: none; }
-            section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide .mainText-container .buttons-container button:nth-of-type(2) {
-              background: #397DFF;
-              border: none;
-              margin-left: 24px; }
+    section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide .mainText-container {
+      position: absolute;
+      top: 123px;
+      left: 390px; }
+      section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide .mainText-container p {
+        color: white;
+        margin: 0; }
+        section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide .mainText-container p:first-of-type {
+          font-size: 18px;
+          line-height: 22px; }
+        section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide .mainText-container p:nth-of-type(2) {
+          font-size: 52px;
+          line-height: 63px;
+          margin-top: 12px;
+          margin-left: -5px; }
+        section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide .mainText-container p:nth-of-type(3) {
+          font-size: 16px;
+          line-height: 148%;
+          margin-top: 24px;
+          color: rgba(255, 255, 255, 0.8); }
+      section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide .mainText-container .buttons-container {
+        margin-top: 54px; }
+        section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide .mainText-container .buttons-container button {
+          width: 186px;
+          height: 48px;
+          border-radius: 8px;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          font-size: 16px;
+          color: white; }
+          section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide .mainText-container .buttons-container button:nth-of-type(1) {
+            border: 1px solid #FFFFFF;
+            background: none; }
+          section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide .mainText-container .buttons-container button:nth-of-type(2) {
+            background: #397DFF;
+            border: none;
+            margin-left: 24px; }
   section.slider .swiper-container-BIG .swiper-container {
     position: absolute;
     top: 214px;

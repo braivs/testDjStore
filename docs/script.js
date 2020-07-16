@@ -82,16 +82,9 @@ var mySwiper = new Swiper ('.swiper-container', {
   direction: 'horizontal',
   loop: true,
   watchSlidesVisibility: true,
-  // longSwipes = false,
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   }
 })
 
-
-// mySwiper.controller.by = 'container';
-// mySwiper.controller.control = mySwiperBig;
-// mySwiperBig.controller.control = mySwiper;
-// mySwiperBig.controller.control = mySwiper;
