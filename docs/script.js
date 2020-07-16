@@ -63,6 +63,20 @@ close3.onclick = function(event) {
   popupWindow3.style.visibility="hidden";
 }
 
+var mySwiperBig = new Swiper ('.swiper-container-BIG', {
+  slidesPerView: 1,
+  direction: 'horizontal',
+  loop: true,
+  effect: 'fade',
+  touchRatio: 3,
+  slideToClickedSlide: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  touchRatio: 0
+})
+
 var mySwiper = new Swiper ('.swiper-container', {
   slidesPerView: 'auto',
   direction: 'horizontal',
@@ -73,17 +87,11 @@ var mySwiper = new Swiper ('.swiper-container', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
-  },  
-})
-var mySwiperBig = new Swiper ('.swiper-container-BIG', {
-  slidesPerView: 1,
-  direction: 'horizontal',
-  loop: true,
-  effect: 'fade',
-  touchRatio: 3,
-  slideToClickedSlide: true,
+  }
 })
 
-mySwiper.controller.by = 'container';
-mySwiper.controller.control = mySwiperBig;
+
+// mySwiper.controller.by = 'container';
+// mySwiper.controller.control = mySwiperBig;
+// mySwiperBig.controller.control = mySwiper;
 // mySwiperBig.controller.control = mySwiper;

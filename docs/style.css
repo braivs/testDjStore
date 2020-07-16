@@ -132,224 +132,227 @@ a {
         font-size: 13px;
         font-weight: 600; }
 
-section.slider .swiper-container-BIG .swiper-wrapper {
-  position: relative; }
-  section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide .mainText-container {
-    position: absolute;
-    top: 123px;
-    left: 390px; }
-    section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide .mainText-container p {
-      color: white;
-      margin: 0; }
-      section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide .mainText-container p:first-of-type {
-        font-size: 18px;
-        line-height: 22px; }
-      section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide .mainText-container p:nth-of-type(2) {
-        font-size: 52px;
-        line-height: 63px;
-        margin-top: 12px;
-        margin-left: -5px; }
-      section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide .mainText-container p:nth-of-type(3) {
-        font-size: 16px;
-        line-height: 148%;
-        margin-top: 24px;
-        color: rgba(255, 255, 255, 0.8); }
-    section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide .mainText-container .buttons-container {
-      margin-top: 54px; }
-      section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide .mainText-container .buttons-container button {
-        width: 186px;
-        height: 48px;
-        border-radius: 8px;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        font-size: 16px;
-        color: white; }
-        section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide .mainText-container .buttons-container button:nth-of-type(1) {
-          border: 1px solid #FFFFFF;
-          background: none; }
-        section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide .mainText-container .buttons-container button:nth-of-type(2) {
-          background: #397DFF;
-          border: none;
-          margin-left: 24px; }
-
-section.slider .swiper-container-BIG .swiper-container {
-  position: absolute;
-  top: 214px;
-  left: 1405px;
-  width: 515px; }
-  section.slider .swiper-container-BIG .swiper-container .swiper-wrapper .swiper-slide {
-    width: 70%;
+section.slider {
+  border: 1px solid red;
+  width: 1920px;
+  height: 624px; }
+  section.slider .swiper-container-BIG .swiper-wrapper {
     position: relative; }
-    section.slider .swiper-container-BIG .swiper-container .swiper-wrapper .swiper-slide h1 {
-      font-size: 64px;
-      color: #397DFF;
-      margin-bottom: 12px; }
-    section.slider .swiper-container-BIG .swiper-container .swiper-wrapper .swiper-slide p {
-      font-size: 14px;
-      color: rgba(255, 255, 255, 0.7);
-      width: 282px;
-      line-height: 160%; }
-    section.slider .swiper-container-BIG .swiper-container .swiper-wrapper .swiper-slide .separator {
-      position: absolute;
-      top: 0;
-      left: 450px;
-      width: 450px;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-      transform: rotate(90deg); }
-  section.slider .swiper-container-BIG .swiper-container .swiper-wrapper .swiper-slide-visible + * {
-    opacity: 0.3; }
-  section.slider .swiper-container-BIG .swiper-container .swiperButtonsContainer .swiper-button-prev::after,
-  section.slider .swiper-container-BIG .swiper-container .swiperButtonsContainer .swiper-button-next::after {
-    display: none; }
-  section.slider .swiper-container-BIG .swiper-container .swiperButtonsContainer .swiper-button-prev,
-  section.slider .swiper-container-BIG .swiper-container .swiperButtonsContainer .swiper-button-next {
-    width: 32px;
-    height: 32px;
-    position: static; }
-  section.slider .swiper-container-BIG .swiper-container .swiperButtonsContainer .swiper-button-prev {
-    margin-top: +10px;
-    margin-right: 43px;
-    background-image: url("img/swiperLeft.png"); }
-  section.slider .swiper-container-BIG .swiper-container .swiperButtonsContainer .swiper-button-next {
-    margin-top: -32px;
-    margin-left: 83px;
-    background-image: url("img/swiperRight.png"); }
-
-section.slider .swiper-container-BIG section.popup.hidden {
-  visibility: hidden; }
-
-section.slider .swiper-container-BIG section.popup {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width: 538px;
-  height: 407px;
-  background: white;
-  z-index: 1;
-  border-radius: 16px; }
-  section.slider .swiper-container-BIG section.popup img {
+    section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide {
+      border: 1px solid orange; }
+      section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide .mainText-container {
+        position: absolute;
+        top: 123px;
+        left: 390px; }
+        section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide .mainText-container p {
+          color: white;
+          margin: 0; }
+          section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide .mainText-container p:first-of-type {
+            font-size: 18px;
+            line-height: 22px; }
+          section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide .mainText-container p:nth-of-type(2) {
+            font-size: 52px;
+            line-height: 63px;
+            margin-top: 12px;
+            margin-left: -5px; }
+          section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide .mainText-container p:nth-of-type(3) {
+            font-size: 16px;
+            line-height: 148%;
+            margin-top: 24px;
+            color: rgba(255, 255, 255, 0.8); }
+        section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide .mainText-container .buttons-container {
+          margin-top: 54px;
+          border: 1px solid green; }
+          section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide .mainText-container .buttons-container button {
+            width: 186px;
+            height: 48px;
+            border-radius: 8px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            font-size: 16px;
+            color: white; }
+            section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide .mainText-container .buttons-container button:nth-of-type(1) {
+              border: 1px solid #FFFFFF;
+              background: none; }
+            section.slider .swiper-container-BIG .swiper-wrapper .swiper-slide .mainText-container .buttons-container button:nth-of-type(2) {
+              background: #397DFF;
+              border: none;
+              margin-left: 24px; }
+  section.slider .swiper-container-BIG .swiper-container {
     position: absolute;
-    margin: 16px 0 0 496px; }
-  section.slider .swiper-container-BIG section.popup .popup-container {
-    margin-top: 32px;
-    margin-left: 42px; }
-    section.slider .swiper-container-BIG section.popup .popup-container p {
-      margin: 0; }
-      section.slider .swiper-container-BIG section.popup .popup-container p:nth-of-type(1) {
-        font-size: 24px;
-        font-weight: 600; }
-      section.slider .swiper-container-BIG section.popup .popup-container p:nth-of-type(2) {
-        margin-top: 12px;
-        font-size: 16px; }
-    section.slider .swiper-container-BIG section.popup .popup-container form {
-      margin-top: 28px; }
-      section.slider .swiper-container-BIG section.popup .popup-container form input {
-        width: 454px;
-        height: 48px;
-        border: 1px solid rgba(0, 0, 0, 0.2);
-        border-radius: 9px;
-        padding-left: 15.32px; }
-        section.slider .swiper-container-BIG section.popup .popup-container form input:hover {
-          border: 1px solid #397DFF; }
-        section.slider .swiper-container-BIG section.popup .popup-container form input::-webkit-input-placeholder {
-          color: rgba(43, 45, 58, 0.5);
-          font-size: 16px; }
-        section.slider .swiper-container-BIG section.popup .popup-container form input::-moz-placeholder {
-          color: rgba(43, 45, 58, 0.5);
-          font-size: 16px; }
-        section.slider .swiper-container-BIG section.popup .popup-container form input:-ms-input-placeholder {
-          color: rgba(43, 45, 58, 0.5);
-          font-size: 16px; }
-        section.slider .swiper-container-BIG section.popup .popup-container form input::-ms-input-placeholder {
-          color: rgba(43, 45, 58, 0.5);
-          font-size: 16px; }
-        section.slider .swiper-container-BIG section.popup .popup-container form input::placeholder {
-          color: rgba(43, 45, 58, 0.5);
-          font-size: 16px; }
-        section.slider .swiper-container-BIG section.popup .popup-container form input:nth-of-type(2) {
-          margin-top: 24px; }
-      section.slider .swiper-container-BIG section.popup .popup-container form .input {
-        margin-top: 52px;
-        position: relative; }
-        section.slider .swiper-container-BIG section.popup .popup-container form .input input.checkbox {
-          width: 16px;
-          height: 16px;
-          position: absolute;
-          left: -9999px; }
-        section.slider .swiper-container-BIG section.popup .popup-container form .input input.checkbox:checked + label:before,
-        section.slider .swiper-container-BIG section.popup .popup-container form .input input.checkbox:not(:checked) + label:before {
-          content: "";
-          position: absolute;
-          left: 0px;
-          top: 0px;
-          width: 16px;
-          height: 16px;
-          border: 1px solid #397DFF;
-          background-color: #EBEEF5;
-          border-radius: 2px; }
-        section.slider .swiper-container-BIG section.popup .popup-container form .input input.checkbox:checked + label:after,
-        section.slider .swiper-container-BIG section.popup .popup-container form .input input.checkbox:not(:checked) + label:after {
-          content: "";
-          position: absolute;
-          left: 3px;
-          top: 4px;
-          width: 10px;
-          height: 5px;
-          border-radius: 1px;
-          border-left: 2px solid #397DFF;
-          border-bottom: 2px solid #397DFF;
-          -webkit-transform: rotate(-45deg);
-          -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg); }
-        section.slider .swiper-container-BIG section.popup .popup-container form .input input.checkbox:not(:checked) + label:after {
-          opacity: 0; }
-        section.slider .swiper-container-BIG section.popup .popup-container form .input input.checkbox:checked + label:after {
-          opacity: 1; }
-      section.slider .swiper-container-BIG section.popup .popup-container form label {
-        display: block;
+    top: 214px;
+    left: 1405px;
+    width: 515px; }
+    section.slider .swiper-container-BIG .swiper-container .swiper-wrapper .swiper-slide {
+      width: 70%;
+      position: relative; }
+      section.slider .swiper-container-BIG .swiper-container .swiper-wrapper .swiper-slide h1 {
+        font-size: 64px;
+        color: #397DFF;
+        margin-bottom: 12px; }
+      section.slider .swiper-container-BIG .swiper-container .swiper-wrapper .swiper-slide p {
         font-size: 14px;
-        margin-top: -22px;
-        margin-left: 24px; }
-        section.slider .swiper-container-BIG section.popup .popup-container form label span {
-          color: #397DFF; }
-      section.slider .swiper-container-BIG section.popup .popup-container form button {
-        margin-top: 16px;
-        width: 454px;
-        height: 52px;
-        background: #397DFF;
-        border-radius: 8px;
-        border: none;
-        font-size: 18px;
-        font-weight: 600;
-        color: white; }
-
-section.slider .swiper-container-BIG section.popup2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  z-index: 2; }
-  section.slider .swiper-container-BIG section.popup2 .popup-container {
-    margin: 0;
-    width: 100%; }
-    section.slider .swiper-container-BIG section.popup2 .popup-container img {
-      margin-top: 34px;
-      margin-left: 189px; }
-    section.slider .swiper-container-BIG section.popup2 .popup-container p {
-      margin-top: 218px; }
-      section.slider .swiper-container-BIG section.popup2 .popup-container p:nth-of-type(1) {
-        font-size: 18px;
-        line-height: 162%;
-        font-weight: 500;
-        text-align: center; }
-    section.slider .swiper-container-BIG section.popup2 .popup-container form {
+        color: rgba(255, 255, 255, 0.7);
+        width: 282px;
+        line-height: 160%; }
+      section.slider .swiper-container-BIG .swiper-container .swiper-wrapper .swiper-slide .separator {
+        position: absolute;
+        top: 0;
+        left: 450px;
+        width: 450px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg); }
+    section.slider .swiper-container-BIG .swiper-container .swiper-wrapper .swiper-slide-visible + * {
+      opacity: 0.3; }
+    section.slider .swiper-container-BIG .swiper-container .swiperButtonsContainer .swiper-button-prev::after,
+    section.slider .swiper-container-BIG .swiper-container .swiperButtonsContainer .swiper-button-next::after {
+      display: none; }
+    section.slider .swiper-container-BIG .swiper-container .swiperButtonsContainer .swiper-button-prev,
+    section.slider .swiper-container-BIG .swiper-container .swiperButtonsContainer .swiper-button-next {
+      width: 32px;
+      height: 32px;
+      position: static; }
+    section.slider .swiper-container-BIG .swiper-container .swiperButtonsContainer .swiper-button-prev {
+      margin-top: +10px;
+      margin-right: 43px;
+      background-image: url("img/swiperLeft.png"); }
+    section.slider .swiper-container-BIG .swiper-container .swiperButtonsContainer .swiper-button-next {
+      margin-top: -32px;
+      margin-left: 83px;
+      background-image: url("img/swiperRight.png"); }
+  section.slider .swiper-container-BIG section.popup.hidden {
+    visibility: hidden; }
+  section.slider .swiper-container-BIG section.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 538px;
+    height: 407px;
+    background: white;
+    z-index: 1;
+    border-radius: 16px; }
+    section.slider .swiper-container-BIG section.popup img {
+      position: absolute;
+      margin: 16px 0 0 496px; }
+    section.slider .swiper-container-BIG section.popup .popup-container {
+      margin-top: 32px;
       margin-left: 42px; }
-      section.slider .swiper-container-BIG section.popup2 .popup-container form button {
-        margin-top: 8px; }
+      section.slider .swiper-container-BIG section.popup .popup-container p {
+        margin: 0; }
+        section.slider .swiper-container-BIG section.popup .popup-container p:nth-of-type(1) {
+          font-size: 24px;
+          font-weight: 600; }
+        section.slider .swiper-container-BIG section.popup .popup-container p:nth-of-type(2) {
+          margin-top: 12px;
+          font-size: 16px; }
+      section.slider .swiper-container-BIG section.popup .popup-container form {
+        margin-top: 28px; }
+        section.slider .swiper-container-BIG section.popup .popup-container form input {
+          width: 454px;
+          height: 48px;
+          border: 1px solid rgba(0, 0, 0, 0.2);
+          border-radius: 9px;
+          padding-left: 15.32px; }
+          section.slider .swiper-container-BIG section.popup .popup-container form input:hover {
+            border: 1px solid #397DFF; }
+          section.slider .swiper-container-BIG section.popup .popup-container form input::-webkit-input-placeholder {
+            color: rgba(43, 45, 58, 0.5);
+            font-size: 16px; }
+          section.slider .swiper-container-BIG section.popup .popup-container form input::-moz-placeholder {
+            color: rgba(43, 45, 58, 0.5);
+            font-size: 16px; }
+          section.slider .swiper-container-BIG section.popup .popup-container form input:-ms-input-placeholder {
+            color: rgba(43, 45, 58, 0.5);
+            font-size: 16px; }
+          section.slider .swiper-container-BIG section.popup .popup-container form input::-ms-input-placeholder {
+            color: rgba(43, 45, 58, 0.5);
+            font-size: 16px; }
+          section.slider .swiper-container-BIG section.popup .popup-container form input::placeholder {
+            color: rgba(43, 45, 58, 0.5);
+            font-size: 16px; }
+          section.slider .swiper-container-BIG section.popup .popup-container form input:nth-of-type(2) {
+            margin-top: 24px; }
+        section.slider .swiper-container-BIG section.popup .popup-container form .input {
+          margin-top: 52px;
+          position: relative; }
+          section.slider .swiper-container-BIG section.popup .popup-container form .input input.checkbox {
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            left: -9999px; }
+          section.slider .swiper-container-BIG section.popup .popup-container form .input input.checkbox:checked + label:before,
+          section.slider .swiper-container-BIG section.popup .popup-container form .input input.checkbox:not(:checked) + label:before {
+            content: "";
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 16px;
+            height: 16px;
+            border: 1px solid #397DFF;
+            background-color: #EBEEF5;
+            border-radius: 2px; }
+          section.slider .swiper-container-BIG section.popup .popup-container form .input input.checkbox:checked + label:after,
+          section.slider .swiper-container-BIG section.popup .popup-container form .input input.checkbox:not(:checked) + label:after {
+            content: "";
+            position: absolute;
+            left: 3px;
+            top: 4px;
+            width: 10px;
+            height: 5px;
+            border-radius: 1px;
+            border-left: 2px solid #397DFF;
+            border-bottom: 2px solid #397DFF;
+            -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+          section.slider .swiper-container-BIG section.popup .popup-container form .input input.checkbox:not(:checked) + label:after {
+            opacity: 0; }
+          section.slider .swiper-container-BIG section.popup .popup-container form .input input.checkbox:checked + label:after {
+            opacity: 1; }
+        section.slider .swiper-container-BIG section.popup .popup-container form label {
+          display: block;
+          font-size: 14px;
+          margin-top: -22px;
+          margin-left: 24px; }
+          section.slider .swiper-container-BIG section.popup .popup-container form label span {
+            color: #397DFF; }
+        section.slider .swiper-container-BIG section.popup .popup-container form button {
+          margin-top: 16px;
+          width: 454px;
+          height: 52px;
+          background: #397DFF;
+          border-radius: 8px;
+          border: none;
+          font-size: 18px;
+          font-weight: 600;
+          color: white; }
+  section.slider .swiper-container-BIG section.popup2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 2; }
+    section.slider .swiper-container-BIG section.popup2 .popup-container {
+      margin: 0;
+      width: 100%; }
+      section.slider .swiper-container-BIG section.popup2 .popup-container img {
+        margin-top: 34px;
+        margin-left: 189px; }
+      section.slider .swiper-container-BIG section.popup2 .popup-container p {
+        margin-top: 218px; }
+        section.slider .swiper-container-BIG section.popup2 .popup-container p:nth-of-type(1) {
+          font-size: 18px;
+          line-height: 162%;
+          font-weight: 500;
+          text-align: center; }
+      section.slider .swiper-container-BIG section.popup2 .popup-container form {
+        margin-left: 42px; }
+        section.slider .swiper-container-BIG section.popup2 .popup-container form button {
+          margin-top: 8px; }
 
 section.separator {
   width: 1920px;
