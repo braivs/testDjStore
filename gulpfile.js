@@ -1,47 +1,42 @@
-var
-	gulp = require('gulp'),
-	livereload = require("gulp-livereload"),
-	sass = require('gulp-sass'),
-	sourcemaps = require('gulp-sourcemaps'),
-	pug =  require('gulp-pug'),
-	autoprefixer = require('gulp-autoprefixer');
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const pug = require('gulp-pug');
+const browserSync = require('browser-sync').create();
+const autoprefixer = require('gulp-autoprefixer');
+const sourcemaps = require('gulp-sourcemaps');
 
-gulp.task('sass-compile', function(){
-	return gulp.src('source/*.sass')
-	.pipe(sourcemaps.init())
-	.pipe(sass().on('error', sass.logError))
-	.pipe(autoprefixer({
-		browsers: ['last 3 versions'],
-		cascade: false
-	}))
-	.pipe(sourcemaps.write('./'))
-	.pipe(gulp.dest('docs/'))
+function style () {
+    return gulp.src('./src/sass/**/*.sass')
+            .pipe(sourcemaps.init())
+            .pipe(sass().on('error', sass.logError))
+            .pipe(autoprefixer())
+            .pipe(sourcemaps.write('./'))
+            .pipe(gulp.dest('./docs/css'))
+            .pipe(browserSync.stream())
+}
+
+function pugCompile () {
+    return gulp.src('./src/*.pug')
+    .pipe(pug({
+        pretty: true
+    }))
+    .pipe(gulp.dest('./docs/'))
+    .pipe(browserSync.stream())
+}
+
+function watch () {
+    browserSync.init({
+        server: {
+            baseDir: './docs'
+        }
+    })
+    gulp.watch('./src/sass/**/*.sass', style);
+    gulp.watch('./src/*.pug', pugCompile);
+    // gulp.watch('./docs/*.html').on('change', browserSync.reload); //for clean html only
+}
+
+gulp.task('default', function () {
+    watch(); //for gulp start
 })
 
-gulp.task('pug', function(){
-	return gulp.src('source/*.pug')
-		.pipe(pug({
-			pretty: true
-		}))
-		.pipe(gulp.dest('docs/'))
-})
-
-gulp.task('reload-css', function() {
-	return gulp.src('docs/*.css')
-	.pipe(livereload())
-});
-
-gulp.task('reload-html', function() {
-	return gulp.src('docs/*.html')
-	.pipe(livereload())
-	//
-});
-
-
-gulp.task('default', function(){
-	gulp.watch('source/*.sass', gulp.series('sass-compile'))
-	gulp.watch('source/**/*.pug', gulp.series('pug'))
-	livereload.listen()
-	gulp.watch('docs/*.css', gulp.series('reload-css'))
-	gulp.watch('docs/*.html', gulp.series('reload-html'))
-})
+exports.watch = watch; //for gulp watch start
