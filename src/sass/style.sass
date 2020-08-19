@@ -98,27 +98,6 @@ section.slider
     width: 1920px
     height: 624px
     .swiper-container-BIG
-        position: relative
-        .buttons-container
-            position: absolute
-            z-index: 2
-            top: 368px
-            left: 390px
-            // margin-top: 54px
-            button
-                width: 186px
-                height: 48px
-                border-radius: 8px
-                box-sizing: border-box
-                font-size: 16px
-                color: white
-                &:nth-of-type(1)
-                    border: 1px solid #FFFFFF
-                    background: none
-                &:nth-of-type(2)
-                    background: #397DFF
-                    border: none
-                    margin-left: 24px        
         .swiper-wrapper
             position: relative
             .swiper-slide
@@ -142,6 +121,22 @@ section.slider
                             line-height: 148%
                             margin-top: 24px
                             color: rgba(255, 255, 255, 0.8) 
+                    .buttons-container
+                        margin-top: 54px
+                        button
+                            width: 186px
+                            height: 48px
+                            border-radius: 8px
+                            box-sizing: border-box
+                            font-size: 16px
+                            color: white
+                            &:nth-of-type(1)
+                                border: 1px solid #FFFFFF
+                                background: none
+                            &:nth-of-type(2)
+                                background: #397DFF
+                                border: none
+                                margin-left: 24px
         .swiper-container
             position: absolute
             top: 214px
@@ -173,23 +168,20 @@ section.slider
                 .swiper-button-prev::after,
                 .swiper-button-next::after
                     display: none
-                    // width: 100%
-                    // height: 100%
-                    // border: 1px solid orange
                 .swiper-button-prev,
                 .swiper-button-next
                     width: 32px
                     height: 32px
                     position: static
-                    // border: 1px solid red
+                    z-index: 2
                 .swiper-button-prev
                     margin-top: +10px
                     margin-right: 43px
-                    background-image: url("img/swiperLeft.png")
+                    background-image: url("../img/swiperLeft.png")
                 .swiper-button-next
                     margin-top: -32px
                     margin-left: 83px
-                    background-image: url("img/swiperRight.png")                
+                    background-image: url("../img/swiperRight.png")                
         section.popup.hidden
             visibility: hidden
         section.popup
@@ -200,7 +192,7 @@ section.slider
             width: 538px
             height: 407px 
             background: white
-            z-index: 3
+            z-index: 1
             border-radius: 16px
             img 
                 position: absolute
@@ -292,7 +284,7 @@ section.slider
                         color: white
         section.popup2 
             display: flex
-            z-index: 4
+            z-index: 2
             .popup-container
                 margin: 0
                 width: 100%
