@@ -1,17 +1,42 @@
-let openClick11 = document.querySelector("#openClick11"); //popup1 
-let openClick12 = document.querySelector("#openClick12"); //popup1
-let openClick13 = document.querySelector('#openClick13'); //popup1
-let openClick31 = document.querySelector("#openClick31"); //popup2
-let openClick32 = document.querySelector("#openClick32"); //popup2
+var swiperFirst = new Swiper('.swiper-container-first', {
+  effect: 'fade',
+  fadeEffect: {
+      crossFade: true
+  },
+  direction: 'vertical',
+  simulateTouch : false,
+  loop: true,
+  loopAdditionalSlides: true,
 
-let close = document.querySelector('#close'); //закрытие обратный вызов
-let popupWindow1 = document.querySelector('#popupWindow1'); //Обратный звонок попап
-let send = document.querySelector('#send');
-let popupWindow2 = document.querySelector('#popupWindow2'); //Заявка успешно отправлена попап
-let close2 = document.querySelector('#close2'); //закрытие заявка успешно отправлена крестик
-let close22 = document.querySelector('#close22'); //закрытие заявка успешно отправлена Ок
-let close3 = document.querySelector("#close3"); //закрытие попапа колонки
-let popupWindow3 = document.querySelector("#popupWindow3"); //попап на колонке
+});
+var swiperSecond = new Swiper('.swiper-container-second', {
+  controller: {
+      control: swiperFirst,
+  },
+  mousewheel: true,
+  loop: true,
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+  },
+  slidesPerView: 2,
+  watchSlidesVisibility: true,
+});
+
+var openClick11 = document.querySelector("#openClick11"); //popup1 
+var openClick12 = document.querySelector("#openClick12"); //popup1
+var openClick13 = document.querySelector('#openClick13'); //popup1
+var openClick31 = document.querySelector("#openClick31"); //popup2
+var openClick32 = document.querySelector("#openClick32"); //popup2
+
+var close = document.querySelector('#close'); //закрытие обратный вызов
+var popupWindow1 = document.querySelector('#popupWindow1'); //Обратный звонок попап
+var send = document.querySelector('#send');
+var popupWindow2 = document.querySelector('#popupWindow2'); //Заявка успешно отправлена попап
+var close2 = document.querySelector('#close2'); //закрытие заявка успешно отправлена крестик
+var close22 = document.querySelector('#close22'); //закрытие заявка успешно отправлена Ок
+var close3 = document.querySelector("#close3"); //закрытие попапа колонки
+var popupWindow3 = document.querySelector("#popupWindow3"); //попап на колонке
 
 openClick11.onclick = function(event) {
   event.preventDefault();
@@ -63,28 +88,4 @@ close3.onclick = function(event) {
   popupWindow3.style.visibility="hidden";
 }
 
-var mySwiperBig = new Swiper ('.swiper-container-BIG', {
-  slidesPerView: 1,
-  direction: 'horizontal',
-  loop: true,
-  effect: 'fade',
-  touchRatio: 3,
-  slideToClickedSlide: true,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  touchRatio: 0
-})
-
-var mySwiper = new Swiper ('.swiper-container', {
-  slidesPerView: 'auto',
-  direction: 'horizontal',
-  loop: true,
-  watchSlidesVisibility: true,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  }
-})
 
