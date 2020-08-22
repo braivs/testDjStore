@@ -217,7 +217,7 @@ a {
         background: #397DFF;
         border: none;
         margin-left: 24px; }
-  .firstBlock .swiper-container-first .swiper-container-second {
+  .firstBlock .swiper-container-first .swiper-container-second-wrapper {
     width: 30%;
     height: 100%;
     z-index: 1;
@@ -225,43 +225,58 @@ a {
     top: 0;
     right: 0;
     overflow: hidden; }
-    .firstBlock .swiper-container-first .swiper-container-second .swiper-wrapper .swiper-slide .text-wrapper {
-      margin-left: 0;
-      margin-top: 214px; }
-      .firstBlock .swiper-container-first .swiper-container-second .swiper-wrapper .swiper-slide .text-wrapper h1 {
-        font-size: 64px;
-        color: #397DFF;
-        margin-bottom: 12px; }
-      .firstBlock .swiper-container-first .swiper-container-second .swiper-wrapper .swiper-slide .text-wrapper p {
-        font-size: 14px;
-        color: rgba(255, 255, 255, 0.7);
-        width: 282px;
-        line-height: 160%; }
-    .firstBlock .swiper-container-first .swiper-container-second .swiper-wrapper .swiper-slide .separator {
-      position: absolute;
-      top: 0;
-      left: 450px;
-      width: 450px;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      -webkit-transform: rotate(90deg);
-          -ms-transform: rotate(90deg);
-              transform: rotate(90deg); }
-    .firstBlock .swiper-container-first .swiper-container-second .swiper-wrapper .swiper-slide-next {
-      opacity: 0.3;
-      margin-left: 120px; }
-    .firstBlock .swiper-container-first .swiper-container-second .swiper-button-prev,
-    .firstBlock .swiper-container-first .swiper-container-second .swiper-button-next {
-      position: absolute;
-      margin-top: 150px;
-      width: 32px;
-      height: 32px; }
-    .firstBlock .swiper-container-first .swiper-container-second .swiper-button-prev::after,
-    .firstBlock .swiper-container-first .swiper-container-second .swiper-button-next::after {
-      display: none; }
-    .firstBlock .swiper-container-first .swiper-container-second .swiper-button-prev {
-      background-image: url("../img/swiperLeft.png"); }
-    .firstBlock .swiper-container-first .swiper-container-second .swiper-button-next {
-      background-image: url("../img/swiperRight.png"); }
+    .firstBlock .swiper-container-first .swiper-container-second-wrapper .swiper-container-second {
+      position: relative;
+      height: 75%; }
+      .firstBlock .swiper-container-first .swiper-container-second-wrapper .swiper-container-second .swiper-wrapper .swiper-slide .slide-wrapper {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        border-right: 2px solid rgba(255, 255, 255, 0.1);
+        margin-top: 214px;
+        width: 330px;
+        height: 230px;
+        overflow: hidden; }
+        .firstBlock .swiper-container-first .swiper-container-second-wrapper .swiper-container-second .swiper-wrapper .swiper-slide .slide-wrapper .text-wrapper {
+          margin: 0;
+          margin-left: 0;
+          width: 290px;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+                  flex-direction: column; }
+          .firstBlock .swiper-container-first .swiper-container-second-wrapper .swiper-container-second .swiper-wrapper .swiper-slide .slide-wrapper .text-wrapper h1 {
+            display: block;
+            font-size: 64px;
+            color: #397DFF;
+            margin-bottom: 12px; }
+          .firstBlock .swiper-container-first .swiper-container-second-wrapper .swiper-container-second .swiper-wrapper .swiper-slide .slide-wrapper .text-wrapper p {
+            display: block;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 160%; }
+      .firstBlock .swiper-container-first .swiper-container-second-wrapper .swiper-container-second .swiper-wrapper .swiper-slide-next {
+        opacity: 0.3; }
+    .firstBlock .swiper-container-first .swiper-container-second-wrapper .second-buttons-container {
+      z-index: 1;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .firstBlock .swiper-container-first .swiper-container-second-wrapper .second-buttons-container a {
+        color: white;
+        cursor: pointer;
+        margin-right: 43px;
+        width: 32px;
+        height: 32px;
+        z-index: 1;
+        outline: none; }
   .firstBlock .swiper-container-first section.popup.hidden {
     visibility: hidden; }
   .firstBlock .swiper-container-first section.popup {

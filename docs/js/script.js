@@ -1,3 +1,6 @@
+var nx = document.getElementsByClassName("swiper-next")[0];
+var pr = document.getElementsByClassName("swiper-prev")[0];
+
 var swiperFirst = new Swiper('.swiper-container-first', {
   effect: 'fade',
   fadeEffect: {
@@ -16,11 +19,12 @@ var swiperSecond = new Swiper('.swiper-container-second', {
   mousewheel: true,
   loop: true,
   navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: nx,
+      prevEl: pr,
   },
   slidesPerView: 2,
   watchSlidesVisibility: true,
+  spaceBetween: 240
 });
 
 var openClick11 = document.querySelector("#openClick11"); //popup1 
