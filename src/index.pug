@@ -136,7 +136,7 @@ html(lang="ru")
                         a.swiper-next 
                             img(src="img/swiperRight.png", alt="") 
                 section.popup.hidden(id="popupWindow1")
-                    a(href="#", id="close")
+                    a.close1(href="#", id="close")
                         img(src="img/close_icon.png", alt="")
                     .popup-container
                         p Готовы обсудить проект?
@@ -153,11 +153,11 @@ html(lang="ru")
                                     span.text Я согласен с условиями обработки 
                                         a(href="#") персональных данных
                             button(type="submit") Отправить
-                section.popup.popup2.hidden(id="popupWindow2")
-                    a(href="#", id="close2")
-                        img(src="img/close_icon.png", alt="")
-                    .popup-container
-                        img(src="img/check.png", alt="")
+                section.popup.hidden.popup2(id="popupWindow2")
+                    .popup2-container
+                        a.close2(href="#", id="close2")
+                            img(src="img/close_icon.png", alt="")
+                        img.check(src="img/check.png", alt="")
                         p.
                             Ваша заявка успешно отправлена.<br>
                             Ожидайте звонка в ближайшее время!
@@ -172,19 +172,19 @@ html(lang="ru")
                     img(src="img/shadow.png", alt="")
                 .rightPart
                     img(src="img/img2.jpg", alt="")
-                    img(src="img/Electro_Voice_EVID_42T_s250-removebg-preview 1.png", class="speakerLeft", alt="")
+                    img.speakerLeft(src="img/Electro_Voice_EVID_42T_s250-removebg-preview 1.png", alt="")
                     a(href="",id="openClick31")
-                        img(src="img/EllipseBig.png", class="EllipseBigLeft", alt="")
+                        img.EllipseBigLeft(src="img/EllipseBig.png", alt="")
                     a(href="",id="openClick32")
                         img(src="img/cross.png", class="crossLeft", alt="")
-                    img(src="img/Electro_Voice_EVID_42T_s250-removebg-preview 2.png", class="speakerRight", alt="")
-                    img(src="img/EllipseBig.png", class="EllipseBigRight", alt="")
-                    img(src="img/EllipseSmall.png", class="EllipseSmallRight", alt="")
+                    img.speakerRight(src="img/Electro_Voice_EVID_42T_s250-removebg-preview 2.png", alt="")
+                    img.EllipseBigRight(src="img/EllipseBig.png", alt="")
+                    img.EllipseSmallRight(src="img/EllipseSmall.png", alt="")
                     .popup(id="popupWindow3")
                         .popupContainer
-                            a(href="#",id="close3")
-                                img(src="img/close_icon2.png", class="close_icon2", alt="")
-                            img(src="img/cartoonSpeaker.png", class="cartoonSpeaker", alt="")
+                            a.close_icon2(href="#",id="close3")
+                                img(src="img/close_icon2.png", alt="")
+                            img.cartoonSpeaker(src="img/cartoonSpeaker.png", alt="")
                             .popupContainer2
                                 p Electro-Voice
                                 p EVID 4.2
