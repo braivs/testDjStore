@@ -158,7 +158,7 @@
           </div>
           <div class="second-buttons-container"><a class="swiper-prev"><img src="img/swiperLeft.png" alt=""/></a><a class="swiper-next"> <img src="img/swiperRight.png" alt=""/></a></div>
         </div>
-        <section class="popup hidden" id="popupWindow1"><a href="#" id="close"><img src="img/close_icon.png" alt=""/></a>
+        <section class="popup" id="popupWindow1"><a href="#" id="close"><img src="img/close_icon.png" alt=""/></a>
           <div class="popup-container">
             <p>Готовы обсудить проект?</p>
             <p>Заполните форму ниже и мы свяжемся с вами.</p>
@@ -166,8 +166,10 @@
               <input type="text" placeholder="Имя*" required="required"/>
               <input type="text" placeholder="Телефон*" required="required"/><br>
               <div class="input">
-                <input class="checkbox" type="checkbox" id="checkbox" required="required"/>
-                <label for="checkbox"> <a href="#">Я согласен с условиями обработки <span>персональных данных</span></a></label>
+                <label class="label"> 
+                  <input class="checkbox" type="checkbox" required="required"/><span class="fake"></span>
+<span class="text">Я согласен с условиями обработки <a href="#">персональных данных</a></span>
+                </label>
               </div>
               <button type="submit">Отправить</button>
             </form>

@@ -135,7 +135,7 @@ html(lang="ru")
                             img(src="img/swiperLeft.png", alt="")
                         a.swiper-next 
                             img(src="img/swiperRight.png", alt="") 
-                section.popup.hidden(id="popupWindow1")
+                section.popup(id="popupWindow1")
                     a(href="#", id="close")
                         img(src="img/close_icon.png", alt="")
                     .popup-container
@@ -146,9 +146,12 @@ html(lang="ru")
                             input(type="text", placeholder="Телефон*", required)
                             <br>
                             .input
-                                input(type="checkbox", class="checkbox", id="checkbox", required)
-                                label(for="checkbox") 
-                                    a(href="#") Я согласен с условиями обработки <span>персональных данных</span>
+                                label.label 
+                                    input.checkbox(type="checkbox", required)
+                                    span.fake
+                                    = '\n'
+                                    span.text Я согласен с условиями обработки 
+                                        a(href="#") персональных данных
                             button(type="submit") Отправить
                 section.popup.popup2.hidden(id="popupWindow2")
                     a(href="#", id="close2")

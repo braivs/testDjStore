@@ -333,49 +333,47 @@ a {
           .firstBlock .swiper-container-first section.popup .popup-container form input:nth-of-type(2) {
             margin-top: 24px; }
         .firstBlock .swiper-container-first section.popup .popup-container form .input {
-          margin-top: 52px;
+          margin-top: 32px;
           position: relative; }
-          .firstBlock .swiper-container-first section.popup .popup-container form .input input.checkbox {
-            width: 16px;
-            height: 16px;
-            position: absolute;
-            left: -9999px; }
-          .firstBlock .swiper-container-first section.popup .popup-container form .input input.checkbox:checked + label:before,
-          .firstBlock .swiper-container-first section.popup .popup-container form .input input.checkbox:not(:checked) + label:before {
-            content: "";
-            position: absolute;
-            left: 0px;
-            top: 0px;
-            width: 16px;
-            height: 16px;
-            border: 1px solid #397DFF;
-            background-color: #EBEEF5;
-            border-radius: 2px; }
-          .firstBlock .swiper-container-first section.popup .popup-container form .input input.checkbox:checked + label:after,
-          .firstBlock .swiper-container-first section.popup .popup-container form .input input.checkbox:not(:checked) + label:after {
-            content: "";
-            position: absolute;
-            left: 3px;
-            top: 4px;
-            width: 10px;
-            height: 5px;
-            border-radius: 1px;
-            border-left: 2px solid #397DFF;
-            border-bottom: 2px solid #397DFF;
-            -webkit-transform: rotate(-45deg);
-            -ms-transform: rotate(-45deg);
-            transform: rotate(-45deg); }
-          .firstBlock .swiper-container-first section.popup .popup-container form .input input.checkbox:not(:checked) + label:after {
-            opacity: 0; }
-          .firstBlock .swiper-container-first section.popup .popup-container form .input input.checkbox:checked + label:after {
-            opacity: 1; }
-        .firstBlock .swiper-container-first section.popup .popup-container form label {
-          display: block;
-          font-size: 14px;
-          margin-top: -22px;
-          margin-left: 24px; }
-          .firstBlock .swiper-container-first section.popup .popup-container form label span {
-            color: #397DFF; }
+          .firstBlock .swiper-container-first section.popup .popup-container form .input .label {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex; }
+            .firstBlock .swiper-container-first section.popup .popup-container form .input .label .checkbox {
+              width: 16px;
+              height: 16px;
+              position: absolute; }
+            .firstBlock .swiper-container-first section.popup .popup-container form .input .label .fake {
+              display: inline-block;
+              width: 16px;
+              height: 16px;
+              border: 1px solid #397DFF;
+              border-radius: 2px;
+              background: #EBEEF5;
+              position: relative;
+              margin-right: 8px; }
+              .firstBlock .swiper-container-first section.popup .popup-container form .input .label .fake::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+                display: block;
+                width: 12px;
+                height: 12px;
+                background: url("../img/checkbox.png") no-repeat center;
+                opacity: 0;
+                -webkit-transition: .2s;
+                transition: .2s; }
+            .firstBlock .swiper-container-first section.popup .popup-container form .input .label .checkbox:checked + .fake:before {
+              opacity: 1; }
+            .firstBlock .swiper-container-first section.popup .popup-container form .input .label .text {
+              font-size: 14px; }
+              .firstBlock .swiper-container-first section.popup .popup-container form .input .label .text a {
+                color: #397DFF; }
         .firstBlock .swiper-container-first section.popup .popup-container form button {
           margin-top: 16px;
           width: 454px;
