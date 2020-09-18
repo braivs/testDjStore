@@ -6,12 +6,13 @@ html(lang="ru")
         link(rel="stylesheet", href="css/style.css")
         link(href!="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet")
         link(rel="stylesheet", href="css/swiper-bundle.min.css")
+        link(rel="stylesheet", href="css/normalize.css")
         title DJ Store
         script(src="js/swiper-bundle.min.js")
         script(src="js/script.js")
     body
         header
-            .header-container
+            .header-container.wrapper
                 .logo-container
                     .img-container
                         img(src="img/djstoreLogo.png", alt="")
@@ -32,21 +33,9 @@ html(lang="ru")
                         .border
                     a(href="#") Контакты
                         .border
-                    .menuGroup.burgerIcon#menu
-                        a(href="#") &#9776
-                .menu-container-burger
-                    a(href="#") Главная
-                        .border
-                    a(href="#") Проекты
-                        .border
-                    a(href="#") Услуги
-                        .border
-                    a(href="#") О компании
-                        .border
-                    a(href="#") Готовые решения
-                        .border
-                    a(href="#") Контакты
-                        .border
+                .burgerIcon
+                    a(href="#") &#9776
+                
                 .email-container
                     a(href="#") 
                         img(src="img/mailIcon.png", alt="")
@@ -58,156 +47,181 @@ html(lang="ru")
                     .tel-container
                         a(href="#", id="openClick12") Обратный звонок
                         p 8 812 615-62-79
-        section.firstBlock
-            .swiper-container-first
-                .swiper-wrapper
-                    .swiper-slide.slide1
-                        .text-wrapper
-                            p Оснащение конференц-залов
-                            p Видео конференции
-                            p.
-                                Профессиональное оборудование для конференц-залов<br>
-                                предназначено для проведения и организации презентаций,<br> 
-                                совещаний, бизнес-тренингов и онлайн-трансляции контента.
-                    .swiper-slide.slide2
-                        .text-wrapper
-                            p Далеко-далеко
-                            p Рыбные тексты
-                            p.
-                                Далеко-далеко за словесными горами в стране гласных и<br>
-                                согласных живут рыбные тексты. Взгляд города свой проектах<br>
-                                дал скатился семантика?
-                    .swiper-slide.slide3 
-                        .text-wrapper
-                            p Cловесные горы
-                            p Взгляд города
-                            p.
-                                Далеко-далеко за словесными горами в стране, гласных и<br>
-                                согласных живут рыбные тексты. Даль имени рекламных пор<br>
-                                одна до, семантика залетают решила всемогущая.
-                    .swiper-slide.slide4
-                        .text-wrapper
-                            p Парадигматический составитель
-                            p Алфавит переписывает
-                            p.
-                                Далеко-далеко за словесными горами в стране гласных и<br>
-                                согласных живут рыбные тексты. Знаках бросил рыбными<br>
-                                текстами парадигматическая составитель алфавит переписывается.
-                    .swiper-slide.slide5
-                        .text-wrapper
-                            p Всемогущая запятая
-                            p Свои города
-                            p.
-                                Далеко-далеко за словесными горами в стране гласных, и<br>
-                                согласных живут рыбные тексты. Всемогущая запятой<br>
-                                оксмокс подпоясал свое города, за пустился.
-                .buttons-container
-                    button(type="button", id="openClick13") Обратный звонок
-                    button(type="button") Заполнить бриф
-                .swiper-container-second-wrapper
-                    .swiper-container-second
-                        .swiper-wrapper
-                            .swiper-slide
-                                .slide-wrapper
-                                    .text-wrapper
-                                        h1 01
-                                        p.
-                                            Простота использования оснащения
-                                            позволяет решать функциональные и 
-                                            организационные задачи, 
-                                            оптимизировать работу, проводить
-                                            мероприятия различного масштаба.
-                            .swiper-slide
-                                .slide-wrapper
-                                    .text-wrapper
-                                        h1 02
-                                        p.
-                                            Применение инновационных решений 
-                                            для демонстрации культурных и 
-                                            исторических реликвий – 
-                                            актуальная тенденция, которая 
-                                            успешно применяется. 
-                            .swiper-slide
-                                .slide-wrapper
-                                    .text-wrapper
-                                        h1 03
-                                        p.
-                                            Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Букв но своих моей большого проектах свой правилами, продолжил текстов речью своего мир. Власти, сих.
-                            .swiper-slide
-                                .slide-wrapper
-                                    .text-wrapper
-                                        h1 04
-                                        p.
-                                            Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Коварный от всех он вскоре, ты запятых то лучше, вопроса великий гор, за рукописи власти большой.
-                            .swiper-slide
-                                .slide-wrapper
-                                    .text-wrapper
-                                        h1 05
-                                        p.
-                                            Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Возвращайся, текст, знаках над буквенных букв ручеек языком.
-                    .second-buttons-container
-                        a.swiper-prev
-                            img(src="img/swiperLeft.png", alt="")
-                        a.swiper-next 
-                            img(src="img/swiperRight.png", alt="") 
-                section.popup.hidden(id="popupWindow1")
-                    a.close1(href="#", id="close")
-                        img(src="img/close_icon.png", alt="")
-                    .popup-container
-                        p Готовы обсудить проект?
-                        p Заполните форму ниже и мы свяжемся с вами.
-                        form(id="send")
-                            input(type="text", placeholder="Имя*", required)
-                            input(type="text", placeholder="Телефон*", required)
-                            <br>
-                            .input
-                                label.label 
-                                    input.checkbox(type="checkbox", required)
-                                    span.fake
-                                    = '\n'
-                                    span.text Я согласен с условиями обработки 
-                                        a(href="#") персональных данных
-                            button(type="submit") Отправить
-                section.popup.hidden.popup2(id="popupWindow2")
-                    .popup2-container
-                        a.close2(href="#", id="close2")
-                            img(src="img/close_icon.png", alt="")
-                        img.check(src="img/check.png", alt="")
-                        p.
-                            Ваша заявка успешно отправлена.<br>
-                            Ожидайте звонка в ближайшее время!
-                        form
-                            button(type="button", id="close22") Ок
-    section.separator
-        section.sound
-            .soundContainer
-                .leftPart
-                    img(src="img/electro_voice_1-removebg-preview.png", alt="")
-                    img(src="img/image-removebg-preview.png", alt="")
-                    img(src="img/shadow.png", alt="")
-                .rightPart
-                    img(src="img/img2.jpg", alt="")
-                    img.speakerLeft(src="img/Electro_Voice_EVID_42T_s250-removebg-preview 1.png", alt="")
-                    a(href="",id="openClick31")
-                        img.EllipseBigLeft(src="img/EllipseBig.png", alt="")
-                    a(href="",id="openClick32")
-                        img(src="img/cross.png", class="crossLeft", alt="")
-                    img.speakerRight(src="img/Electro_Voice_EVID_42T_s250-removebg-preview 2.png", alt="")
-                    img.EllipseBigRight(src="img/EllipseBig.png", alt="")
-                    img.EllipseSmallRight(src="img/EllipseSmall.png", alt="")
-                    .popup(id="popupWindow3")
-                        .popupContainer
-                            a.close_icon2(href="#",id="close3")
-                                img(src="img/close_icon2.png", alt="")
-                            img.cartoonSpeaker(src="img/cartoonSpeaker.png", alt="")
-                            .popupContainer2
-                                p Electro-Voice
-                                p EVID 4.2
-                                ul
-                                    li Очень мягкое звучание.
-                                    li Чувствительность — 89 дБ.
-                                    li Пиковая мощность — 400 Вт.
-                                    li Степень влагозащищенности IP34.
+            .menu-container-burger
+                a(href="#")
+                    .imgContainer
+                        img(src="img/m_menu1.png", alt="") 
+                    |Главная
+                a(href="#")
+                    .imgContainer
+                        img(src="img/m_menu2.png", alt="") 
+                    |Проекты
+                a(href="#")
+                    .imgContainer
+                        img(src="img/m_menu3.png", alt="") 
+                    |Услуги
+                a(href="#")
+                    .imgContainer
+                        img(src="img/m_menu4.png", alt="") 
+                    |О компании
+                a(href="#")
+                    .imgContainer
+                        img(src="img/m_menu5.png", alt="") 
+                    |Готовые решения
+                a(href="#")
+                    .imgContainer
+                        img(src="img/m_menu6.png", alt="") 
+                    |Контакты
+    //-     section.firstBlock
+    //-         .swiper-container-first
+    //-             .swiper-wrapper
+    //-                 .swiper-slide.slide1
+    //-                     .text-wrapper
+    //-                         p Оснащение конференц-залов
+    //-                         p Видео конференции
+    //-                         p.
+    //-                             Профессиональное оборудование для конференц-залов<br>
+    //-                             предназначено для проведения и организации презентаций,<br> 
+    //-                             совещаний, бизнес-тренингов и онлайн-трансляции контента.
+    //-                 .swiper-slide.slide2
+    //-                     .text-wrapper
+    //-                         p Далеко-далеко
+    //-                         p Рыбные тексты
+    //-                         p.
+    //-                             Далеко-далеко за словесными горами в стране гласных и<br>
+    //-                             согласных живут рыбные тексты. Взгляд города свой проектах<br>
+    //-                             дал скатился семантика?
+    //-                 .swiper-slide.slide3 
+    //-                     .text-wrapper
+    //-                         p Cловесные горы
+    //-                         p Взгляд города
+    //-                         p.
+    //-                             Далеко-далеко за словесными горами в стране, гласных и<br>
+    //-                             согласных живут рыбные тексты. Даль имени рекламных пор<br>
+    //-                             одна до, семантика залетают решила всемогущая.
+    //-                 .swiper-slide.slide4
+    //-                     .text-wrapper
+    //-                         p Парадигматический составитель
+    //-                         p Алфавит переписывает
+    //-                         p.
+    //-                             Далеко-далеко за словесными горами в стране гласных и<br>
+    //-                             согласных живут рыбные тексты. Знаках бросил рыбными<br>
+    //-                             текстами парадигматическая составитель алфавит переписывается.
+    //-                 .swiper-slide.slide5
+    //-                     .text-wrapper
+    //-                         p Всемогущая запятая
+    //-                         p Свои города
+    //-                         p.
+    //-                             Далеко-далеко за словесными горами в стране гласных, и<br>
+    //-                             согласных живут рыбные тексты. Всемогущая запятой<br>
+    //-                             оксмокс подпоясал свое города, за пустился.
+    //-             .buttons-container
+    //-                 button(type="button", id="openClick13") Обратный звонок
+    //-                 button(type="button") Заполнить бриф
+    //-             .swiper-container-second-wrapper
+    //-                 .swiper-container-second
+    //-                     .swiper-wrapper
+    //-                         .swiper-slide
+    //-                             .slide-wrapper
+    //-                                 .text-wrapper
+    //-                                     h1 01
+    //-                                     p.
+    //-                                         Простота использования оснащения
+    //-                                         позволяет решать функциональные и 
+    //-                                         организационные задачи, 
+    //-                                         оптимизировать работу, проводить
+    //-                                         мероприятия различного масштаба.
+    //-                         .swiper-slide
+    //-                             .slide-wrapper
+    //-                                 .text-wrapper
+    //-                                     h1 02
+    //-                                     p.
+    //-                                         Применение инновационных решений 
+    //-                                         для демонстрации культурных и 
+    //-                                         исторических реликвий – 
+    //-                                         актуальная тенденция, которая 
+    //-                                         успешно применяется. 
+    //-                         .swiper-slide
+    //-                             .slide-wrapper
+    //-                                 .text-wrapper
+    //-                                     h1 03
+    //-                                     p.
+    //-                                         Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Букв но своих моей большого проектах свой правилами, продолжил текстов речью своего мир. Власти, сих.
+    //-                         .swiper-slide
+    //-                             .slide-wrapper
+    //-                                 .text-wrapper
+    //-                                     h1 04
+    //-                                     p.
+    //-                                         Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Коварный от всех он вскоре, ты запятых то лучше, вопроса великий гор, за рукописи власти большой.
+    //-                         .swiper-slide
+    //-                             .slide-wrapper
+    //-                                 .text-wrapper
+    //-                                     h1 05
+    //-                                     p.
+    //-                                         Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Возвращайся, текст, знаках над буквенных букв ручеек языком.
+    //-                 .second-buttons-container
+    //-                     a.swiper-prev
+    //-                         img(src="img/swiperLeft.png", alt="")
+    //-                     a.swiper-next 
+    //-                         img(src="img/swiperRight.png", alt="") 
+    //-             section.popup.hidden(id="popupWindow1")
+    //-                 a.close1(href="#", id="close")
+    //-                     img(src="img/close_icon.png", alt="")
+    //-                 .popup-container
+    //-                     p Готовы обсудить проект?
+    //-                     p Заполните форму ниже и мы свяжемся с вами.
+    //-                     form(id="send")
+    //-                         input(type="text", placeholder="Имя*", required)
+    //-                         input(type="text", placeholder="Телефон*", required)
+    //-                         <br>
+    //-                         .input
+    //-                             label.label 
+    //-                                 input.checkbox(type="checkbox", required)
+    //-                                 span.fake
+    //-                                 = '\n'
+    //-                                 span.text Я согласен с условиями обработки 
+    //-                                     a(href="#") персональных данных
+    //-                         button(type="submit") Отправить
+    //-             section.popup.hidden.popup2(id="popupWindow2")
+    //-                 .popup2-container
+    //-                     a.close2(href="#", id="close2")
+    //-                         img(src="img/close_icon.png", alt="")
+    //-                     img.check(src="img/check.png", alt="")
+    //-                     p.
+    //-                         Ваша заявка успешно отправлена.<br>
+    //-                         Ожидайте звонка в ближайшее время!
+    //-                     form
+    //-                         button(type="button", id="close22") Ок
+    //- section.separator
+    //-     section.sound
+    //-         .soundContainer
+    //-             .leftPart
+    //-                 img(src="img/electro_voice_1-removebg-preview.png", alt="")
+    //-                 img(src="img/image-removebg-preview.png", alt="")
+    //-                 img(src="img/shadow.png", alt="")
+    //-             .rightPart
+    //-                 img(src="img/img2.jpg", alt="")
+    //-                 img.speakerLeft(src="img/Electro_Voice_EVID_42T_s250-removebg-preview 1.png", alt="")
+    //-                 a(href="",id="openClick31")
+    //-                     img.EllipseBigLeft(src="img/EllipseBig.png", alt="")
+    //-                 a(href="",id="openClick32")
+    //-                     img(src="img/cross.png", class="crossLeft", alt="")
+    //-                 img.speakerRight(src="img/Electro_Voice_EVID_42T_s250-removebg-preview 2.png", alt="")
+    //-                 img.EllipseBigRight(src="img/EllipseBig.png", alt="")
+    //-                 img.EllipseSmallRight(src="img/EllipseSmall.png", alt="")
+    //-                 .popup(id="popupWindow3")
+    //-                     .popupContainer
+    //-                         a.close_icon2(href="#",id="close3")
+    //-                             img(src="img/close_icon2.png", alt="")
+    //-                         img.cartoonSpeaker(src="img/cartoonSpeaker.png", alt="")
+    //-                         .popupContainer2
+    //-                             p Electro-Voice
+    //-                             p EVID 4.2
+    //-                             ul
+    //-                                 li Очень мягкое звучание.
+    //-                                 li Чувствительность — 89 дБ.
+    //-                                 li Пиковая мощность — 400 Вт.
+    //-                                 li Степень влагозащищенности IP34.
     footer
         script(src="js/swiper-bundle.min.js")
         script(src="js/script.js")

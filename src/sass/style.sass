@@ -5,106 +5,104 @@
 body
     background: #E5E5E5
     font-family: 'Montserrat', sans-serif 
-header
-    display: flex
-    width: 1920px
-    height: 91px
-    // padding-bottom: 20px
-    background: #EBEEF5
 a
     text-decoration: none
-.header-container
-    // border: 3px solid red
+    color: #000
+.wrapper
+    width: 80%
+
+header
     display: flex
-    margin-left: 390px
-    .logo-container
-        display: flex
-        flex-direction: column
-        margin-top: 20px
-        .img-container
-            display: flex
-            align-items: center
-            img:first-of-type
-                margin-right: 5.89px
-        .first
-            position: relative
-            width: 149.1px
-            height: 15.38px
-            margin-top: 3.85px
-            background: #2D3786
-            border-radius: 3.92357px
-            .second
-                display: flex
-                position: absolute
-                width: 147.13px
-                height: 15.38px
-                left: 4.9px
-                top: 3.85px
-                background: #397DFF
-                border-radius: 3.92357px
-                p
-                    font-size: 9.80892px
-                    color: #FFFFFF
-                    margin: 0 auto
-                    align-self: center
-    .menu-container
-        display: flex
-        align-items: flex-end
-        margin-left: 29.96px
-        a 
-            color: rgba(43, 45, 58, 0.7)            
-            font-size: 14px
-            margin-left: 33px
-            &:first-of-type
-                margin-left: 0
-            &:hover
-                color: #397DFF
-            &:hover .border
-                visibility: visible
-            .border
-                margin: 0 auto                
-                width: 48px
-                border-top: 3px solid #397DFF
-                margin-top: 34px
-                visibility: hidden
-    .menu-container-burger
-        display: none
-    .email-container
+    justify-content: center
+    // height: 91px
+    background: #EBEEF5
+    padding: 25px 0
+    .header-container
         display: flex
         align-items: center
-        margin-left: 27px
-        a
-            img 
-                margin-top: 5px
-        a:nth-of-type(2)
-            text-decoration: none
-            margin-left: 10px
-            font-size: 13px
-            color: #000
-            font-weight: 600
-    .phone-container
-        display: flex
-        align-items: center
-        margin-left: 24px
-        .tel-container
+        .logo-container
             display: flex
             flex-direction: column
-            margin-top: 10px
-            margin-left: 10px
+            .img-container
+                display: flex
+                align-items: center
+                img:first-of-type
+                    margin-right: 5.89px
+            .first
+                position: relative
+                width: 149.1px
+                height: 15.38px
+                margin-top: 3.85px
+                background: #2D3786
+                border-radius: 3.92357px
+                .second
+                    display: flex
+                    position: absolute
+                    width: 147.13px
+                    height: 15.38px
+                    left: 4.9px
+                    top: 3.85px
+                    background: #397DFF
+                    border-radius: 3.92357px
+                    p
+                        font-size: 9.80892px
+                        color: #FFFFFF
+                        margin: 0 auto
+                        align-self: center
+        .menu-container
+            display: flex
+            align-items: flex-end
+            margin-left: 29.96px
+            a 
+                color: rgba(43, 45, 58, 0.7)            
+                font-size: 14px
+                margin-left: 33px
+                &:first-of-type
+                    margin-left: 0
+                &:hover
+                    color: #397DFF
+                &:hover .border
+                    visibility: visible
+                .border
+                    margin: 0 auto                
+                    width: 48px
+                    border-top: 3px solid #397DFF
+                    margin-top: 34px
+                    visibility: hidden
+        .burgerIcon
+            display: none
+        
+        .email-container
+            display: flex
+            align-items: center
+            margin-left: 27px
             a
-                color: #397DFF
-                font-size: 11px
-            p
-                margin-top: 0 
+                img 
+                    margin-top: 5px
+            a:nth-of-type(2)
+                text-decoration: none
+                margin-left: 10px
                 font-size: 13px
+                color: #000
                 font-weight: 600
-
-*
-    box-sizing: border-box
-    margin: 0
-    padding: 0
-
-
+        .phone-container
+            display: flex
+            align-items: center
+            margin-left: 24px
+            .tel-container
+                display: flex
+                flex-direction: column
+                margin-top: 10px
+                margin-left: 10px
+                a
+                    color: #397DFF
+                    font-size: 11px
+                p
+                    margin-top: 0 
+                    font-size: 13px
+                    font-weight: 600
+    .menu-container-burger
+        display: none
 .firstBlock
     .swiper-container-first
         height: 624px

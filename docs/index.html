@@ -6,13 +6,14 @@
     <link rel="stylesheet" href="css/style.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
     <title>DJ Store</title>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
   </head>
   <body>
     <header>
-      <div class="header-container">
+      <div class="header-container wrapper">
         <div class="logo-container">
           <div class="img-container"><img src="img/djstoreLogo.png" alt=""/><img src="img/djstore.png" alt=""/></div>
           <div class="first">
@@ -27,16 +28,8 @@
             <div class="border"></div></a><a href="#">О компании
             <div class="border"></div></a><a href="#">Готовые решения
             <div class="border"></div></a><a href="#">Контакты
-            <div class="border"></div></a>
-          <div class="menuGroup burgerIcon" id="menu"><a href="#">&#9776</a></div>
-        </div>
-        <div class="menu-container-burger"><a href="#">Главная
-            <div class="border"></div></a><a href="#">Проекты
-            <div class="border"></div></a><a href="#">Услуги
-            <div class="border"></div></a><a href="#">О компании
-            <div class="border"></div></a><a href="#">Готовые решения
-            <div class="border"></div></a><a href="#">Контакты
             <div class="border"></div></a></div>
+        <div class="burgerIcon"><a href="#">&#9776</a></div>
         <div class="email-container"><a href="#"> <img src="img/mailIcon.png" alt=""/></a><a href="#">info@sld-store.ru</a></div>
         <div class="phone-container"><a href=""><a href="#" id="openClick11"><img src="img/phone_icon.png" alt=""/></a></a>
           <div class="tel-container"><a href="#" id="openClick12">Обратный звонок</a>
@@ -44,183 +37,15 @@
           </div>
         </div>
       </div>
+      <div class="menu-container-burger"><a href="#">
+          <div class="imgContainer"><img src="img/m_menu1.png" alt=""/></div>Главная</a><a href="#">
+          <div class="imgContainer"><img src="img/m_menu2.png" alt=""/></div>Проекты</a><a href="#">
+          <div class="imgContainer"><img src="img/m_menu3.png" alt=""/></div>Услуги</a><a href="#">
+          <div class="imgContainer"><img src="img/m_menu4.png" alt=""/></div>О компании</a><a href="#">
+          <div class="imgContainer"><img src="img/m_menu5.png" alt=""/></div>Готовые решения</a><a href="#">
+          <div class="imgContainer"><img src="img/m_menu6.png" alt=""/></div>Контакты</a></div>
     </header>
-    <section class="firstBlock">
-      <div class="swiper-container-first">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide slide1">
-            <div class="text-wrapper">
-              <p>Оснащение конференц-залов</p>
-              <p>Видео конференции</p>
-              <p>
-                Профессиональное оборудование для конференц-залов<br>
-                предназначено для проведения и организации презентаций,<br> 
-                совещаний, бизнес-тренингов и онлайн-трансляции контента.
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide slide2">
-            <div class="text-wrapper">
-              <p>Далеко-далеко</p>
-              <p>Рыбные тексты</p>
-              <p>
-                Далеко-далеко за словесными горами в стране гласных и<br>
-                согласных живут рыбные тексты. Взгляд города свой проектах<br>
-                дал скатился семантика?
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide slide3"> 
-            <div class="text-wrapper">
-              <p>Cловесные горы</p>
-              <p>Взгляд города</p>
-              <p>
-                Далеко-далеко за словесными горами в стране, гласных и<br>
-                согласных живут рыбные тексты. Даль имени рекламных пор<br>
-                одна до, семантика залетают решила всемогущая.
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide slide4">
-            <div class="text-wrapper">
-              <p>Парадигматический составитель</p>
-              <p>Алфавит переписывает</p>
-              <p>
-                Далеко-далеко за словесными горами в стране гласных и<br>
-                согласных живут рыбные тексты. Знаках бросил рыбными<br>
-                текстами парадигматическая составитель алфавит переписывается.
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide slide5">
-            <div class="text-wrapper">
-              <p>Всемогущая запятая</p>
-              <p>Свои города</p>
-              <p>
-                Далеко-далеко за словесными горами в стране гласных, и<br>
-                согласных живут рыбные тексты. Всемогущая запятой<br>
-                оксмокс подпоясал свое города, за пустился.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="buttons-container">
-          <button type="button" id="openClick13">Обратный звонок</button>
-          <button type="button">Заполнить бриф</button>
-        </div>
-        <div class="swiper-container-second-wrapper">
-          <div class="swiper-container-second">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="slide-wrapper">
-                  <div class="text-wrapper">
-                    <h1>01</h1>
-                    <p>
-                      Простота использования оснащения
-                      позволяет решать функциональные и 
-                      организационные задачи, 
-                      оптимизировать работу, проводить
-                      мероприятия различного масштаба.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slide-wrapper">
-                  <div class="text-wrapper">
-                    <h1>02</h1>
-                    <p>
-                      Применение инновационных решений 
-                      для демонстрации культурных и 
-                      исторических реликвий – 
-                      актуальная тенденция, которая 
-                      успешно применяется. 
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slide-wrapper">
-                  <div class="text-wrapper">
-                    <h1>03</h1>
-                    <p>Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Букв но своих моей большого проектах свой правилами, продолжил текстов речью своего мир. Власти, сих.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slide-wrapper">
-                  <div class="text-wrapper">
-                    <h1>04</h1>
-                    <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Коварный от всех он вскоре, ты запятых то лучше, вопроса великий гор, за рукописи власти большой.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slide-wrapper">
-                  <div class="text-wrapper">
-                    <h1>05</h1>
-                    <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Возвращайся, текст, знаках над буквенных букв ручеек языком.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="second-buttons-container"><a class="swiper-prev"><img src="img/swiperLeft.png" alt=""/></a><a class="swiper-next"> <img src="img/swiperRight.png" alt=""/></a></div>
-        </div>
-        <section class="popup hidden" id="popupWindow1"><a class="close1" href="#" id="close"><img src="img/close_icon.png" alt=""/></a>
-          <div class="popup-container">
-            <p>Готовы обсудить проект?</p>
-            <p>Заполните форму ниже и мы свяжемся с вами.</p>
-            <form id="send">
-              <input type="text" placeholder="Имя*" required="required"/>
-              <input type="text" placeholder="Телефон*" required="required"/><br>
-              <div class="input">
-                <label class="label"> 
-                  <input class="checkbox" type="checkbox" required="required"/><span class="fake"></span>
-<span class="text">Я согласен с условиями обработки <a href="#">персональных данных</a></span>
-                </label>
-              </div>
-              <button type="submit">Отправить</button>
-            </form>
-          </div>
-        </section>
-        <section class="popup hidden popup2" id="popupWindow2">
-          <div class="popup2-container"><a class="close2" href="#" id="close2"><img src="img/close_icon.png" alt=""/></a><img class="check" src="img/check.png" alt=""/>
-            <p>
-              Ваша заявка успешно отправлена.<br>
-              Ожидайте звонка в ближайшее время!
-            </p>
-            <form>
-              <button type="button" id="close22">Ок</button>
-            </form>
-          </div>
-        </section>
-      </div>
-    </section>
   </body>
-  <section class="separator">
-    <section class="sound">
-      <div class="soundContainer">
-        <div class="leftPart"><img src="img/electro_voice_1-removebg-preview.png" alt=""/><img src="img/image-removebg-preview.png" alt=""/><img src="img/shadow.png" alt=""/></div>
-        <div class="rightPart"><img src="img/img2.jpg" alt=""/><img class="speakerLeft" src="img/Electro_Voice_EVID_42T_s250-removebg-preview 1.png" alt=""/><a href="" id="openClick31"><img class="EllipseBigLeft" src="img/EllipseBig.png" alt=""/></a><a href="" id="openClick32"><img class="crossLeft" src="img/cross.png" alt=""/></a><img class="speakerRight" src="img/Electro_Voice_EVID_42T_s250-removebg-preview 2.png" alt=""/><img class="EllipseBigRight" src="img/EllipseBig.png" alt=""/><img class="EllipseSmallRight" src="img/EllipseSmall.png" alt=""/>
-          <div class="popup" id="popupWindow3">
-            <div class="popupContainer"><a class="close_icon2" href="#" id="close3"><img src="img/close_icon2.png" alt=""/></a><img class="cartoonSpeaker" src="img/cartoonSpeaker.png" alt=""/>
-              <div class="popupContainer2">
-                <p>Electro-Voice</p>
-                <p>EVID 4.2</p>
-                <ul>
-                  <li>Очень мягкое звучание.</li>
-                  <li>Чувствительность — 89 дБ.</li>
-                  <li>Пиковая мощность — 400 Вт.</li>
-                  <li>Степень влагозащищенности IP34.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </section>
   <footer>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>

@@ -9,72 +9,108 @@
  
 
 //Пришлось сделать доп. для меню
-@media (max-width: 1560px)
-    .header-container
-        margin-left: 150px
-    .firstBlock
-        .swiper-container-first
-            .swiper-wrapper
-                .swiper-slide
-                    .text-wrapper
-                        margin-left: 185px
-            .buttons-container
-                left: 185px
+// @media (max-width: 1560px)
+//     .header-container
+//         margin-left: 150px
+//     .firstBlock
+//         .swiper-container-first
+//             .swiper-wrapper
+//                 .swiper-slide
+//                     .text-wrapper
+//                         margin-left: 185px
+//             .buttons-container
+//                 left: 185px
 
-@media (max-width: 1320px)
-    .header-container
-        margin-left: 50px
-    .firstBlock
-        .swiper-container-first
-            .swiper-wrapper
-                .swiper-slide
-                    .text-wrapper
-                        margin-left: 50px
-            .buttons-container
-                left: 50px
-@media (max-width: 1320px)
-    .header-container
-        margin-left: 50px
-    .firstBlock
-        .swiper-container-first
-            .swiper-wrapper
-                .swiper-slide
-                    .text-wrapper
-                        margin-left: 50px
-            .buttons-container
-                left: 50px
-@media (max-width: 1220px)
-    .header-container
-        margin-left: 15px
-    .firstBlock
-        .swiper-container-first
-            .swiper-wrapper
-                .swiper-slide
-                    .text-wrapper
-                        margin-left: 15px
-            .buttons-container
-                left: 15px
-@media (max-width: 1190px)
+// @media (max-width: 1320px)
+//     .header-container
+//         margin-left: 50px
+//     .firstBlock
+//         .swiper-container-first
+//             .swiper-wrapper
+//                 .swiper-slide
+//                     .text-wrapper
+//                         margin-left: 50px
+//             .buttons-container
+//                 left: 50px
+// @media (max-width: 1320px)
+//     .header-container
+//         margin-left: 50px
+//     .firstBlock
+//         .swiper-container-first
+//             .swiper-wrapper
+//                 .swiper-slide
+//                     .text-wrapper
+//                         margin-left: 50px
+//             .buttons-container
+//                 left: 50px
+// @media (max-width: 1220px)
+//     .header-container
+//         margin-left: 15px
+//     .firstBlock
+//         .swiper-container-first
+//             .swiper-wrapper
+//                 .swiper-slide
+//                     .text-wrapper
+//                         margin-left: 15px
+//             .buttons-container
+//                 left: 15px
+// @media (max-width: 1190px)
+//     header
+//         height: auto
+//         width: 100%
+//         justify-content: center
+//         .header-container
+//             flex-direction: column
+//             align-items: center
+//             .logo-container
+//                 margin-bottom: 15px
+//             .menu-container
+//                 margin-left: 0
+//                 .border
+//                     margin-top: 0
+//             .email-container
+//                 margin-left: 0
+//             .phone-container
+//                 margin-left: 0
+//                 margin-bottom: 15px
+
+@media (max-width: 768px)
     header
-        height: auto
         width: 100%
-        justify-content: center
+        flex-direction: column
+        align-items: center
         .header-container
-            flex-direction: column
-            align-items: center
-            .logo-container
-                margin-bottom: 15px
+            justify-content: space-between
             .menu-container
-                margin-left: 0
-                .border
-                    margin-top: 0
+                display: none
             .email-container
-                margin-left: 0
+                display: none    
             .phone-container
-                margin-left: 0
-                margin-bottom: 15px
-
-            
+                display: none
+            .burgerIcon
+                display: block
+                font-size: 25px
+        .menu-container-burger
+            display: flex
+            flex-direction: column
+            padding-top: 25px
+            padding-left: 10%
+            align-self: flex-start
+            a 
+                display: flex
+                align-items: center
+                border-bottom: 1px solid rgba(43, 45, 58, 0.1)
+                height: 50px
+                // width: 340px
+                // padding-bottom: 15px 
+                // width: 100%
+                .imgContainer
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    height: 30px
+                    width: 30px
+                    margin-right: 23px        
 
             
 
