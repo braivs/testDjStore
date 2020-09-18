@@ -1,3 +1,12 @@
+menu.onclick = function myFunction() {
+	var x = document.getElementById("myTopnav");
+	if (x.className === "topnav") {
+		x.className += " responsive";
+	} else{
+		x.className = "topnav";
+	}
+}
+
 var nx = document.getElementsByClassName("swiper-next")[0];
 var pr = document.getElementsByClassName("swiper-prev")[0];
 
@@ -24,7 +33,21 @@ var swiperSecond = new Swiper('.swiper-container-second', {
   },
   slidesPerView: 2,
   watchSlidesVisibility: true,
-  spaceBetween: 240
+  spaceBetween: 240,
+  breakpoints: {
+    1450: {
+      spaceBetween: 240,
+    },
+    1420: {
+      spaceBetween: 300,
+    },
+    1400: {
+      spaceBetween: 340,
+    },
+    1350: {
+      spaceBetween: 380,
+    },
+  }
 });
 
 var openClick11 = document.querySelector("#openClick11"); //popup1 

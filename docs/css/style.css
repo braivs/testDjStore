@@ -99,6 +99,8 @@ a {
         border-top: 3px solid #397DFF;
         margin-top: 34px;
         visibility: hidden; }
+  .header-container .menu-container-burger {
+    display: none; }
   .header-container .email-container {
     display: -webkit-box;
     display: -webkit-flex;
@@ -436,109 +438,177 @@ a {
         margin-bottom: 48px; }
 
 section.separator {
-  width: 1920px;
+  width: 100%;
   height: 82px;
   background: #EBEEF5; }
 
-section.sound .soundContainer {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 620px;
-  width: 1920px; }
-  section.sound .soundContainer .leftPart {
-    position: relative;
-    width: 960px;
-    background: #DAE3F6; }
-    section.sound .soundContainer .leftPart img:nth-of-type(1) {
-      position: absolute;
-      top: 210px;
-      left: 210px; }
-    section.sound .soundContainer .leftPart img:nth-of-type(2) {
-      position: absolute;
-      top: 132px;
-      left: 476px; }
-    section.sound .soundContainer .leftPart img:nth-of-type(3) {
-      position: absolute;
-      top: 413px;
-      left: 232px; }
-  section.sound .soundContainer .rightPart {
-    width: 960px;
-    position: relative; }
-    section.sound .soundContainer .rightPart img.speakerLeft {
-      position: absolute;
-      top: 58px;
-      left: 184px; }
-    section.sound .soundContainer .rightPart img.EllipseBigLeft {
-      position: absolute;
-      top: 73px;
-      left: 172px; }
-    section.sound .soundContainer .rightPart img.crossLeft {
-      position: absolute;
-      top: 96px;
-      left: 195px; }
-    section.sound .soundContainer .rightPart img.speakerRight {
-      position: absolute;
-      top: 58px;
-      left: 693px; }
-    section.sound .soundContainer .rightPart img.EllipseBigRight {
-      position: absolute;
-      top: 72px;
-      left: 689px; }
-    section.sound .soundContainer .rightPart img.EllipseSmallRight {
-      position: absolute;
-      top: 95px;
-      left: 712px; }
-    section.sound .soundContainer .rightPart .popup {
-      visibility: hidden;
-      position: absolute;
-      z-index: 1;
-      background: white;
-      width: 352px;
-      height: 180px;
-      bottom: 524px;
-      left: 33px;
-      border-radius: 10px; }
-      section.sound .soundContainer .rightPart .popup .popupContainer {
-        position: relative;
-        width: 100%;
-        height: 100%; }
-        section.sound .soundContainer .rightPart .popup .popupContainer a.close_icon2 {
-          z-index: 1;
-          position: absolute;
-          top: 12px;
-          right: 16px; }
-        section.sound .soundContainer .rightPart .popup .popupContainer img.cartoonSpeaker {
-          position: absolute;
-          top: 16px;
-          right: 44px; }
-        section.sound .soundContainer .rightPart .popup .popupContainer .popupContainer2 {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          top: 17px;
-          left: 24px; }
-          section.sound .soundContainer .rightPart .popup .popupContainer .popupContainer2 p {
-            font-size: 18px; }
-          section.sound .soundContainer .rightPart .popup .popupContainer .popupContainer2 ul {
-            margin-top: 12px;
-            list-style: none; }
-            section.sound .soundContainer .rightPart .popup .popupContainer .popupContainer2 ul li {
-              background: url(img/mark.png) no-repeat 0 0;
-              padding-left: 24px;
-              font-size: 12px;
-              margin-bottom: 10px;
-              line-height: 16px; }
-      section.sound .soundContainer .rightPart .popup .popupContainer::after {
-        content: '';
+section.sound {
+  width: 100%; }
+  section.sound .soundContainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 620px;
+    width: 100%; }
+    section.sound .soundContainer .leftPart {
+      position: relative;
+      width: 100%;
+      background: #DAE3F6; }
+      section.sound .soundContainer .leftPart img {
+        max-width: 100%;
+        height: auto; }
+      section.sound .soundContainer .leftPart img:nth-of-type(1) {
         position: absolute;
-        left: 50%;
-        bottom: -20px;
-        -webkit-transform: translate(-50%, 0);
-            -ms-transform: translate(-50%, 0);
-                transform: translate(-50%, 0);
-        border: 10px solid transparent;
-        border-top: 10px solid white; }
+        top: 210px;
+        left: 210px; }
+      section.sound .soundContainer .leftPart img:nth-of-type(2) {
+        position: absolute;
+        top: 132px;
+        left: 476px; }
+      section.sound .soundContainer .leftPart img:nth-of-type(3) {
+        position: absolute;
+        top: 413px;
+        left: 232px; }
+    section.sound .soundContainer .rightPart {
+      width: 100%;
+      position: relative; }
+      section.sound .soundContainer .rightPart img {
+        max-width: 100%;
+        height: auto; }
+      section.sound .soundContainer .rightPart img.speakerLeft {
+        position: absolute;
+        top: 10%;
+        left: 19%; }
+      section.sound .soundContainer .rightPart img.EllipseBigLeft {
+        position: absolute;
+        top: 73px;
+        left: 172px; }
+      section.sound .soundContainer .rightPart img.crossLeft {
+        position: absolute;
+        top: 96px;
+        left: 195px; }
+      section.sound .soundContainer .rightPart img.speakerRight {
+        position: absolute;
+        top: 10%;
+        left: 72%; }
+      section.sound .soundContainer .rightPart img.EllipseBigRight {
+        position: absolute;
+        top: 72px;
+        left: 689px; }
+      section.sound .soundContainer .rightPart img.EllipseSmallRight {
+        position: absolute;
+        top: 95px;
+        left: 712px; }
+      section.sound .soundContainer .rightPart .popup {
+        visibility: hidden;
+        position: absolute;
+        z-index: 1;
+        background: white;
+        width: 352px;
+        height: 180px;
+        bottom: 524px;
+        left: 33px;
+        border-radius: 10px; }
+        section.sound .soundContainer .rightPart .popup .popupContainer {
+          position: relative;
+          width: 100%;
+          height: 100%; }
+          section.sound .soundContainer .rightPart .popup .popupContainer a.close_icon2 {
+            z-index: 1;
+            position: absolute;
+            top: 12px;
+            right: 16px; }
+          section.sound .soundContainer .rightPart .popup .popupContainer img.cartoonSpeaker {
+            position: absolute;
+            top: 16px;
+            right: 44px; }
+          section.sound .soundContainer .rightPart .popup .popupContainer .popupContainer2 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 17px;
+            left: 24px; }
+            section.sound .soundContainer .rightPart .popup .popupContainer .popupContainer2 p {
+              font-size: 18px; }
+            section.sound .soundContainer .rightPart .popup .popupContainer .popupContainer2 ul {
+              margin-top: 12px;
+              list-style: none; }
+              section.sound .soundContainer .rightPart .popup .popupContainer .popupContainer2 ul li {
+                background: url(img/mark.png) no-repeat 0 0;
+                padding-left: 24px;
+                font-size: 12px;
+                margin-bottom: 10px;
+                line-height: 16px; }
+        section.sound .soundContainer .rightPart .popup .popupContainer::after {
+          content: '';
+          position: absolute;
+          left: 50%;
+          bottom: -20px;
+          -webkit-transform: translate(-50%, 0);
+              -ms-transform: translate(-50%, 0);
+                  transform: translate(-50%, 0);
+          border: 10px solid transparent;
+          border-top: 10px solid white; }
+
+@media (max-width: 1560px) {
+  .header-container {
+    margin-left: 150px; }
+  .firstBlock .swiper-container-first .swiper-wrapper .swiper-slide .text-wrapper {
+    margin-left: 185px; }
+  .firstBlock .swiper-container-first .buttons-container {
+    left: 185px; } }
+
+@media (max-width: 1320px) {
+  .header-container {
+    margin-left: 50px; }
+  .firstBlock .swiper-container-first .swiper-wrapper .swiper-slide .text-wrapper {
+    margin-left: 50px; }
+  .firstBlock .swiper-container-first .buttons-container {
+    left: 50px; } }
+
+@media (max-width: 1320px) {
+  .header-container {
+    margin-left: 50px; }
+  .firstBlock .swiper-container-first .swiper-wrapper .swiper-slide .text-wrapper {
+    margin-left: 50px; }
+  .firstBlock .swiper-container-first .buttons-container {
+    left: 50px; } }
+
+@media (max-width: 1220px) {
+  .header-container {
+    margin-left: 15px; }
+  .firstBlock .swiper-container-first .swiper-wrapper .swiper-slide .text-wrapper {
+    margin-left: 15px; }
+  .firstBlock .swiper-container-first .buttons-container {
+    left: 15px; } }
+
+@media (max-width: 1190px) {
+  header {
+    height: auto;
+    width: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    header .header-container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      header .header-container .logo-container {
+        margin-bottom: 15px; }
+      header .header-container .menu-container {
+        margin-left: 0; }
+        header .header-container .menu-container .border {
+          margin-top: 0; }
+      header .header-container .email-container {
+        margin-left: 0; }
+      header .header-container .phone-container {
+        margin-left: 0;
+        margin-bottom: 15px; } }
 
 /*# sourceMappingURL=style.css.map */
