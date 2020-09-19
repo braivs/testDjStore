@@ -1,6 +1,18 @@
-document.querySelector('.burgerIcon').addEventListener('click', () => {
-  document.querySelector('.burgerMenu').classList.toggle('responsive');
+var burgerIcon = document.querySelector('.burgerIcon');
+var burgerMenu = document.querySelector('.burgerMenu');
+
+burgerIcon.addEventListener('click', () => {
+  burgerMenu.classList.toggle('responsive');
 });
+
+var burgerIconSymbol = document.querySelector('.burgerIconSymbol');
+function changeIcon() {
+  if (burgerIconSymbol.innerHTML === '☰') {
+    burgerIconSymbol.innerHTML = "✕";
+  } else {
+    burgerIconSymbol.innerHTML = "☰";
+  }
+}
 
 var nx = document.getElementsByClassName("swiper-next")[0];
 var pr = document.getElementsByClassName("swiper-prev")[0];
@@ -68,46 +80,46 @@ openClick12.onclick = function(event) {
   event.preventDefault();
   popupWindow1.classList.remove('hidden');
   } //popup1
-openClick13.onclick = function(event) {
-  event.preventDefault();
-  popupWindow1.classList.remove('hidden');
-  } //popup1
-openClick31.onclick = function(event) {
-  event.preventDefault();
-  popupWindow3.style.visibility="visible";
-} //popup3
-openClick32.onclick = function(event) {
-  event.preventDefault();
-  popupWindow3.style.visibility="visible";
-} //popup3
+// openClick13.onclick = function(event) {
+//   event.preventDefault();
+//   popupWindow1.classList.remove('hidden');
+//   } //popup1
+// openClick31.onclick = function(event) {
+//   event.preventDefault();
+//   popupWindow3.style.visibility="visible";
+// } //popup3
+// openClick32.onclick = function(event) {
+//   event.preventDefault();
+//   popupWindow3.style.visibility="visible";
+// } //popup3
 
 
-close.onclick = function(event) {
-  event.preventDefault();
-  popupWindow1.classList.add('hidden');
-}
+// close.onclick = function(event) {
+//   event.preventDefault();
+//   popupWindow1.classList.add('hidden');
+// }
 addEventListener("keydown", function(event) {
   if (event.keyCode === 27)
     popupWindow1.classList.add('hidden');
     popupWindow2.classList.add('hidden');
     popupWindow3.style.visibility="hidden";
   })
-send.onsubmit = function(event) {
-  event.preventDefault();
-  popupWindow1.classList.add('hidden');
-  popupWindow2.classList.remove('hidden');
-}
-close2.onclick = function(event) {
-  event.preventDefault();
-  popupWindow2.classList.add('hidden');
-} //закрытие обратный вызов
-close22.onclick = function(event) {
-  event.preventDefault();
-  popupWindow2.classList.add('hidden');
-}
-close3.onclick = function(event) {
-  event.preventDefault();
-  popupWindow3.style.visibility="hidden";
-}
+// send.onsubmit = function(event) {
+//   event.preventDefault();
+//   popupWindow1.classList.add('hidden');
+//   popupWindow2.classList.remove('hidden');
+// }
+// close2.onclick = function(event) {
+//   event.preventDefault();
+//   popupWindow2.classList.add('hidden');
+// } //закрытие обратный вызов
+// close22.onclick = function(event) {
+//   event.preventDefault();
+//   popupWindow2.classList.add('hidden');
+// }
+// close3.onclick = function(event) {
+//   event.preventDefault();
+//   popupWindow3.style.visibility="hidden";
+// }
 
 
