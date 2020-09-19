@@ -1,10 +1,11 @@
+//выезжание бургер меню
 var burgerIcon = document.querySelector('.burgerIcon');
 var burgerMenu = document.querySelector('.burgerMenu');
-
 burgerIcon.addEventListener('click', () => {
   burgerMenu.classList.toggle('responsive');
 });
 
+//измение значка бургер меню
 var burgerIconSymbol = document.querySelector('.burgerIconSymbol');
 function changeIcon() {
   if (burgerIconSymbol.innerHTML === '☰') {
@@ -14,9 +15,9 @@ function changeIcon() {
   }
 }
 
+//слайдер
 var nx = document.getElementsByClassName("swiper-next")[0];
 var pr = document.getElementsByClassName("swiper-prev")[0];
-
 var swiperFirst = new Swiper('.swiper-container-first', {
   effect: 'fade',
   fadeEffect: {
@@ -57,6 +58,7 @@ var swiperSecond = new Swiper('.swiper-container-second', {
   }
 });
 
+//всплывающие окна
 var openClick11 = document.querySelector("#openClick11"); //popup1 
 var openClick12 = document.querySelector("#openClick12"); //popup1
 var openClick13 = document.querySelector('#openClick13'); //popup1

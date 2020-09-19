@@ -9,17 +9,18 @@ a
     text-decoration: none
     color: #000
 .wrapper
-    width: 80%
+    width: 1200px
 
 header
     display: flex
     justify-content: center
-    // height: 91px
     background: #EBEEF5
     padding: 25px 0
+    height: 90px
     .header-container
         display: flex
         align-items: center
+        justify-content: space-between
         .logo-container
             display: flex
             flex-direction: column
@@ -51,31 +52,38 @@ header
                         align-self: center
         .menu-container
             display: flex
-            align-items: flex-end
-            margin-left: 29.96px
-            a 
-                color: rgba(43, 45, 58, 0.7)            
-                font-size: 14px
-                margin-left: 33px
-                &:first-of-type
-                    margin-left: 0
-                &:hover
-                    color: #397DFF
+            align-items: center
+            height: 90px
+            .block
+                display: grid
+                grid-template-columns: 100%
+                grid-template-rows: 100%
+                height: 100%
                 &:hover .border
                     visibility: visible
+                a 
+                    align-self: center
+                    display: block
+                    color: rgba(43, 45, 58, 0.7)            
+                    font-size: 14px
+                    &:first-of-type
+                        margin-left: 0
+                    &:hover
+                        color: #397DFF
                 .border
+                    align-self: end
                     margin: 0 auto                
                     width: 48px
                     border-top: 3px solid #397DFF
-                    margin-top: 34px
+                    align-self: flex-end
                     visibility: hidden
+            .block:not(:first-child)
+                margin-left: 33px
         .burgerIcon
             display: none
-        
         .email-container
             display: flex
             align-items: center
-            margin-left: 27px
             a
                 img 
                     margin-top: 5px
@@ -88,7 +96,6 @@ header
         .phone-container
             display: flex
             align-items: center
-            margin-left: 24px
             .tel-container
                 display: flex
                 flex-direction: column
