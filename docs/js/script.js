@@ -1,11 +1,6 @@
-menu.onclick = function myFunction() {
-	var x = document.getElementById("myTopnav");
-	if (x.className === "topnav") {
-		x.className += " responsive";
-	} else{
-		x.className = "topnav";
-	}
-}
+document.querySelector('.burgerPlace').addEventListener('click', () => {
+  document.querySelector('.burgerMenu').classList.toggle('responsive');
+});
 
 var nx = document.getElementsByClassName("swiper-next")[0];
 var pr = document.getElementsByClassName("swiper-prev")[0];

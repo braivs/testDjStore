@@ -11,7 +11,7 @@ html(lang="ru")
         script(src="js/swiper-bundle.min.js")
         script(src="js/script.js")
     body
-        header
+        header.burgerPlace
             .header-container.wrapper
                 .logo-container
                     .img-container
@@ -20,7 +20,7 @@ html(lang="ru")
                     .first
                         .second
                             p ИНСТАЛЛЯЦИИ
-                .menu-container#myTopnav
+                .menu-container
                     a(href="#") Главная
                         .border
                     a(href="#") Проекты
@@ -47,7 +47,7 @@ html(lang="ru")
                     .tel-container
                         a(href="#", id="openClick12") Обратный звонок
                         p 8 812 615-62-79
-            .menu-container-burger
+            .burgerMenu
                 a(href="#")
                     .imgContainer
                         img(src="img/m_menu1.png", alt="") 
