@@ -1,4 +1,4 @@
-document.querySelector('.burgerPlace').addEventListener('click', () => {
+document.querySelector('.burgerIcon').addEventListener('click', () => {
   document.querySelector('.burgerMenu').classList.toggle('responsive');
 });
 
