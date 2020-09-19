@@ -18,15 +18,15 @@ function changeIcon() {
 //слайдер
 var nx = document.getElementsByClassName("swiper-next")[0];
 var pr = document.getElementsByClassName("swiper-prev")[0];
-var swiperFirst = new Swiper('.swiper-container-first', {
+var swiperFirst = new Swiper('.slider', {
   effect: 'fade',
   fadeEffect: {
       crossFade: true
   },
-  direction: 'vertical',
-  simulateTouch : false,
-  loop: true,
-  loopAdditionalSlides: true,
+  // direction: 'vertical',
+  // simulateTouch : false,
+  // loop: true,
+  // loopAdditionalSlides: true,
 
 });
 var swiperSecond = new Swiper('.swiper-container-second', {
