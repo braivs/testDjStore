@@ -621,6 +621,21 @@ section.sound {
                   justify-content: center;
           height: 30px;
           width: 30px;
-          margin-right: 23px; } }
+          margin-right: 23px; }
+      header .burgerMenu.responsive button {
+        background: #397DFF;
+        border: none;
+        border-radius: 6px;
+        width: 340px;
+        height: 40px;
+        color: white;
+        margin-top: 30px;
+        font-size: 14px; }
+      header .burgerMenu.responsive p {
+        margin-top: 30px;
+        font-size: 20px; }
+      header .burgerMenu.responsive a.email {
+        color: #397DFF;
+        border: none; } }
 
 /*# sourceMappingURL=style.css.map */
