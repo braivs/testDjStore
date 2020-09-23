@@ -16,46 +16,37 @@ function changeIcon() {
 }
 
 //слайдер
-var nx = document.getElementsByClassName("swiper-next")[0];
-var pr = document.getElementsByClassName("swiper-prev")[0];
 var swiperFirst = new Swiper('.slider', {
   effect: 'fade',
   fadeEffect: {
-      crossFade: true
+    crossFade: true,
   },
-  // direction: 'vertical',
-  // simulateTouch : false,
-  // loop: true,
-  // loopAdditionalSlides: true,
-
+  direction: 'vertical',
+  simulateTouch : false,
+  loop: true,
+  loopAdditionalSlides: true,
 });
-var swiperSecond = new Swiper('.swiper-container-second', {
+var nx = document.getElementsByClassName("swiper-next")[0];
+var pr = document.getElementsByClassName("swiper-prev")[0];
+var swiperSecond = new Swiper('.sliderSecond', {
   controller: {
       control: swiperFirst,
   },
-  mousewheel: true,
+  // mousewheel: true,
   loop: true,
   navigation: {
       nextEl: nx,
       prevEl: pr,
   },
   slidesPerView: 2,
-  watchSlidesVisibility: true,
-  spaceBetween: 240,
   breakpoints: {
-    1450: {
-      spaceBetween: 240,
+    279: {
+      slidesPerView: 1,
     },
-    1420: {
-      spaceBetween: 300,
-    },
-    1400: {
-      spaceBetween: 340,
-    },
-    1350: {
-      spaceBetween: 380,
-    },
-  }
+    768: {
+      slidesPerView: 2,
+    }
+  },
 });
 
 //всплывающие окна

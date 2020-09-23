@@ -3,15 +3,12 @@
     padding: 0
     box-sizing: border-box
 body
-    background: #E5E5E5
     font-family: 'Montserrat', sans-serif 
 a
     text-decoration: none
     color: #000
 .wrapper
     width: 1200px
-    // border: 3px solid violet
-
 header
     display: flex
     justify-content: center
@@ -114,18 +111,17 @@ header
         display: none
 body
     section.slider
+        max-height: 624px
         position: relative
-        border: 3px solid green
         .swiper-slide        
-            background: url('../img/img1.jpg')
-            height: 624px
-            width: 100vw
+            background: url('../img/img1.jpg') no-repeat
+            // width: 100vw
             display: flex
             justify-content: center
             .wrapper
-                // border: 3px solid blue
                 margin-top: 120px
                 .text
+                    height: 200px
                     p 
                         text-align: left
                         color: white
@@ -171,27 +167,50 @@ body
             background: url('../img/img14.jpg')
         section.sliderSecond
             position: absolute
-            // top: 210px
-            top: 0
+            top: 210px
             right: 0
-            border: 3px solid blue
-            z-index: 1
-            width: 30%
-            .text-wrapper
-                display: flex
-                flex-direction: column
-                width: 100%
-                border: 3px solid orange
-                h1
-                    display: block
-                    font-size: 64px
-                    color: #397DFF
-                    margin-bottom: 12px
-                p 
-                    display: block
-                    font-size: 14px
-                    color: rgba(255, 255, 255, 0.7)
-                    line-height: 22px
+            width: 560px
+            overflow: hidden
+            z-index: 2
+            .swiper-wrapper
+                .swiper-slide
+                    background: none
+                    height: 270px
+                    padding-right: 0px
+                    .text-wrapper
+                        display: flex
+                        flex-direction: column
+                        // width: 350px
+                        h1
+                            display: block
+                            font-size: 64px
+                            color: #397DFF
+                            margin-top: 0px
+                            margin-bottom: 12px
+                        p 
+                            display: block
+                            font-size: 14px
+                            color: rgba(255, 255, 255, 0.7)
+                            line-height: 22px
+                        
+                .swiper-slide-next
+                    opacity: 0.3
+                    margin-left: 70px
+                    // outline: 1px solid rgba(255, 255, 255, 0.1)
+                    // outline: 1px solid red
+                    padding-left: 0px
+                    border-left: 1px solid rgba(255, 255, 255, 0.1)
+
+                    // width: 125
+        section.sliderSecondButtons
+            position: absolute
+            top: 500px
+            z-index: 2
+            right: 0
+            width: 560px
+            a
+                cursor: pointer
+                margin-right: 42px
         //     .swiper-container-second-wrapper
         //         width: 30%
         //         height: 100%
@@ -385,8 +404,7 @@ section.sound
         .leftPart
             position: relative
             width: 100%
-            background: #DAE3F6
-            // border: 3px solid red
+            // background: #DAE3F6
             img
                 max-width: 100%
                 height: auto
@@ -406,7 +424,6 @@ section.sound
             // width: 960px
             width: 100%
             position: relative
-            // border: 3px solid green
             img
                 max-width: 100%
                 height: auto
