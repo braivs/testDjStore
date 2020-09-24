@@ -15,39 +15,51 @@ function changeIcon() {
   }
 }
 
-//слайдер
-var swiperFirst = new Swiper('.slider', {
+//sliders:
+var nx = document.getElementsByClassName("swiper-next")[0];
+var pr = document.getElementsByClassName("swiper-prev")[0];
+var swiperBackground = new Swiper('.sliderBackground', {
   effect: 'fade',
   fadeEffect: {
     crossFade: true,
   },
-  direction: 'vertical',
   simulateTouch : false,
-  loop: true,
-  loopAdditionalSlides: true,
-});
-var nx = document.getElementsByClassName("swiper-next")[0];
-var pr = document.getElementsByClassName("swiper-prev")[0];
-var swiperSecond = new Swiper('.sliderSecond', {
-  controller: {
-      control: swiperFirst,
-  },
-  // mousewheel: true,
-  loop: true,
   navigation: {
-      nextEl: nx,
-      prevEl: pr,
+    nextEl: nx,
+    prevEl: pr,
+  },
+  loop: true,
+  // direction: 'vertical',
+  // loopAdditionalSlides: true,
+});
+var swiperLeft = new Swiper('.sliderLeft', {
+  navigation: {
+    nextEl: nx,
+    prevEl: pr,
+  },
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true,
+  },
+  loop: true,
+});
+var swiperRight = new Swiper('.sliderRight', {
+  navigation: {
+    nextEl: nx,
+    prevEl: pr,
   },
   slidesPerView: 2,
-  breakpoints: {
-    279: {
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 2,
-    }
-  },
+  loop: true,
+  // breakpoints: {
+  //   279: {
+  //     slidesPerView: 1,
+  //   },
+  //   768: {
+  //     slidesPerView: 2,
+  //   }
+  // },
 });
+
 
 //всплывающие окна
 var openClick11 = document.querySelector("#openClick11"); //popup1 

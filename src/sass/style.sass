@@ -8,7 +8,8 @@ a
     text-decoration: none
     color: #000
 .wrapper
-    width: 1200px
+    // width: 1200px
+    width: 63%
 header
     display: flex
     justify-content: center
@@ -109,157 +110,94 @@ header
                     font-weight: 600
     .burgerMenu
         display: none
-body
-    section.slider
-        max-height: 624px
-        position: relative
-        .swiper-slide        
-            background: url('../img/img1.jpg') no-repeat
-            // width: 100vw
-            display: flex
-            justify-content: center
-            .wrapper
-                margin-top: 120px
-                .text
-                    height: 200px
-                    p 
-                        text-align: left
-                        color: white
-                        &:first-of-type
-                            font-size: 18px
-                            line-height: 22px
-                        &:nth-of-type(2)
-                            font-size: 52px
-                            // line-height: 63px
-                            margin-top: 12px
-                            // margin-left: -5px
-                            // margin-left: 0
-                            padding-left: 0
-                        &:nth-of-type(3)
-                            width: 550px
-                            font-size: 16px
-                            line-height: 148%
-                            margin-top: 24px
-                            color: rgba(255, 255, 255, 0.8)
-                .buttons-container
-                    margin-top: 50px
-                    button
-                        width: 186px
-                        height: 48px
-                        border-radius: 8px
-                        box-sizing: border-box
-                        font-size: 16px
-                        color: white
-                        &:nth-of-type(1)
-                            border: 1px solid #FFFFFF
-                            background: none
-                        &:nth-of-type(2)
-                            background: #397DFF
-                            border: none
-                            margin-left: 24px
-        .swiper-slide.slide2
-            background: url('../img/img11.jpg')
-        .swiper-slide.slide3
-            background: url('../img/img12.jpg')
-        .swiper-slide.slide4
-            background: url('../img/img13.jpg')
-        .swiper-slide.slide5
-            background: url('../img/img14.jpg')
-        section.sliderSecond
-            position: absolute
-            top: 210px
-            right: 0
-            width: 560px
-            overflow: hidden
-            z-index: 2
+main
+    section.sliderContainer 
+        display: grid
+        width: 100vw
+        overflow: hidden
+        height: 624px
+        grid-template-columns: 18.5% 51.5% 30%
+        grid-template-rows: repeat(4,25%)
+        .sliderBackground
+            grid-column: 1 / 5
+            grid-row: 1 / 5
             .swiper-wrapper
-                .swiper-slide
-                    background: none
-                    height: 270px
-                    padding-right: 0px
-                    .text-wrapper
-                        display: flex
-                        flex-direction: column
-                        // width: 350px
-                        h1
-                            display: block
-                            font-size: 64px
-                            color: #397DFF
-                            margin-top: 0px
-                            margin-bottom: 12px
-                        p 
-                            display: block
-                            font-size: 14px
-                            color: rgba(255, 255, 255, 0.7)
-                            line-height: 22px
-                        
-                .swiper-slide-next
-                    opacity: 0.3
-                    margin-left: 70px
-                    // outline: 1px solid rgba(255, 255, 255, 0.1)
-                    // outline: 1px solid red
-                    padding-left: 0px
-                    border-left: 1px solid rgba(255, 255, 255, 0.1)
-
-                    // width: 125
-        section.sliderSecondButtons
-            position: absolute
-            top: 500px
-            z-index: 2
-            right: 0
-            width: 560px
+                .bgSlide
+                    display: grid
+                .bgSlide1    
+                    background: url('../img/slide1.jpg')
+                .bgSlide2
+                    background: url('../img/slide2.jpg')
+                .bgSlide3
+                    background: url('../img/slide3.jpg')
+                .bgSlide4
+                    background: url('../img/slide4.jpg')
+                .bgSlide5
+                    background: url('../img/slide5.jpg')
+        .control
+            grid-column: 3 / 4
+            grid-row: 2 / 4
+            align-self: end
+            z-index: 1
             a
-                cursor: pointer
-                margin-right: 42px
-        //     .swiper-container-second-wrapper
-        //         width: 30%
-        //         height: 100%
-        //         z-index: 1
-        //         position: absolute
-        //         top: 0
-        //         right: 0
-        //         overflow: hidden
-        //         .swiper-container-second
-        //             position: relative
-        //             height: 75%
-        //             .swiper-wrapper
-        //                 .swiper-slide
-        //                     .slide-wrapper
-        //                         display: flex
-        //                         border-right: 2px solid rgba(255, 255, 255, 0.1)
-        //                         margin-top: 164px
-        //                         width: 330px
-        //                         height: 260px
-        //                         overflow: hidden
-        //                         .text-wrapper
-        //                             margin: 0
-        //                             margin-left: 0
-        //                             width: 290px
-        //                             display: flex
-        //                             flex-direction: column
-        //                             h1
-        //                                 display: block
-        //                                 font-size: 64px
-        //                                 color: #397DFF
-        //                                 margin-bottom: 12px
-        //                             p 
-        //                                 display: block
-        //                                 font-size: 14px
-        //                                 color: rgba(255, 255, 255, 0.7)
-        //                                 line-height: 160%
-        //                 .swiper-slide-next
-        //                     opacity: 0.3
-        //         .second-buttons-container
-        //             z-index: 1
-        //             display: flex
-        //             a
-        //                 color: white
-        //                 cursor: pointer
-        //                 margin-right: 43px
-        //                 width: 32px
-        //                 height: 32px
-        //                 z-index: 1
-        //                 outline: none
+                margin-right: 50px
+        .sliderLeft
+            grid-column: 2 / 3
+            grid-row: 1 / 4
+            z-index: 1
+            align-self: center
+            overflow: hidden
+            p 
+                color: white
+                &:first-of-type
+                    font-size: 18px
+                &:nth-of-type(2)
+                    font-size: 52px
+                    margin-top: 12px
+                &:nth-of-type(3)
+                    font-size: 16px
+                    line-height: 148%
+                    margin-top: 24px
+                    color: rgba(255, 255, 255, 0.8)
+                    max-width: 555px
+        .sliderRight
+            grid-column: 3 / 4
+            grid-row: 2 / 4
+            align-self: center
+            z-index: 1
+            overflow: hidden
+            h1
+                font-size: 64px
+                color: #397DFF
+                margin: 0
+            p 
+                font-size: 14px
+                color: rgba(255, 255, 255, 0.7)
+                width: 100%
+                line-height: 160%
+            .swiper-slide-next
+                opacity: 0.3
+                margin-left: 18%
+        .buttons
+            grid-column: 2 / 3
+            grid-row: 3 / 4
+            z-index: 1
+            align-self: center
+            button
+                width: 186px
+                height: 48px
+                border-radius: 8px
+                box-sizing: border-box
+                font-size: 16px
+                color: white
+                &:nth-of-type(1)
+                    border: 1px solid #FFFFFF
+                    background: none
+                &:nth-of-type(2)
+                    background: #397DFF
+                    border: none
+                    margin-left: 24px
+                    
         //     section.popup.hidden
         //         visibility: hidden
         //     section.popup
