@@ -48,16 +48,15 @@ var swiperRight = new Swiper('.sliderRight', {
     nextEl: nx,
     prevEl: pr,
   },
-  slidesPerView: 2,
   loop: true,
-  // breakpoints: {
-  //   279: {
-  //     slidesPerView: 1,
-  //   },
-  //   768: {
-  //     slidesPerView: 2,
-  //   }
-  // },
+  breakpoints: {
+    279: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    }
+  },
 });
 
 

@@ -202,7 +202,7 @@ main section.sliderContainer {
     grid-column: 3 / 4;
     grid-row: 2 / 4;
     align-self: end;
-    z-index: 1; }
+    z-index: 2; }
     main section.sliderContainer .control a {
       margin-right: 50px; }
   main section.sliderContainer .sliderLeft {
@@ -245,7 +245,7 @@ main section.sliderContainer {
   main section.sliderContainer .buttons {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
-    z-index: 1;
+    z-index: 2;
     align-self: center; }
     main section.sliderContainer .buttons button {
       width: 186px;
@@ -373,23 +373,28 @@ section.sound {
           border: 10px solid transparent;
           border-top: 10px solid white; }
 
-@media (max-width: 1250px) {
+@media (max-width: 1850px) {
   .wrapper {
-    width: 95%; } }
+    width: 90%; }
+  main section.sliderContainer {
+    grid-template-columns: 5% 51.5% 43.5%; } }
 
-@media (max-width: 1199px) {
-  .wrapper {
-    width: 98%; }
+@media (max-width: 1300px) {
   header .header-container .menu-container .block:not(:first-child) {
     margin-left: 5px; }
-  main section.slider section.sliderSecond {
-    top: 350px; }
-  main section.slider section.sliderSecondButtons {
-    left: 20px; } }
+  main section.sliderContainer .control {
+    grid-row: 4 / 5;
+    align-self: start; }
+  main section.sliderContainer .sliderLeft p:nth-of-type(2) {
+    font-size: 40px; }
+  main section.sliderContainer .sliderLeft p:nth-of-type(3) {
+    max-width: 450px; }
+  main section.sliderContainer .buttons {
+    -webkit-align-self: end;
+        -ms-flex-item-align: end;
+            align-self: end; } }
 
 @media (max-width: 991px) {
-  .wrapper {
-    width: 80%; }
   header {
     width: 100%;
     -webkit-box-orient: vertical;
@@ -473,80 +478,36 @@ section.sound {
       header .burgerMenu.responsive a.email {
         color: #397DFF;
         border: none; }
-  main section.slider .swiper-slide .wrapper {
-    margin-top: 80px; }
-    main section.slider .swiper-slide .wrapper .text p:nth-of-type(2) {
-      font-size: 45px; }
-  main section.slider section.sliderSecond {
-    top: 400px; }
-  main section.slider section.sliderSecondButtons {
-    left: 70px; } }
+  main section.sliderContainer .sliderLeft p:nth-of-type(2) {
+    font-size: 31px; }
+  main section.sliderContainer .control {
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center; }
+  main section.sliderContainer .buttons button {
+    width: 170px; } }
 
 @media (max-width: 767px) {
-  main section.slider .swiper-wrapper {
-    max-height: 624px;
-    border: 3px solid violet; }
-    main section.slider .swiper-wrapper .swiper-slide .wrapper .text p:nth-of-type(2) {
-      font-size: 35px; }
-    main section.slider .swiper-wrapper .swiper-slide .wrapper .text p:nth-of-type(3) {
-      width: 500px; }
-  main section.slider section.sliderSecond {
-    display: none;
-    border: 2px solid red;
-    left: 80px; }
-  main section.slider section.sliderSecondButtons {
-    z-index: 99;
-    border: 3px solid blue;
-    left: 20px; } }
+  main section.sliderContainer .control {
+    justify-self: center; }
+  main section.sliderContainer .sliderRight {
+    margin: 0 10%; }
+    main section.sliderContainer .sliderRight p {
+      width: 70%; }
+    main section.sliderContainer .sliderRight .swiper-slide-next {
+      margin-left: 0; }
+  main section.sliderContainer .buttons button {
+    width: 130px; } }
 
 @media (max-width: 575px) {
   header .burgerMenu.responsive a {
     font-size: 14px;
     height: 30px; }
   header .burgerMenu.responsive button {
-    width: 300px; }
-  main section.slider .swiper-slide .wrapper {
-    margin-top: 30px; }
-    main section.slider .swiper-slide .wrapper .text p:nth-of-type(1) {
-      font-size: 16px; }
-    main section.slider .swiper-slide .wrapper .text p:nth-of-type(2) {
-      font-size: 22px; }
-    main section.slider .swiper-slide .wrapper .text p:nth-of-type(3) {
-      width: 300px; }
-    main section.slider .swiper-slide .wrapper .buttons-container button {
-      width: 120px;
-      height: 40px;
-      font-size: 10px; }
-      main section.slider .swiper-slide .wrapper .buttons-container button:nth-of-type(2) {
-        margin-left: 20px; }
-  main section.slider section.sliderSecond {
-    width: 340px;
-    left: 20px19;
-    top: 420px; }
-    main section.slider section.sliderSecond .swiper-slide-next {
-      margin-left: 0; }
-  main section.slider section.sliderSecondButtons {
-    top: 390px; } }
+    width: 300px; } }
 
 @media (max-width: 349px) {
   header .burgerMenu.responsive button {
-    width: 220px; }
-  main section.slider .swiper-slide .wrapper .text {
-    height: 280px; }
-    main section.slider .swiper-slide .wrapper .text p:nth-of-type(1) {
-      font-size: 12px; }
-    main section.slider .swiper-slide .wrapper .text p:nth-of-type(2) {
-      font-size: 18px; }
-    main section.slider .swiper-slide .wrapper .text p:nth-of-type(3) {
-      width: 250px; }
-  main section.slider .swiper-slide .wrapper .buttons-container {
-    margin-top: 25px; }
-    main section.slider .swiper-slide .wrapper .buttons-container button {
-      width: 150px;
-      height: 40px;
-      font-size: 14px; }
-      main section.slider .swiper-slide .wrapper .buttons-container button:nth-of-type(2) {
-        margin-top: 10px;
-        margin-left: 0; } }
+    width: 220px; } }
 
 /*# sourceMappingURL=style.css.map */
