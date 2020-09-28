@@ -1,3 +1,12 @@
+window.onorientationchange = function() { 
+  var orientation = window.orientation; 
+      switch(orientation) { 
+          case 0:
+          case 90:
+          case -90: window.location.reload(); 
+          break; } 
+};
+
 //выезжание бургер меню
 var burgerIcon = document.querySelector('.burgerIcon');
 var burgerMenu = document.querySelector('.burgerMenu');
@@ -37,6 +46,7 @@ var swiperBackground = new Swiper('.sliderBackground', {
       loopAdditionalSlides: true,
     }
   },
+  followFinger: false,
 });
 var swiperLeft = new Swiper('.sliderLeft', {
   navigation: {
@@ -60,6 +70,7 @@ var swiperLeft = new Swiper('.sliderLeft', {
       loopAdditionalSlides: true,
     }
   },
+  followFinger: false,
 });
 var swiperRight = new Swiper('.sliderRight', {
   navigation: {
