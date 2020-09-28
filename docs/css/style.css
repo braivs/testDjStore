@@ -181,6 +181,7 @@ main section.sliderContainer {
   width: 100vw;
   overflow: hidden;
   height: 624px;
+  max-height: 100vh;
   grid-template-columns: 18.5% 51.5% 30%;
   grid-template-rows: repeat(4, 25%); }
   main section.sliderContainer .sliderBackground {
@@ -540,6 +541,17 @@ section.sound {
       grid-column: 2 / 4;
       grid-row: 3 / 4; } }
 
+@media (max-height: 575px) {
+  main section.sliderContainer .buttons {
+    grid-row: 4 / 5;
+    align-self: center; }
+  main section.sliderContainer .sliderRight {
+    grid-row: 1 / 4; }
+  main section.sliderContainer .control {
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center; } }
+
 @media (max-width: 349px) {
   header .burgerMenu.responsive button {
     width: 220px; }
@@ -550,5 +562,13 @@ section.sound {
             align-self: start; }
   main section.sliderContainer .buttons button {
     width: 100px; } }
+
+@media (max-height: 349px) {
+  main section.sliderContainer .sliderRight h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+  main section.sliderContainer .sliderRight p {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */

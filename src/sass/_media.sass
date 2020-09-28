@@ -162,6 +162,17 @@
                     &:nth-of-type(3)
                         // max-width: 330px
 
+@media (max-height: 575px)
+    main
+        section.sliderContainer
+            .buttons
+                grid-row: 4 / 5
+                align-self: center
+            .sliderRight
+                grid-row: 1 / 4
+            .control
+                align-self: center
+
 // 280 - 349px
 @media (max-width: 349px)
     header
@@ -180,6 +191,16 @@
                 button
                     width: 100px
 
+@media (max-height: 349px)
+    main 
+        section.sliderContainer
+            .sliderRight
+                h1 
+                    margin: 0
+                    padding: 0
+                    text-align: center
+                p
+                    display: none
 //Пришлось сделать доп. для меню
 // @media (max-width: 1560px)
 //     .header-container
