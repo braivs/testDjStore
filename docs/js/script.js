@@ -1,7 +1,7 @@
 //тестовая перерисовка при повороте телефона
-window.addEventListener("orientationchange", function() {
-  console.log(screen.orientation);
-}, false);
+if (window.DeviceOrientationEvent) {
+  window.addEventListener('orientationchange', function() { location.reload(); }, false);
+}
 
 //выезжание бургер меню
 var burgerIcon = document.querySelector('.burgerIcon');
@@ -42,7 +42,7 @@ var swiperBackground = new Swiper('.sliderBackground', {
       loopAdditionalSlides: true,
     }
   },
-  followFinger: false,
+  // followFinger: false,
 });
 var swiperLeft = new Swiper('.sliderLeft', {
   navigation: {
@@ -66,7 +66,7 @@ var swiperLeft = new Swiper('.sliderLeft', {
       loopAdditionalSlides: true,
     }
   },
-  followFinger: false,
+  // followFinger: false,
 });
 var swiperRight = new Swiper('.sliderRight', {
   navigation: {
@@ -85,6 +85,7 @@ var swiperRight = new Swiper('.sliderRight', {
   controller: {
     control: swiperLeft,
   },
+  // followFinger: false,
 });
 
 
