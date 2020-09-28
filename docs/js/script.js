@@ -1,11 +1,6 @@
-window.onorientationchange = function() { 
-  var orientation = window.orientation; 
-      switch(orientation) { 
-          case 0:
-          case 90:
-          case -90: window.location.reload(); 
-          break; } 
-};
+if (window.DeviceOrientationEvent) {
+  window.addEventListener('orientationchange', function() { location.reload(); }, false);
+}
 
 //выезжание бургер меню
 var burgerIcon = document.querySelector('.burgerIcon');
