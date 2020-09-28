@@ -532,6 +532,8 @@ section.sound {
 @media (max-width: 349px) {
   header .burgerMenu.responsive button {
     width: 220px; }
+  main section.sliderContainer .control a {
+    margin-right: 30px; }
   main section.sliderContainer .sliderLeft {
     margin-top: 20px;
     -webkit-align-self: start;
