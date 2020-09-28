@@ -564,6 +564,10 @@ section.sound {
     width: 100px; } }
 
 @media (max-height: 349px) {
+  main section.sliderContainer .sliderLeft p:first-of-type {
+    margin-top: 20px; }
+  main section.sliderContainer .sliderLeft p:nth-of-type(3) {
+    margin-top: 12px; }
   main section.sliderContainer .sliderRight h1 {
     margin: 0;
     padding: 0;
