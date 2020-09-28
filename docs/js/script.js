@@ -1,6 +1,7 @@
-if (window.DeviceOrientationEvent) {
-  window.addEventListener('orientationchange', function() { location.reload(); }, false);
-}
+//тестовая перерисовка при повороте телефона
+window.addEventListener("orientationchange", function() {
+  console.log(screen.orientation);
+}, false);
 
 //выезжание бургер меню
 var burgerIcon = document.querySelector('.burgerIcon');
