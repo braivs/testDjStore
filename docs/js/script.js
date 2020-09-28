@@ -23,13 +23,12 @@ var swiperBackground = new Swiper('.sliderBackground', {
   fadeEffect: {
     crossFade: true,
   },
-  simulateTouch : false,
+  allowTouchMove: false,
   navigation: {
     nextEl: nx,
     prevEl: pr,
   },
   loop: true,
-  // direction: 'vertical',
   loopAdditionalSlides: true,
 });
 var swiperLeft = new Swiper('.sliderLeft', {
@@ -42,7 +41,7 @@ var swiperLeft = new Swiper('.sliderLeft', {
     crossFade: true,
   },
   loop: true,
-  simulateTouch : false,
+  allowTouchMove: false,
   controller: {
     control: swiperBackground,
   },
