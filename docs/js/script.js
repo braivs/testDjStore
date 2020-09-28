@@ -30,7 +30,7 @@ var swiperBackground = new Swiper('.sliderBackground', {
   },
   loop: true,
   // direction: 'vertical',
-  // loopAdditionalSlides: true,
+  loopAdditionalSlides: true,
 });
 var swiperLeft = new Swiper('.sliderLeft', {
   navigation: {
@@ -42,6 +42,11 @@ var swiperLeft = new Swiper('.sliderLeft', {
     crossFade: true,
   },
   loop: true,
+  simulateTouch : false,
+  controller: {
+    control: swiperBackground,
+  },
+  loopAdditionalSlides: true,
 });
 var swiperRight = new Swiper('.sliderRight', {
   navigation: {
@@ -56,6 +61,9 @@ var swiperRight = new Swiper('.sliderRight', {
     768: {
       slidesPerView: 2,
     }
+  },
+  controller: {
+    control: swiperLeft,
   },
 });
 
