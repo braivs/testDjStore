@@ -510,7 +510,18 @@ section.sound {
     main section.sliderContainer .control {
       grid-column: 2 / 3;
       grid-row: 4 / 5;
-      justify-self: start; }
+      justify-self: start;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      main section.sliderContainer .control a {
+        margin-right: 0; }
     main section.sliderContainer .sliderLeft {
       grid-column: 2 / 4;
       grid-row: 1 / 4; }
@@ -532,8 +543,6 @@ section.sound {
 @media (max-width: 349px) {
   header .burgerMenu.responsive button {
     width: 220px; }
-  main section.sliderContainer .control a {
-    margin-right: 30px; }
   main section.sliderContainer .sliderLeft {
     margin-top: 20px;
     -webkit-align-self: start;
