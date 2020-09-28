@@ -29,7 +29,14 @@ var swiperBackground = new Swiper('.sliderBackground', {
     prevEl: pr,
   },
   loop: true,
-  loopAdditionalSlides: true,
+  breakpoints: {
+    279: {
+      loopAdditionalSlides: false,
+    },
+    768: {
+      loopAdditionalSlides: true,
+    }
+  },
 });
 var swiperLeft = new Swiper('.sliderLeft', {
   navigation: {
@@ -45,7 +52,14 @@ var swiperLeft = new Swiper('.sliderLeft', {
   controller: {
     control: swiperBackground,
   },
-  loopAdditionalSlides: true,
+  breakpoints: {
+    279: {
+      loopAdditionalSlides: false,
+    },
+    768: {
+      loopAdditionalSlides: true,
+    }
+  },
 });
 var swiperRight = new Swiper('.sliderRight', {
   navigation: {
