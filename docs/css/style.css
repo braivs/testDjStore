@@ -504,10 +504,40 @@ section.sound {
     font-size: 14px;
     height: 30px; }
   header .burgerMenu.responsive button {
-    width: 300px; } }
+    width: 300px; }
+  main section.sliderContainer {
+    grid-template-columns: 5% 45% 45% 5%; }
+    main section.sliderContainer .control {
+      grid-column: 2 / 3;
+      grid-row: 4 / 5;
+      justify-self: start; }
+    main section.sliderContainer .sliderLeft {
+      grid-column: 2 / 4;
+      grid-row: 1 / 4; }
+    main section.sliderContainer .sliderRight {
+      grid-column: 3 / 4;
+      grid-row: 4 / 5;
+      margin: 0;
+      padding: 0; }
+      main section.sliderContainer .sliderRight h1 {
+        margin: 0;
+        padding: 0;
+        text-align: center; }
+      main section.sliderContainer .sliderRight p {
+        display: none; }
+    main section.sliderContainer .buttons {
+      grid-column: 2 / 4;
+      grid-row: 3 / 4; } }
 
 @media (max-width: 349px) {
   header .burgerMenu.responsive button {
-    width: 220px; } }
+    width: 220px; }
+  main section.sliderContainer .sliderLeft {
+    margin-top: 20px;
+    -webkit-align-self: start;
+        -ms-flex-item-align: start;
+            align-self: start; }
+  main section.sliderContainer .buttons button {
+    width: 100px; } }
 
 /*# sourceMappingURL=style.css.map */
