@@ -83,16 +83,16 @@ var swiperRight = new Swiper('.sliderRight', {
   },
   // followFinger: false,
   touchMoveStopPropagation: true,
-});
+}); 
 
 //тестовая перерисовка при повороте телефона
 if (window.DeviceOrientationEvent) {
   // window.addEventListener('orientationchange', function() { location.reload(); }, false);
   window.addEventListener('orientationchange', function() { 
-    // location.reload(); 
-    swiperBackground.resizeFix();
-    swiperLeft.resizeFix();
-    swiperRight.resizeFix();
+    location.reload(); 
+    // swiperBackground.resizeFix();
+    // swiperLeft.resizeFix();
+    // swiperRight.resizeFix();
   }, false);
 }
 
