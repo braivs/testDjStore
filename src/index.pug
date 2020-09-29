@@ -41,17 +41,16 @@ html(lang="ru")
                         .border
                 .burgerIcon
                     a.burgerIconSymbol(href="#", onclick="changeIcon()") ☰
-                
                 .email-container
                     a(href="#") 
                         img(src="img/mailIcon.png", alt="")
                     a(href="#") info@sld-store.ru
                 .phone-container
                     a(href="")
-                        a(href="#", id="openClick11")
+                        a.openPopupCall1(href="#")
                             img(src="img/phone_icon.png", alt="")
                     .tel-container
-                        a(href="#", id="openClick12") Обратный звонок
+                        a.openPopupCall2(href="#") Обратный звонок
                         p 8 812 615-62-79
             .burgerMenu.wrapper
                 a(href="#")
@@ -138,12 +137,12 @@ html(lang="ru")
                             h1 05
                             p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Коварный от всех он вскоре, ты запятых то лучше, вопроса великий гор, за рукописи власти большой.
                 .buttons
-                    button(type="button") Обратный звонок
+                    button.openPopupCall3(type="button") Обратный звонок
                     button(type="button") Заполнить бриф
-        section.popup.hidden(id="popupWindow1")
-            a.close1(href="#", id="close")
-                img(src="img/close_icon.png", alt="")
+        section.popupCall
             .popup-container
+                a.closePopupCall(href="#")
+                    img(src="img/close_icon.png", alt="")
                 p Готовы обсудить проект?
                 p Заполните форму ниже и мы свяжемся с вами.
                 form(id="send")

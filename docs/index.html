@@ -44,8 +44,8 @@
         </div>
         <div class="burgerIcon"><a class="burgerIconSymbol" href="#" onclick="changeIcon()">☰</a></div>
         <div class="email-container"><a href="#"> <img src="img/mailIcon.png" alt=""/></a><a href="#">info@sld-store.ru</a></div>
-        <div class="phone-container"><a href=""><a href="#" id="openClick11"><img src="img/phone_icon.png" alt=""/></a></a>
-          <div class="tel-container"><a href="#" id="openClick12">Обратный звонок</a>
+        <div class="phone-container"><a href=""><a class="openPopupCall1" href="#"><img src="img/phone_icon.png" alt=""/></a></a>
+          <div class="tel-container"><a class="openPopupCall2" href="#">Обратный звонок</a>
             <p>8 812 615-62-79</p>
           </div>
         </div>
@@ -128,13 +128,13 @@
           </div>
         </div>
         <div class="buttons">
-          <button type="button">Обратный звонок</button>
+          <button class="openPopupCall3" type="button">Обратный звонок</button>
           <button type="button">Заполнить бриф</button>
         </div>
       </section>
     </main>
-    <section class="popup hidden" id="popupWindow1"><a class="close1" href="#" id="close"><img src="img/close_icon.png" alt=""/></a>
-      <div class="popup-container">
+    <section class="popupCall">
+      <div class="popup-container"><a class="closePopupCall" href="#"><img src="img/close_icon.png" alt=""/></a>
         <p>Готовы обсудить проект?</p>
         <p>Заполните форму ниже и мы свяжемся с вами.</p>
         <form id="send">

@@ -5,7 +5,7 @@ burgerIcon.addEventListener('click', () => {
   burgerMenu.classList.toggle('responsive');
 });
 
-//измение значка бургер меню
+//изменение значка бургер меню
 var burgerIconSymbol = document.querySelector('.burgerIconSymbol');
 function changeIcon() {
   if (burgerIconSymbol.innerHTML === '☰') {
@@ -96,31 +96,56 @@ if (window.DeviceOrientationEvent) {
   }, false);
 }
 
-
-//всплывающие окна
-var openClick11 = document.querySelector("#openClick11"); //popup1 
-var openClick12 = document.querySelector("#openClick12"); //popup1
-var openClick13 = document.querySelector('#openClick13'); //popup1
-var openClick31 = document.querySelector("#openClick31"); //popup2
-var openClick32 = document.querySelector("#openClick32"); //popup2
-
-var close = document.querySelector('#close'); //закрытие обратный вызов
-var popupWindow1 = document.querySelector('#popupWindow1'); //Обратный звонок попап
-var send = document.querySelector('#send');
-var popupWindow2 = document.querySelector('#popupWindow2'); //Заявка успешно отправлена попап
-var close2 = document.querySelector('#close2'); //закрытие заявка успешно отправлена крестик
-var close22 = document.querySelector('#close22'); //закрытие заявка успешно отправлена Ок
-var close3 = document.querySelector("#close3"); //закрытие попапа колонки
-var popupWindow3 = document.querySelector("#popupWindow3"); //попап на колонке
-
-openClick11.onclick = function(event) {
+//popups
+var popupCall = document.querySelector(".popupCall");
+var openPopupCall1 = document.querySelector('.openPopupCall1');
+var openPopupCall2 = document.querySelector('.openPopupCall2');
+var openPopupCall3 = document.querySelector('.openPopupCall3');
+openPopupCall1.onclick = function(event) {
   event.preventDefault();
-  popupWindow1.classList.remove('hidden');
-  } //popup1
-openClick12.onclick = function(event) {
+  popupCall.style.display="block";
+  }
+openPopupCall2.onclick = function(event) {
   event.preventDefault();
-  popupWindow1.classList.remove('hidden');
-  } //popup1
+  popupCall.style.display="block";
+  }
+openPopupCall3.onclick = function(event) {
+  event.preventDefault();
+  popupCall.style.display="block";
+  }
+var closePopupCall = document.querySelector(".closePopupCall");
+closePopupCall.onclick = function(event) {
+  event.preventDefault();
+  popupCall.style.display="none";
+  }
+addEventListener("keydown", function(event) {
+  if (event.keyCode === 27)
+    popupCall.style.display="none";
+  })
+
+// var openClick11 = document.querySelector("#openClick11"); //popup1 
+// var openClick12 = document.querySelector("#openClick12"); //popup1
+// var openClick13 = document.querySelector('#openClick13'); //popup1
+// var openClick31 = document.querySelector("#openClick31"); //popup2
+// var openClick32 = document.querySelector("#openClick32"); //popup2
+
+// var close = document.querySelector('#close'); //закрытие обратный вызов
+// var popupWindow1 = document.querySelector('#popupWindow1'); //Обратный звонок попап
+// var send = document.querySelector('#send');
+// var popupWindow2 = document.querySelector('#popupWindow2'); //Заявка успешно отправлена попап
+// var close2 = document.querySelector('#close2'); //закрытие заявка успешно отправлена крестик
+// var close22 = document.querySelector('#close22'); //закрытие заявка успешно отправлена Ок
+// var close3 = document.querySelector("#close3"); //закрытие попапа колонки
+// var popupWindow3 = document.querySelector("#popupWindow3"); //попап на колонке
+
+// openClick11.onclick = function(event) {
+//   event.preventDefault();
+//   popupWindow1.classList.remove('hidden');
+//   } //popup1
+// openClick12.onclick = function(event) {
+//   event.preventDefault();
+//   popupWindow1.classList.remove('hidden');
+//   } //popup1
 // openClick13.onclick = function(event) {
 //   event.preventDefault();
 //   popupWindow1.classList.remove('hidden');
@@ -139,12 +164,12 @@ openClick12.onclick = function(event) {
 //   event.preventDefault();
 //   popupWindow1.classList.add('hidden');
 // }
-addEventListener("keydown", function(event) {
-  if (event.keyCode === 27)
-    popupWindow1.classList.add('hidden');
-    popupWindow2.classList.add('hidden');
-    popupWindow3.style.visibility="hidden";
-  })
+// addEventListener("keydown", function(event) {
+//   if (event.keyCode === 27)
+//     popupWindow1.classList.add('hidden');
+//     popupWindow2.classList.add('hidden');
+//     popupWindow3.style.visibility="hidden";
+//   })
 // send.onsubmit = function(event) {
 //   event.preventDefault();
 //   popupWindow1.classList.add('hidden');

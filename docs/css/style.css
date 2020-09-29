@@ -253,7 +253,8 @@ body {
         border-radius: 8px;
         box-sizing: border-box;
         font-size: 16px;
-        color: white; }
+        color: white;
+        cursor: pointer; }
         body main section.sliderContainer .buttons button:nth-of-type(1) {
           border: 1px solid #FFFFFF;
           background: none; }
@@ -261,9 +262,8 @@ body {
           background: #397DFF;
           border: none;
           margin-left: 24px; }
-  body section.popup.hidden {
-    visibility: hidden; }
-  body section.popup {
+  body section.popupCall {
+    display: none;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -275,61 +275,94 @@ body {
     background: white;
     z-index: 3;
     border-radius: 16px; }
-    body section.popup a.close1 {
-      position: absolute;
-      right: 24px;
-      top: 16px; }
-    body section.popup .popup-container {
-      margin-top: 32px;
-      margin-left: 42px; }
-      body section.popup .popup-container p {
+    body section.popupCall .popup-container {
+      width: 100%;
+      height: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      position: relative;
+      padding: 35px 0; }
+      body section.popupCall .popup-container a.closePopupCall {
+        position: absolute;
+        right: 24px;
+        top: 21px; }
+      body section.popupCall .popup-container p {
         margin: 0; }
-        body section.popup .popup-container p:nth-of-type(1) {
+        body section.popupCall .popup-container p:nth-of-type(1) {
           font-size: 24px;
           font-weight: 600; }
-        body section.popup .popup-container p:nth-of-type(2) {
+        body section.popupCall .popup-container p:nth-of-type(2) {
           margin-top: 12px;
           font-size: 16px; }
-      body section.popup .popup-container form {
-        margin-top: 28px; }
-        body section.popup .popup-container form input {
-          width: 454px;
+      body section.popupCall .popup-container form {
+        margin-top: 28px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        max-width: 100%; }
+        body section.popupCall .popup-container form input {
+          width: 420px;
           height: 48px;
           border: 1px solid rgba(0, 0, 0, 0.2);
           border-radius: 9px;
           padding-left: 15.32px; }
-          body section.popup .popup-container form input:hover {
+          body section.popupCall .popup-container form input:hover {
             border: 1px solid #397DFF; }
-          body section.popup .popup-container form input::-webkit-input-placeholder {
+          body section.popupCall .popup-container form input::-webkit-input-placeholder {
             color: rgba(43, 45, 58, 0.5);
             font-size: 16px; }
-          body section.popup .popup-container form input::-moz-placeholder {
+          body section.popupCall .popup-container form input::-moz-placeholder {
             color: rgba(43, 45, 58, 0.5);
             font-size: 16px; }
-          body section.popup .popup-container form input:-ms-input-placeholder {
+          body section.popupCall .popup-container form input:-ms-input-placeholder {
             color: rgba(43, 45, 58, 0.5);
             font-size: 16px; }
-          body section.popup .popup-container form input::-ms-input-placeholder {
+          body section.popupCall .popup-container form input::-ms-input-placeholder {
             color: rgba(43, 45, 58, 0.5);
             font-size: 16px; }
-          body section.popup .popup-container form input::placeholder {
+          body section.popupCall .popup-container form input::placeholder {
             color: rgba(43, 45, 58, 0.5);
             font-size: 16px; }
-          body section.popup .popup-container form input:nth-of-type(2) {
+          body section.popupCall .popup-container form input:nth-of-type(2) {
             margin-top: 24px; }
-        body section.popup .popup-container form .input {
+        body section.popupCall .popup-container form .input {
           margin-top: 32px;
           position: relative; }
-          body section.popup .popup-container form .input .label {
+          body section.popupCall .popup-container form .input .label {
             display: -webkit-box;
             display: -webkit-flex;
             display: -ms-flexbox;
             display: flex; }
-            body section.popup .popup-container form .input .label .checkbox {
+            body section.popupCall .popup-container form .input .label .checkbox {
               width: 16px;
               height: 16px;
               position: absolute; }
-            body section.popup .popup-container form .input .label .fake {
+            body section.popupCall .popup-container form .input .label .fake {
               display: inline-block;
               width: 16px;
               height: 16px;
@@ -338,7 +371,7 @@ body {
               background: #EBEEF5;
               position: relative;
               margin-right: 8px; }
-              body section.popup .popup-container form .input .label .fake::before {
+              body section.popupCall .popup-container form .input .label .fake::before {
                 content: "";
                 position: absolute;
                 top: 50%;
@@ -353,13 +386,13 @@ body {
                 opacity: 0;
                 -webkit-transition: .2s;
                 transition: .2s; }
-            body section.popup .popup-container form .input .label .checkbox:checked + .fake:before {
+            body section.popupCall .popup-container form .input .label .checkbox:checked + .fake:before {
               opacity: 1; }
-            body section.popup .popup-container form .input .label .text {
+            body section.popupCall .popup-container form .input .label .text {
               font-size: 14px; }
-              body section.popup .popup-container form .input .label .text a {
+              body section.popupCall .popup-container form .input .label .text a {
                 color: #397DFF; }
-        body section.popup .popup-container form button {
+        body section.popupCall .popup-container form button {
           margin-top: 16px;
           width: 454px;
           height: 52px;
@@ -644,7 +677,30 @@ body {
         display: none; }
     body main section.sliderContainer .buttons {
       grid-column: 2 / 4;
-      grid-row: 3 / 4; } }
+      grid-row: 3 / 4; }
+  body section.popupCall {
+    width: 320px;
+    height: 350px; }
+    body section.popupCall .popup-container a.closePopupCall {
+      position: absolute;
+      right: 10px;
+      top: 10px; }
+    body section.popupCall .popup-container p:nth-of-type(1) {
+      font-size: 21px; }
+    body section.popupCall .popup-container p:nth-of-type(2) {
+      font-size: 14px;
+      width: 250px; }
+    body section.popupCall .popup-container form input {
+      width: 260px;
+      height: 35px; }
+      body section.popupCall .popup-container form input:nth-of-type(2) {
+        margin-top: 10px; }
+    body section.popupCall .popup-container form .input .label .text {
+      font-size: 10px;
+      width: 250px; }
+    body section.popupCall .popup-container form button {
+      width: 260px;
+      height: 40px; } }
 
 @media (max-height: 575px) {
   body main section.sliderContainer .buttons {
@@ -666,7 +722,30 @@ body {
         -ms-flex-item-align: start;
             align-self: start; }
   body main section.sliderContainer .buttons button {
-    width: 100px; } }
+    width: 100px; }
+  body section.popupCall {
+    width: 250px;
+    height: 350px; }
+    body section.popupCall .popup-container a.closePopupCall {
+      position: absolute;
+      right: 10px;
+      top: 10px; }
+    body section.popupCall .popup-container p:nth-of-type(1) {
+      font-size: 16px; }
+    body section.popupCall .popup-container p:nth-of-type(2) {
+      font-size: 12px;
+      width: 220px; }
+    body section.popupCall .popup-container form input {
+      width: 220px;
+      height: 35px; }
+      body section.popupCall .popup-container form input:nth-of-type(2) {
+        margin-top: 10px; }
+    body section.popupCall .popup-container form .input .label .text {
+      font-size: 10px;
+      width: 190px; }
+    body section.popupCall .popup-container form button {
+      width: 220px;
+      height: 40px; } }
 
 @media (max-height: 349px) {
   body main section.sliderContainer .sliderLeft p:first-of-type {
