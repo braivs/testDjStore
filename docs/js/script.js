@@ -1,8 +1,3 @@
-//тестовая перерисовка при повороте телефона
-if (window.DeviceOrientationEvent) {
-  window.addEventListener('orientationchange', function() { location.reload(); }, false);
-}
-
 //выезжание бургер меню
 var burgerIcon = document.querySelector('.burgerIcon');
 var burgerMenu = document.querySelector('.burgerMenu');
@@ -84,9 +79,22 @@ var swiperRight = new Swiper('.sliderRight', {
   },
   controller: {
     control: swiperLeft,
+    followFinger: false,
   },
   // followFinger: false,
+  touchMoveStopPropagation: true,
 });
+
+//тестовая перерисовка при повороте телефона
+if (window.DeviceOrientationEvent) {
+  // window.addEventListener('orientationchange', function() { location.reload(); }, false);
+  window.addEventListener('orientationchange', function() { 
+    // location.reload(); 
+    swiperBackground.resizeFix();
+    swiperLeft.resizeFix();
+    swiperRight.resizeFix();
+  }, false);
+}
 
 
 //всплывающие окна
