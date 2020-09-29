@@ -2,442 +2,441 @@
     margin: 0
     padding: 0
     box-sizing: border-box
-body
-    font-family: 'Montserrat', sans-serif 
 a
     text-decoration: none
     color: #000
 .wrapper
-    // width: 1200px
     width: 63%
-header
-    display: flex
-    justify-content: center
-    background: #EBEEF5
-    padding: 25px 0
-    height: 90px
-    .header-container
+body
+    font-family: 'Montserrat', sans-serif
+    position: relative
+    header
         display: flex
-        align-items: center
-        justify-content: space-between
-        .logo-container
-            display: flex
-            flex-direction: column
-            .img-container
-                display: flex
-                align-items: center
-                img:first-of-type
-                    margin-right: 5.89px
-            .first
-                position: relative
-                width: 149.1px
-                height: 15.38px
-                margin-top: 3.85px
-                background: #2D3786
-                border-radius: 3.92357px
-                .second
-                    display: flex
-                    position: absolute
-                    width: 147.13px
-                    height: 15.38px
-                    left: 4.9px
-                    top: 3.85px
-                    background: #397DFF
-                    border-radius: 3.92357px
-                    p
-                        font-size: 9.80892px
-                        color: #FFFFFF
-                        margin: 0 auto
-                        align-self: center
-        .menu-container
+        justify-content: center
+        background: #EBEEF5
+        padding: 25px 0
+        height: 90px
+        .header-container
             display: flex
             align-items: center
-            height: 90px
-            .block
-                display: grid
-                grid-template-columns: 100%
-                grid-template-rows: 100%
-                height: 100%
-                &:hover .border
-                    visibility: visible
-                a 
-                    align-self: center
-                    display: block
-                    color: rgba(43, 45, 58, 0.7)            
-                    font-size: 14px
-                    &:first-of-type
-                        margin-left: 0
-                    &:hover
-                        color: #397DFF
-                .border
-                    align-self: end
-                    margin: 0 auto                
-                    width: 48px
-                    border-top: 3px solid #397DFF
-                    align-self: flex-end
-                    visibility: hidden
-                    margin-top: -3px
-            .block:not(:first-child)
-                margin-left: 33px
-        .burgerIcon
-            display: none
-        .email-container
-            display: flex
-            align-items: center
-            a
-                img 
-                    margin-top: 5px
-            a:nth-of-type(2)
-                text-decoration: none
-                margin-left: 10px
-                font-size: 13px
-                color: #000
-                font-weight: 600
-        .phone-container
-            display: flex
-            align-items: center
-            .tel-container
+            justify-content: space-between
+            .logo-container
                 display: flex
                 flex-direction: column
-                margin-top: 10px
-                margin-left: 10px
-                a
-                    color: #397DFF
-                    font-size: 11px
-                p
-                    margin-top: 0 
-                    font-size: 13px
-                    font-weight: 600
-    .burgerMenu
-        display: none
-main
-    section.sliderContainer 
-        display: grid
-        width: 100vw
-        overflow: hidden
-        height: 624px
-        max-height: 100vh
-        grid-template-columns: 18.5% 51.5% 30%
-        grid-template-rows: repeat(4,25%)
-        .sliderBackground
-            grid-column: 1 / 5
-            grid-row: 1 / 5
-            .swiper-wrapper
-                .bgSlide
-                    display: grid
-                .bgSlide1    
-                    background: url('../img/slide1.jpg')
-                .bgSlide2
-                    background: url('../img/slide2.jpg')
-                .bgSlide3
-                    background: url('../img/slide3.jpg')
-                .bgSlide4
-                    background: url('../img/slide4.jpg')
-                .bgSlide5
-                    background: url('../img/slide5.jpg')
-        .control
-            grid-column: 3 / 4
-            grid-row: 2 / 4
-            align-self: end
-            z-index: 2
-            a
-                margin-right: 50px
-        .sliderLeft
-            grid-column: 2 / 3
-            grid-row: 1 / 4
-            z-index: 1
-            align-self: center
-            overflow: hidden
-            p 
-                color: white
-                &:first-of-type
-                    font-size: 18px
-                &:nth-of-type(2)
-                    font-size: 52px
-                    margin-top: 12px
-                &:nth-of-type(3)
-                    font-size: 16px
-                    line-height: 148%
-                    margin-top: 24px
-                    color: rgba(255, 255, 255, 0.8)
-                    max-width: 555px
-        .sliderRight
-            grid-column: 3 / 4
-            grid-row: 2 / 4
-            align-self: center
-            z-index: 1
-            overflow: hidden
-            h1
-                font-size: 64px
-                color: #397DFF
-                margin: 0
-            p 
-                font-size: 14px
-                color: rgba(255, 255, 255, 0.7)
-                width: 100%
-                line-height: 160%
-            .swiper-slide-next
-                opacity: 0.3
-                margin-left: 18%
-        .buttons
-            grid-column: 2 / 3
-            grid-row: 3 / 4
-            z-index: 2
-            align-self: center
-            button
-                width: 186px
-                height: 48px
-                border-radius: 8px
-                box-sizing: border-box
-                font-size: 16px
-                color: white
-                &:nth-of-type(1)
-                    border: 1px solid #FFFFFF
-                    background: none
-                &:nth-of-type(2)
-                    background: #397DFF
-                    border: none
-                    margin-left: 24px
-
-        //     section.popup.hidden
-        //         visibility: hidden
-        //     section.popup
-        //         position: absolute
-        //         top: 50%
-        //         left: 50% 
-        //         transform: translate(-50%, -50%)
-        //         width: 538px
-        //         height: 407px 
-        //         background: white
-        //         z-index: 1
-        //         border-radius: 16px
-        //         a.close1 
-        //             position: absolute
-        //             right: 24px
-        //             top: 16px
-        //         .popup-container
-        //             margin-top: 32px
-        //             margin-left: 42px
-        //             p 
-        //                 margin: 0
-        //                 &:nth-of-type(1)
-        //                     font-size: 24px
-        //                     font-weight: 600
-        //                 &:nth-of-type(2)
-        //                     margin-top: 12px
-        //                     font-size: 16px
-        //             form 
-        //                 margin-top: 28px
-        //                 input
-        //                     width: 454px
-        //                     height: 48px
-        //                     border: 1px solid rgba(0, 0, 0, 0.2)
-        //                     border-radius: 9px
-        //                     padding-left: 15.32px
-        //                     &:hover
-        //                         border: 1px solid #397DFF
-        //                     &::placeholder
-        //                         color: rgba(43, 45, 58, 0.5)
-        //                         font-size: 16px
-        //                     &:nth-of-type(2)
-        //                         margin-top: 24px
-        //                 .input
-        //                     margin-top: 32px
-        //                     position: relative
-        //                     .label
-        //                         display: flex
-        //                         .checkbox
-        //                             width: 16px
-        //                             height: 16px
-        //                             position: absolute
-        //                         .fake
-        //                             display: inline-block
-        //                             width: 16px
-        //                             height: 16px
-        //                             border: 1px solid #397DFF
-        //                             border-radius: 2px
-        //                             background: #EBEEF5
-        //                             position: relative
-        //                             margin-right: 8px
-        //                             &::before
-        //                                 content: ""
-        //                                 position: absolute
-        //                                 top: 50%
-        //                                 left: 50%
-        //                                 transform: translate(-50%, -50%)
-        //                                 display: block
-        //                                 width: 12px
-        //                                 height: 12px
-        //                                 background: url("../img/checkbox.png") no-repeat center
-        //                                 opacity: 0
-        //                                 transition: .2s
-        //                         .checkbox:checked + .fake:before
-        //                             opacity: 1
-        //                         .text
-        //                             font-size: 14px
-        //                             a
-        //                                 color: #397DFF
-        //                 button
-        //                     margin-top: 16px
-        //                     width: 454px
-        //                     height: 52px
-        //                     background: #397DFF
-        //                     border-radius: 8px
-        //                     border: none
-        //                     font-size: 18px
-        //                     font-weight: 600
-        //                     color: white
-        //     section.popup2 
-        //         z-index: 2
-        //         width: 538px
-        //         height: 407px
-        //         position: absolute
-        //         .popup2-container
-        //             display: flex
-        //             flex-direction: column
-        //             align-items: center
-        //             position: relative
-        //             width: 100%
-        //             height: 100%
-        //             a.close2
-        //                 position: absolute
-        //                 top: 16px
-        //                 right: 24px
-        //             img.check
-        //                 margin-top: 34px
-        //                 width: 160px
-        //                 height: 160px
-        //                 z-index: 2
-        //             p
-        //                 margin-top: 24px
-        //                 &:nth-of-type(1)
-        //                     font-size: 18px
-        //                     line-height: 162%
-        //                     font-weight: 500
-        //                     text-align: center
-        //             form 
-        //                 button
-        //                     width: 454px
-        //                     height: 52px
-        //                     background: #397DFF
-        //                     border-radius: 8px
-        //                     border: none
-        //                     font-size: 18px
-        //                     font-weight: 600
-        //                     color: white
-        //                     margin-top: 32px
-        //                     margin-bottom: 48px
-section.separator 
-    width: 100%
-    height: 82px
-    background: #EBEEF5
-section.sound 
-    width: 100%
-    .soundContainer
-        display: grid
-        grid-template-columns: 50% 50%
-        // grid-auto-rows: auto
-        // border: 5px solid orange
-        height: 620px
-        width: 100%
-        .leftPart
-            position: relative
-            width: 100%
-            // background: #DAE3F6
-            img
-                max-width: 100%
-                height: auto
-            img:nth-of-type(1)
-                position: absolute
-                top: 210px
-                left: 210px
-            img:nth-of-type(2)
-                position: absolute
-                top: 132px
-                left: 476px
-            img:nth-of-type(3)
-                position: absolute
-                top: 413px
-                left: 232px
-        .rightPart
-            // width: 960px
-            width: 100%
-            position: relative
-            img
-                max-width: 100%
-                height: auto
-            img.speakerLeft 
-                position: absolute
-                top: 10%
-                left: 19%
-            img.EllipseBigLeft 
-                position: absolute
-                top: 73px
-                left: 172px
-            img.crossLeft 
-                position: absolute
-                top: 96px
-                left: 195px
-            img.speakerRight 
-                position: absolute
-                top: 10%
-                left: 72%
-            img.EllipseBigRight 
-                position: absolute
-                top: 72px
-                left: 689px
-            img.EllipseSmallRight
-                position: absolute
-                top: 95px
-                left: 712px
-            .popup
-                visibility: hidden
-                position: absolute
-                z-index: 1
-                background: white
-                width: 352px
-                height: 180px
-                bottom: 524px
-                left: 33px
-                border-radius: 10px
-                .popupContainer
+                .img-container
+                    display: flex
+                    align-items: center
+                    img:first-of-type
+                        margin-right: 5.89px
+                .first
                     position: relative
-                    width: 100%
+                    width: 149.1px
+                    height: 15.38px
+                    margin-top: 3.85px
+                    background: #2D3786
+                    border-radius: 3.92357px
+                    .second
+                        display: flex
+                        position: absolute
+                        width: 147.13px
+                        height: 15.38px
+                        left: 4.9px
+                        top: 3.85px
+                        background: #397DFF
+                        border-radius: 3.92357px
+                        p
+                            font-size: 9.80892px
+                            color: #FFFFFF
+                            margin: 0 auto
+                            align-self: center
+            .menu-container
+                display: flex
+                align-items: center
+                height: 90px
+                .block
+                    display: grid
+                    grid-template-columns: 100%
+                    grid-template-rows: 100%
                     height: 100%
-                    a.close_icon2
-                        z-index: 1
-                        position: absolute
-                        top: 12px
-                        right: 16px
-                    img.cartoonSpeaker
-                        position: absolute
-                        top: 16px
-                        right: 44px
-                    .popupContainer2
-                        position: absolute
+                    &:hover .border
+                        visibility: visible
+                    a 
+                        align-self: center
+                        display: block
+                        color: rgba(43, 45, 58, 0.7)            
+                        font-size: 14px
+                        &:first-of-type
+                            margin-left: 0
+                        &:hover
+                            color: #397DFF
+                    .border
+                        align-self: end
+                        margin: 0 auto                
+                        width: 48px
+                        border-top: 3px solid #397DFF
+                        align-self: flex-end
+                        visibility: hidden
+                        margin-top: -3px
+                .block:not(:first-child)
+                    margin-left: 33px
+            .burgerIcon
+                display: none
+            .email-container
+                display: flex
+                align-items: center
+                a
+                    img 
+                        margin-top: 5px
+                a:nth-of-type(2)
+                    text-decoration: none
+                    margin-left: 10px
+                    font-size: 13px
+                    color: #000
+                    font-weight: 600
+            .phone-container
+                display: flex
+                align-items: center
+                .tel-container
+                    display: flex
+                    flex-direction: column
+                    margin-top: 10px
+                    margin-left: 10px
+                    a
+                        color: #397DFF
+                        font-size: 11px
+                    p
+                        margin-top: 0 
+                        font-size: 13px
+                        font-weight: 600
+        .burgerMenu
+            display: none
+    main
+        section.sliderContainer 
+            display: grid
+            width: 100vw
+            overflow: hidden
+            height: 624px
+            max-height: 100vh
+            grid-template-columns: 18.5% 51.5% 30%
+            grid-template-rows: repeat(4,25%)
+            .sliderBackground
+                grid-column: 1 / 5
+                grid-row: 1 / 5
+                .swiper-wrapper
+                    .bgSlide
+                        display: grid
+                    .bgSlide1    
+                        background: url('../img/slide1.jpg')
+                    .bgSlide2
+                        background: url('../img/slide2.jpg')
+                    .bgSlide3
+                        background: url('../img/slide3.jpg')
+                    .bgSlide4
+                        background: url('../img/slide4.jpg')
+                    .bgSlide5
+                        background: url('../img/slide5.jpg')
+            .control
+                grid-column: 3 / 4
+                grid-row: 2 / 4
+                align-self: end
+                z-index: 2
+                a
+                    margin-right: 50px
+            .sliderLeft
+                grid-column: 2 / 3
+                grid-row: 1 / 4
+                z-index: 1
+                align-self: center
+                overflow: hidden
+                p 
+                    color: white
+                    &:first-of-type
+                        font-size: 18px
+                    &:nth-of-type(2)
+                        font-size: 52px
+                        margin-top: 12px
+                    &:nth-of-type(3)
+                        font-size: 16px
+                        line-height: 148%
+                        margin-top: 24px
+                        color: rgba(255, 255, 255, 0.8)
+                        max-width: 555px
+            .sliderRight
+                grid-column: 3 / 4
+                grid-row: 2 / 4
+                align-self: center
+                z-index: 1
+                overflow: hidden
+                h1
+                    font-size: 64px
+                    color: #397DFF
+                    margin: 0
+                p 
+                    font-size: 14px
+                    color: rgba(255, 255, 255, 0.7)
+                    width: 100%
+                    line-height: 160%
+                .swiper-slide-next
+                    opacity: 0.3
+                    margin-left: 18%
+            .buttons
+                grid-column: 2 / 3
+                grid-row: 3 / 4
+                z-index: 2
+                align-self: center
+                button
+                    width: 186px
+                    height: 48px
+                    border-radius: 8px
+                    box-sizing: border-box
+                    font-size: 16px
+                    color: white
+                    &:nth-of-type(1)
+                        border: 1px solid #FFFFFF
+                        background: none
+                    &:nth-of-type(2)
+                        background: #397DFF
+                        border: none
+                        margin-left: 24px
+    section.popup.hidden
+        visibility: hidden
+    section.popup
+        position: absolute
+        top: 50%
+        left: 50% 
+        transform: translate(-50%, -50%)
+        width: 538px
+        height: 407px 
+        background: white
+        z-index: 3
+        border-radius: 16px
+        a.close1 
+            position: absolute
+            right: 24px
+            top: 16px
+        .popup-container
+            margin-top: 32px
+            margin-left: 42px
+            p 
+                margin: 0
+                &:nth-of-type(1)
+                    font-size: 24px
+                    font-weight: 600
+                &:nth-of-type(2)
+                    margin-top: 12px
+                    font-size: 16px
+            form 
+                margin-top: 28px
+                input
+                    width: 454px
+                    height: 48px
+                    border: 1px solid rgba(0, 0, 0, 0.2)
+                    border-radius: 9px
+                    padding-left: 15.32px
+                    &:hover
+                        border: 1px solid #397DFF
+                    &::placeholder
+                        color: rgba(43, 45, 58, 0.5)
+                        font-size: 16px
+                    &:nth-of-type(2)
+                        margin-top: 24px
+                .input
+                    margin-top: 32px
+                    position: relative
+                    .label
+                        display: flex
+                        .checkbox
+                            width: 16px
+                            height: 16px
+                            position: absolute
+                        .fake
+                            display: inline-block
+                            width: 16px
+                            height: 16px
+                            border: 1px solid #397DFF
+                            border-radius: 2px
+                            background: #EBEEF5
+                            position: relative
+                            margin-right: 8px
+                            &::before
+                                content: ""
+                                position: absolute
+                                top: 50%
+                                left: 50%
+                                transform: translate(-50%, -50%)
+                                display: block
+                                width: 12px
+                                height: 12px
+                                background: url("../img/checkbox.png") no-repeat center
+                                opacity: 0
+                                transition: .2s
+                        .checkbox:checked + .fake:before
+                            opacity: 1
+                        .text
+                            font-size: 14px
+                            a
+                                color: #397DFF
+                button
+                    margin-top: 16px
+                    width: 454px
+                    height: 52px
+                    background: #397DFF
+                    border-radius: 8px
+                    border: none
+                    font-size: 18px
+                    font-weight: 600
+                    color: white
+        //   section.popup2 
+            //         z-index: 2
+            //         width: 538px
+            //         height: 407px
+            //         position: absolute
+            //         .popup2-container
+            //             display: flex
+            //             flex-direction: column
+            //             align-items: center
+            //             position: relative
+            //             width: 100%
+            //             height: 100%
+            //             a.close2
+            //                 position: absolute
+            //                 top: 16px
+            //                 right: 24px
+            //             img.check
+            //                 margin-top: 34px
+            //                 width: 160px
+            //                 height: 160px
+            //                 z-index: 2
+            //             p
+            //                 margin-top: 24px
+            //                 &:nth-of-type(1)
+            //                     font-size: 18px
+            //                     line-height: 162%
+            //                     font-weight: 500
+            //                     text-align: center
+            //             form 
+            //                 button
+            //                     width: 454px
+            //                     height: 52px
+            //                     background: #397DFF
+            //                     border-radius: 8px
+            //                     border: none
+            //                     font-size: 18px
+            //                     font-weight: 600
+            //                     color: white
+            //                     margin-top: 32px
+            //                     margin-bottom: 48px
+    section.separator 
+        width: 100%
+        height: 82px
+        background: #EBEEF5
+    section.sound 
+        width: 100%
+        .soundContainer
+            display: grid
+            grid-template-columns: 50% 50%
+            // grid-auto-rows: auto
+            // border: 5px solid orange
+            height: 620px
+            width: 100%
+            .leftPart
+                position: relative
+                width: 100%
+                // background: #DAE3F6
+                img
+                    max-width: 100%
+                    height: auto
+                img:nth-of-type(1)
+                    position: absolute
+                    top: 210px
+                    left: 210px
+                img:nth-of-type(2)
+                    position: absolute
+                    top: 132px
+                    left: 476px
+                img:nth-of-type(3)
+                    position: absolute
+                    top: 413px
+                    left: 232px
+            .rightPart
+                // width: 960px
+                width: 100%
+                position: relative
+                img
+                    max-width: 100%
+                    height: auto
+                img.speakerLeft 
+                    position: absolute
+                    top: 10%
+                    left: 19%
+                img.EllipseBigLeft 
+                    position: absolute
+                    top: 73px
+                    left: 172px
+                img.crossLeft 
+                    position: absolute
+                    top: 96px
+                    left: 195px
+                img.speakerRight 
+                    position: absolute
+                    top: 10%
+                    left: 72%
+                img.EllipseBigRight 
+                    position: absolute
+                    top: 72px
+                    left: 689px
+                img.EllipseSmallRight
+                    position: absolute
+                    top: 95px
+                    left: 712px
+                .popup
+                    visibility: hidden
+                    position: absolute
+                    z-index: 1
+                    background: white
+                    width: 352px
+                    height: 180px
+                    bottom: 524px
+                    left: 33px
+                    border-radius: 10px
+                    .popupContainer
+                        position: relative
                         width: 100%
                         height: 100%
-                        top: 17px
-                        left: 24px
-                        p 
-                            font-size: 18px
-                        ul  
-                            margin-top: 12px
-                            list-style: none
-                            li 
-                                background:  url(img/mark.png) no-repeat 0 0
-                                padding-left: 24px
-                                font-size: 12px
-                                margin-bottom: 10px
-                                line-height: 16px
-                .popupContainer::after 
-                    content: '' 
-                    position: absolute 
-                    left: 50% 
-                    bottom: -20px 
-                    transform: translate(-50%, 0)
-                    border: 10px solid transparent
-                    border-top: 10px solid white
+                        a.close_icon2
+                            z-index: 1
+                            position: absolute
+                            top: 12px
+                            right: 16px
+                        img.cartoonSpeaker
+                            position: absolute
+                            top: 16px
+                            right: 44px
+                        .popupContainer2
+                            position: absolute
+                            width: 100%
+                            height: 100%
+                            top: 17px
+                            left: 24px
+                            p 
+                                font-size: 18px
+                            ul  
+                                margin-top: 12px
+                                list-style: none
+                                li 
+                                    background:  url(img/mark.png) no-repeat 0 0
+                                    padding-left: 24px
+                                    font-size: 12px
+                                    margin-bottom: 10px
+                                    line-height: 16px
+                    .popupContainer::after 
+                        content: '' 
+                        position: absolute 
+                        left: 50% 
+                        bottom: -20px 
+                        transform: translate(-50%, 0)
+                        border: 10px solid transparent
+                        border-top: 10px solid white
 @import  'media'
 
             

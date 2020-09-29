@@ -8,9 +8,10 @@
 @media (max-width: 1850px)
     .wrapper
         width: 90%
-    main
-        section.sliderContainer
-            grid-template-columns: 5% 51.5% 43.5%
+    body
+        main
+            section.sliderContainer
+                grid-template-columns: 5% 51.5% 43.5%
 
 // @media (max-width: 1250px)
 //     .wrapper
@@ -18,195 +19,197 @@
 
 //992 - 1199
 @media (max-width: 1300px)
-    // .wrapper
-        // width: 98%
-    header
-        .header-container
-            .menu-container
-                .block:not(:first-child)
-                    margin-left: 5px       
-    main
-        section.sliderContainer
-            .control
-                grid-row: 4 / 5
-                align-self: start
-            .sliderLeft
-                p
-                    &:nth-of-type(2)
-                        font-size: 40px
-                    &:nth-of-type(3)
-                        max-width: 450px
-            .buttons
-                align-self: end
+    body
+        header
+            .header-container
+                .menu-container
+                    .block:not(:first-child)
+                        margin-left: 5px       
+        main
+            section.sliderContainer
+                .control
+                    grid-row: 4 / 5
+                    align-self: start
+                .sliderLeft
+                    p
+                        &:nth-of-type(2)
+                            font-size: 40px
+                        &:nth-of-type(3)
+                            max-width: 450px
+                .buttons
+                    align-self: end
 
 
 //768px - 991px
 @media (max-width: 991px)
     .wrapper
         // width: 80%
-    header
-        width: 100%
-        flex-direction: column
-        align-items: center
-        height: auto
-        .header-container
-            justify-content: space-between
-            .menu-container
-                display: none
-            .email-container
-                display: none    
-            .phone-container
-                display: none
-            .burgerIcon
-                display: block
-                font-size: 25px
-        .burgerMenu.responsive
-            display: flex
+    body
+        header
+            width: 100%
             flex-direction: column
-            padding-top: 25px
-            padding-left: 10%
-            align-self: flex-start
-            a 
+            align-items: center
+            height: auto
+            .header-container
+                justify-content: space-between
+                .menu-container
+                    display: none
+                .email-container
+                    display: none    
+                .phone-container
+                    display: none
+                .burgerIcon
+                    display: block
+                    font-size: 25px
+            .burgerMenu.responsive
                 display: flex
-                align-items: center
-                border-bottom: 1px solid rgba(43, 45, 58, 0.1)
-                height: 50px
-                .imgContainer
+                flex-direction: column
+                padding-top: 25px
+                padding-left: 10%
+                align-self: flex-start
+                a 
                     display: flex
                     align-items: center
-                    justify-content: center
-                    height: 30px
-                    width: 30px
-                    margin-right: 23px
-            button
-                background: #397DFF
-                border: none
-                border-radius: 6px
-                width: 340px
-                height: 40px
-                color: white
-                margin-top: 30px
-                font-size: 14px
-            p
-                margin-top: 30px
-                font-size: 20px
-            a.email
-                color: #397DFF
-                border: none
-    main
-        section.sliderContainer 
-            .sliderLeft
-                p
-                    &:nth-of-type(2)
-                        font-size: 31px
-            .control
-                align-self: center
-            .buttons
+                    border-bottom: 1px solid rgba(43, 45, 58, 0.1)
+                    height: 50px
+                    .imgContainer
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        height: 30px
+                        width: 30px
+                        margin-right: 23px
                 button
-                    width: 170px
+                    background: #397DFF
+                    border: none
+                    border-radius: 6px
+                    width: 340px
+                    height: 40px
+                    color: white
+                    margin-top: 30px
+                    font-size: 14px
+                p
+                    margin-top: 30px
+                    font-size: 20px
+                a.email
+                    color: #397DFF
+                    border: none
+        main
+            section.sliderContainer 
+                .sliderLeft
+                    p
+                        &:nth-of-type(2)
+                            font-size: 31px
+                .control
+                    align-self: center
+                .buttons
+                    button
+                        width: 170px
 
 @media (max-width: 767px)
-    main
-        section.sliderContainer 
-            .control
-                justify-self: center
-            .sliderRight
-                margin: 0 10%
-                p 
-                    width: 70%
-                .swiper-slide-next
-                    margin-left: 0
-            .buttons
-                button
-                    width: 130px
+    body
+        main
+            section.sliderContainer 
+                .control
+                    justify-self: center
+                .sliderRight
+                    margin: 0 10%
+                    p 
+                        width: 70%
+                    .swiper-slide-next
+                        margin-left: 0
+                .buttons
+                    button
+                        width: 130px
 // 350px - 575px
 @media (max-width: 575px)
-    header
-        .burgerMenu.responsive
-            a 
-                font-size: 14px
-                height: 30px
-            button
-                width: 300px
-    main 
-        section.sliderContainer
-            grid-template-columns: 5% 45% 45% 5%
-            .control
-                grid-column: 2 / 3
-                grid-row: 4 / 5 
-                justify-self: start
-                a
-                    margin-right: 0
-                display: flex
-                width: 100%
-                justify-content: space-between
-            .sliderLeft
-                grid-column: 2 / 4
-                grid-row: 1 / 4
-            .sliderRight
-                grid-column: 3 / 4
-                grid-row: 4 / 5
-                margin: 0
-                padding: 0
-                h1 
+    body
+        header
+            .burgerMenu.responsive
+                a 
+                    font-size: 14px
+                    height: 30px
+                button
+                    width: 300px
+        main 
+            section.sliderContainer
+                grid-template-columns: 5% 45% 45% 5%
+                .control
+                    grid-column: 2 / 3
+                    grid-row: 4 / 5 
+                    justify-self: start
+                    a
+                        margin-right: 0
+                    display: flex
+                    width: 100%
+                    justify-content: space-between
+                .sliderLeft
+                    grid-column: 2 / 4
+                    grid-row: 1 / 4
+                .sliderRight
+                    grid-column: 3 / 4
+                    grid-row: 4 / 5
                     margin: 0
                     padding: 0
-                    text-align: center
-                p
-                    display: none
-            .buttons
-                grid-column: 2 / 4
-                grid-row: 3 / 4
-
-                p
-                    &:nth-of-type(3)
-                        // max-width: 330px
-
+                    h1 
+                        margin: 0
+                        padding: 0
+                        text-align: center
+                    p
+                        display: none
+                .buttons
+                    grid-column: 2 / 4
+                    grid-row: 3 / 4
+                    p
+                        &:nth-of-type(3)
+                            // max-width: 330px
 @media (max-height: 575px)
-    main
-        section.sliderContainer
-            .buttons
-                grid-row: 4 / 5
-                align-self: center
-            .sliderRight
-                grid-row: 1 / 4
-            .control
-                align-self: center
-
+    body
+        main
+            section.sliderContainer
+                .buttons
+                    grid-row: 4 / 5
+                    align-self: center
+                .sliderRight
+                    grid-row: 1 / 4
+                .control
+                    align-self: center
 // 280 - 349px
 @media (max-width: 349px)
-    header
-        .burgerMenu.responsive
-            button
-                width: 220px
-    main 
-        section.sliderContainer
-            .control
-                a 
-                    // margin-right: 30px
-            .sliderLeft
-                margin-top: 20px
-                align-self: start
-            .buttons
+    body
+        header
+            .burgerMenu.responsive
                 button
-                    width: 100px
+                    width: 220px
+        main 
+            section.sliderContainer
+                .control
+                    a 
+                        // margin-right: 30px
+                .sliderLeft
+                    margin-top: 20px
+                    align-self: start
+                .buttons
+                    button
+                        width: 100px
 
 @media (max-height: 349px)
-    main 
-        section.sliderContainer
-            .sliderLeft
-                p
-                    &:first-of-type
-                        margin-top: 20px
-                    &:nth-of-type(3)
-                        margin-top: 12px
-            .sliderRight
-                h1 
-                    margin: 0
-                    padding: 0
-                    text-align: center
-                p
-                    display: none
+    body
+        main 
+            section.sliderContainer
+                .sliderLeft
+                    p
+                        &:first-of-type
+                            margin-top: 20px
+                        &:nth-of-type(3)
+                            margin-top: 12px
+                .sliderRight
+                    h1 
+                        margin: 0
+                        padding: 0
+                        text-align: center
+                    p
+                        display: none
 //Пришлось сделать доп. для меню
 // @media (max-width: 1560px)
 //     .header-container

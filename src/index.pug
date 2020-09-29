@@ -140,24 +140,24 @@ html(lang="ru")
                 .buttons
                     button(type="button") Обратный звонок
                     button(type="button") Заполнить бриф
-                //-     section.popup.hidden(id="popupWindow1")
-                //-         a.close1(href="#", id="close")
-                //-             img(src="img/close_icon.png", alt="")
-                //-         .popup-container
-                //-             p Готовы обсудить проект?
-                //-             p Заполните форму ниже и мы свяжемся с вами.
-                //-             form(id="send")
-                //-                 input(type="text", placeholder="Имя*", required)
-                //-                 input(type="text", placeholder="Телефон*", required)
-                //-                 <br>
-                //-                 .input
-                //-                     label.label 
-                //-                         input.checkbox(type="checkbox", required)
-                //-                         span.fake
-                //-                         = '\n'
-                //-                         span.text Я согласен с условиями обработки 
-                //-                             a(href="#") персональных данных
-                //-                 button(type="submit") Отправить
+        section.popup.hidden(id="popupWindow1")
+            a.close1(href="#", id="close")
+                img(src="img/close_icon.png", alt="")
+            .popup-container
+                p Готовы обсудить проект?
+                p Заполните форму ниже и мы свяжемся с вами.
+                form(id="send")
+                    input(type="text", placeholder="Имя*", required)
+                    input(type="text", placeholder="Телефон*", required)
+                    <br>
+                    .input
+                        label.label 
+                            input.checkbox(type="checkbox", required)
+                            span.fake
+                            = '\n'
+                            span.text Я согласен с условиями обработки 
+                                a(href="#") персональных данных
+                    button(type="submit") Отправить
                 //-     section.popup.hidden.popup2(id="popupWindow2")
                 //-         .popup2-container
                 //-             a.close2(href="#", id="close2")
