@@ -96,7 +96,8 @@ if (window.DeviceOrientationEvent) {
   }, false);
 }
 
-//popups
+//popups:
+//popupCall
 var popupCall = document.querySelector(".popupCall");
 var openPopupCall1 = document.querySelector('.openPopupCall1');
 var openPopupCall2 = document.querySelector('.openPopupCall2');
@@ -104,24 +105,47 @@ var openPopupCall3 = document.querySelector('.openPopupCall3');
 openPopupCall1.onclick = function(event) {
   event.preventDefault();
   popupCall.style.display="block";
-  }
+}
 openPopupCall2.onclick = function(event) {
   event.preventDefault();
   popupCall.style.display="block";
-  }
+}
 openPopupCall3.onclick = function(event) {
   event.preventDefault();
   popupCall.style.display="block";
-  }
+}
 var closePopupCall = document.querySelector(".closePopupCall");
 closePopupCall.onclick = function(event) {
   event.preventDefault();
   popupCall.style.display="none";
-  }
+}
+var sendPopupCall = document.querySelector(".sendPopupCall");
+//popupConfirm
+var popupConfirm = document.querySelector(".popupConfirm");
+sendPopupCall.onsubmit = function(event) {
+  event.preventDefault();
+  popupCall.style.display="none";
+  popupConfirm.style.display="block";    
+}
+var closePopupConfirm1 = document.querySelector(".closePopupConfirm1");
+closePopupConfirm1.onclick = function(event) {
+  event.preventDefault();
+  popupConfirm.style.display="none";
+}
+var closePopupConfirm2 = document.querySelector(".closePopupConfirm2");
+closePopupConfirm2.onclick = function(event) {
+  event.preventDefault();
+  popupConfirm.style.display="none";
+}
+
+//for all popups
 addEventListener("keydown", function(event) {
-  if (event.keyCode === 27)
+  if (event.keyCode === 27) {
     popupCall.style.display="none";
-  })
+    popupConfirm.style.display="none";
+  }
+})
+
 
 // var openClick11 = document.querySelector("#openClick11"); //popup1 
 // var openClick12 = document.querySelector("#openClick12"); //popup1

@@ -145,7 +145,7 @@ html(lang="ru")
                     img(src="img/close_icon.png", alt="")
                 p Готовы обсудить проект?
                 p Заполните форму ниже и мы свяжемся с вами.
-                form(id="send")
+                form.sendPopupCall
                     input(type="text", placeholder="Имя*", required)
                     input(type="text", placeholder="Телефон*", required)
                     <br>
@@ -156,17 +156,17 @@ html(lang="ru")
                             = '\n'
                             span.text Я согласен с условиями обработки 
                                 a(href="#") персональных данных
-                    button(type="submit") Отправить
-                //-     section.popup.hidden.popup2(id="popupWindow2")
-                //-         .popup2-container
-                //-             a.close2(href="#", id="close2")
-                //-                 img(src="img/close_icon.png", alt="")
-                //-             img.check(src="img/check.png", alt="")
-                //-             p.
-                //-                 Ваша заявка успешно отправлена.<br>
-                //-                 Ожидайте звонка в ближайшее время!
-                //-             form
-                //-                 button(type="button", id="close22") Ок
+                    button.openPopupConfirm(type="submit") Отправить
+        section.popupConfirm
+            .popup2-container
+                a.closePopupConfirm1(href="#")
+                    img(src="img/close_icon.png", alt="")
+                img.check(src="img/check.png", alt="")
+                p.
+                    Ваша заявка успешно отправлена.<br>
+                    Ожидайте звонка в ближайшее время!
+                form
+                    button.closePopupConfirm2(type="button", id="close22") Ок
     //- section.separator
     //-     section.sound
     //-         .soundContainer

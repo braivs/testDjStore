@@ -264,7 +264,7 @@ body {
           margin-left: 24px; }
   body section.popupCall {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -401,7 +401,66 @@ body {
           border: none;
           font-size: 18px;
           font-weight: 600;
-          color: white; }
+          color: white;
+          cursor: pointer; }
+  body section.popupConfirm {
+    display: none;
+    z-index: 3;
+    width: 538px;
+    height: 407px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 16px; }
+    body section.popupConfirm .popup2-container {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      position: relative;
+      width: 100%;
+      height: 100%; }
+      body section.popupConfirm .popup2-container a.closePopupConfirm1 {
+        position: absolute;
+        top: 16px;
+        right: 24px; }
+      body section.popupConfirm .popup2-container img.check {
+        margin-top: 34px;
+        width: 160px;
+        height: 160px;
+        z-index: 2; }
+      body section.popupConfirm .popup2-container p {
+        margin-top: 24px; }
+        body section.popupConfirm .popup2-container p:nth-of-type(1) {
+          font-size: 18px;
+          line-height: 162%;
+          font-weight: 500;
+          text-align: center; }
+      body section.popupConfirm .popup2-container form button {
+        width: 454px;
+        height: 52px;
+        background: #397DFF;
+        border-radius: 8px;
+        border: none;
+        font-size: 18px;
+        font-weight: 600;
+        color: white;
+        margin-top: 32px;
+        margin-bottom: 48px;
+        cursor: pointer; }
   body section.separator {
     width: 100%;
     height: 82px;

@@ -137,7 +137,7 @@
       <div class="popup-container"><a class="closePopupCall" href="#"><img src="img/close_icon.png" alt=""/></a>
         <p>Готовы обсудить проект?</p>
         <p>Заполните форму ниже и мы свяжемся с вами.</p>
-        <form id="send">
+        <form class="sendPopupCall">
           <input type="text" placeholder="Имя*" required="required"/>
           <input type="text" placeholder="Телефон*" required="required"/><br>
           <div class="input">
@@ -146,7 +146,18 @@
 <span class="text">Я согласен с условиями обработки <a href="#">персональных данных</a></span>
             </label>
           </div>
-          <button type="submit">Отправить</button>
+          <button class="openPopupConfirm" type="submit">Отправить</button>
+        </form>
+      </div>
+    </section>
+    <section class="popupConfirm">
+      <div class="popup2-container"><a class="closePopupConfirm1" href="#"><img src="img/close_icon.png" alt=""/></a><img class="check" src="img/check.png" alt=""/>
+        <p>
+          Ваша заявка успешно отправлена.<br>
+          Ожидайте звонка в ближайшее время!
+        </p>
+        <form>
+          <button class="closePopupConfirm2" type="button" id="close22">Ок</button>
         </form>
       </div>
     </section>
