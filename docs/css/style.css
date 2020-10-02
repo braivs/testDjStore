@@ -739,6 +739,8 @@ body {
     align-self: center; }
   body main section.sliderContainer .sliderRight {
     grid-row: 2 / 4; }
+    body main section.sliderContainer .sliderRight p {
+      display: none; }
   body main section.sliderContainer .control {
     -webkit-align-self: center;
         -ms-flex-item-align: center;
