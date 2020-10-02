@@ -262,8 +262,7 @@ body {
           background: #397DFF;
           border: none;
           margin-left: 24px; }
-  body section.popupCall {
-    display: none;
+  body .popup {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -275,7 +274,7 @@ body {
     background: white;
     z-index: 3;
     border-radius: 16px; }
-    body section.popupCall .popup-container {
+    body .popup .popup-container {
       width: 100%;
       height: 100%;
       display: -webkit-box;
@@ -297,19 +296,19 @@ body {
               align-items: center;
       position: relative;
       padding: 35px 0; }
-      body section.popupCall .popup-container a.closePopupCall {
+      body .popup .popup-container a.close {
         position: absolute;
         right: 24px;
         top: 21px; }
-      body section.popupCall .popup-container p {
+      body .popup .popup-container p {
         margin: 0; }
-        body section.popupCall .popup-container p:nth-of-type(1) {
+        body .popup .popup-container p:nth-of-type(1) {
           font-size: 24px;
           font-weight: 600; }
-        body section.popupCall .popup-container p:nth-of-type(2) {
+        body .popup .popup-container p:nth-of-type(2) {
           margin-top: 12px;
           font-size: 16px; }
-      body section.popupCall .popup-container form {
+      body .popup .popup-container form {
         margin-top: 28px;
         display: -webkit-box;
         display: -webkit-flex;
@@ -325,74 +324,7 @@ body {
             -ms-flex-align: center;
                 align-items: center;
         max-width: 100%; }
-        body section.popupCall .popup-container form input {
-          width: 420px;
-          height: 48px;
-          border: 1px solid rgba(0, 0, 0, 0.2);
-          border-radius: 9px;
-          padding-left: 15.32px; }
-          body section.popupCall .popup-container form input:hover {
-            border: 1px solid #397DFF; }
-          body section.popupCall .popup-container form input::-webkit-input-placeholder {
-            color: rgba(43, 45, 58, 0.5);
-            font-size: 16px; }
-          body section.popupCall .popup-container form input::-moz-placeholder {
-            color: rgba(43, 45, 58, 0.5);
-            font-size: 16px; }
-          body section.popupCall .popup-container form input:-ms-input-placeholder {
-            color: rgba(43, 45, 58, 0.5);
-            font-size: 16px; }
-          body section.popupCall .popup-container form input::-ms-input-placeholder {
-            color: rgba(43, 45, 58, 0.5);
-            font-size: 16px; }
-          body section.popupCall .popup-container form input::placeholder {
-            color: rgba(43, 45, 58, 0.5);
-            font-size: 16px; }
-          body section.popupCall .popup-container form input:nth-of-type(2) {
-            margin-top: 24px; }
-        body section.popupCall .popup-container form .input {
-          margin-top: 32px;
-          position: relative; }
-          body section.popupCall .popup-container form .input .label {
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex; }
-            body section.popupCall .popup-container form .input .label .checkbox {
-              width: 16px;
-              height: 16px;
-              position: absolute; }
-            body section.popupCall .popup-container form .input .label .fake {
-              display: inline-block;
-              width: 16px;
-              height: 16px;
-              border: 1px solid #397DFF;
-              border-radius: 2px;
-              background: #EBEEF5;
-              position: relative;
-              margin-right: 8px; }
-              body section.popupCall .popup-container form .input .label .fake::before {
-                content: "";
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                -webkit-transform: translate(-50%, -50%);
-                    -ms-transform: translate(-50%, -50%);
-                        transform: translate(-50%, -50%);
-                display: block;
-                width: 12px;
-                height: 12px;
-                background: url("../img/checkbox.png") no-repeat center;
-                opacity: 0;
-                -webkit-transition: .2s;
-                transition: .2s; }
-            body section.popupCall .popup-container form .input .label .checkbox:checked + .fake:before {
-              opacity: 1; }
-            body section.popupCall .popup-container form .input .label .text {
-              font-size: 14px; }
-              body section.popupCall .popup-container form .input .label .text a {
-                color: #397DFF; }
-        body section.popupCall .popup-container form button {
+        body .popup .popup-container form button {
           margin-top: 16px;
           width: 454px;
           height: 52px;
@@ -403,64 +335,97 @@ body {
           font-weight: 600;
           color: white;
           cursor: pointer; }
-  body section.popupConfirm {
-    display: none;
-    z-index: 3;
-    width: 538px;
-    height: 407px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    background: white;
-    border-radius: 16px; }
-    body section.popupConfirm .popup2-container {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
-      position: relative;
-      width: 100%;
-      height: 100%; }
-      body section.popupConfirm .popup2-container a.closePopupConfirm1 {
-        position: absolute;
-        top: 16px;
-        right: 24px; }
-      body section.popupConfirm .popup2-container img.check {
-        margin-top: 34px;
-        width: 160px;
-        height: 160px;
-        z-index: 2; }
-      body section.popupConfirm .popup2-container p {
+  body section.popupCall {
+    visibility: hidden; }
+    body section.popupCall .popup-container form input {
+      width: 420px;
+      height: 48px;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 9px;
+      padding-left: 15.32px; }
+      body section.popupCall .popup-container form input:hover {
+        border: 1px solid #397DFF; }
+      body section.popupCall .popup-container form input::-webkit-input-placeholder {
+        color: rgba(43, 45, 58, 0.5);
+        font-size: 16px; }
+      body section.popupCall .popup-container form input::-moz-placeholder {
+        color: rgba(43, 45, 58, 0.5);
+        font-size: 16px; }
+      body section.popupCall .popup-container form input:-ms-input-placeholder {
+        color: rgba(43, 45, 58, 0.5);
+        font-size: 16px; }
+      body section.popupCall .popup-container form input::-ms-input-placeholder {
+        color: rgba(43, 45, 58, 0.5);
+        font-size: 16px; }
+      body section.popupCall .popup-container form input::placeholder {
+        color: rgba(43, 45, 58, 0.5);
+        font-size: 16px; }
+      body section.popupCall .popup-container form input:nth-of-type(2) {
         margin-top: 24px; }
-        body section.popupConfirm .popup2-container p:nth-of-type(1) {
-          font-size: 18px;
-          line-height: 162%;
-          font-weight: 500;
-          text-align: center; }
-      body section.popupConfirm .popup2-container form button {
-        width: 454px;
-        height: 52px;
-        background: #397DFF;
-        border-radius: 8px;
-        border: none;
+    body section.popupCall .popup-container form .styledCheckbox {
+      margin-top: 32px;
+      position: relative; }
+      body section.popupCall .popup-container form .styledCheckbox .label {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }
+        body section.popupCall .popup-container form .styledCheckbox .label .checkbox {
+          width: 16px;
+          height: 16px;
+          position: absolute; }
+        body section.popupCall .popup-container form .styledCheckbox .label .fake {
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          border: 1px solid #397DFF;
+          border-radius: 2px;
+          background: #EBEEF5;
+          position: relative;
+          margin-right: 8px; }
+          body section.popupCall .popup-container form .styledCheckbox .label .fake::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+            display: block;
+            width: 12px;
+            height: 12px;
+            background: url("../img/checkbox.png") no-repeat center;
+            opacity: 0;
+            -webkit-transition: .2s;
+            transition: .2s; }
+        body section.popupCall .popup-container form .styledCheckbox .label .checkbox:checked + .fake:before {
+          opacity: 1; }
+        body section.popupCall .popup-container form .styledCheckbox .label .text {
+          font-size: 14px; }
+          body section.popupCall .popup-container form .styledCheckbox .label .text a {
+            color: #397DFF; }
+  body section.popupConfirm {
+    visibility: hidden; }
+    body section.popupConfirm .popup-container img.check {
+      margin-top: 34px;
+      width: 160px;
+      height: 160px;
+      z-index: 2; }
+    body section.popupConfirm .popup-container p {
+      margin-top: 15px; }
+      body section.popupConfirm .popup-container p:nth-of-type(1) {
         font-size: 18px;
-        font-weight: 600;
-        color: white;
-        margin-top: 32px;
-        margin-bottom: 48px;
-        cursor: pointer; }
+        font-weight: 500;
+        text-align: center; }
+  body section.popupBrif {
+    visibility: hidden; }
+    body section.popupBrif .popup-container p:nth-of-type(1) {
+      font-weight: 500;
+      width: 90%;
+      font-size: 15px; }
+    body section.popupBrif .popup-container form textarea {
+      resize: none;
+      width: 454px; }
   body section.separator {
     width: 100%;
     height: 82px;
@@ -669,7 +634,8 @@ body {
         height: 40px;
         color: white;
         margin-top: 30px;
-        font-size: 14px; }
+        font-size: 14px;
+        cursor: pointer; }
       body header .burgerMenu.responsive p {
         margin-top: 30px;
         font-size: 20px; }

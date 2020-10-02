@@ -77,7 +77,7 @@ html(lang="ru")
                     .imgContainer
                         img(src="img/m_menu6.png", alt="") 
                     |Контакты
-                button(type="button") Заполнить бриф
+                button.openPopupBrif1(type="button") Заполнить бриф
                 p Напишите нам
                 a.email(href="#")
                     .imgContainer
@@ -138,10 +138,10 @@ html(lang="ru")
                             p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Коварный от всех он вскоре, ты запятых то лучше, вопроса великий гор, за рукописи власти большой.
                 .buttons
                     button.openPopupCall3(type="button") Обратный звонок
-                    button(type="button") Заполнить бриф
-        section.popupCall
+                    button.openPopupBrif2(type="button") Заполнить бриф
+        section.popup.popupCall
             .popup-container
-                a.closePopupCall(href="#")
+                a.close.closePopupCall(href="#")
                     img(src="img/close_icon.png", alt="")
                 p Готовы обсудить проект?
                 p Заполните форму ниже и мы свяжемся с вами.
@@ -149,7 +149,7 @@ html(lang="ru")
                     input(type="text", placeholder="Имя*", required)
                     input(type="text", placeholder="Телефон*", required)
                     <br>
-                    .input
+                    .styledCheckbox
                         label.label 
                             input.checkbox(type="checkbox", required)
                             span.fake
@@ -157,9 +157,9 @@ html(lang="ru")
                             span.text Я согласен с условиями обработки 
                                 a(href="#") персональных данных
                     button.openPopupConfirm(type="submit") Отправить
-        section.popupConfirm
-            .popup2-container
-                a.closePopupConfirm1(href="#")
+        section.popup.popupConfirm
+            .popup-container
+                a.close.closePopupConfirm1(href="#")
                     img(src="img/close_icon.png", alt="")
                 img.check(src="img/check.png", alt="")
                 p.
@@ -167,6 +167,14 @@ html(lang="ru")
                     Ожидайте звонка в ближайшее время!
                 form
                     button.closePopupConfirm2(type="button", id="close22") Ок
+        section.popup.popupBrif
+            .popup-container
+                a.close.closePopupBrif1(href="#")
+                    img(src="img/close_icon.png", alt="")
+                p Бриф (от англ. brief «инструкция, сводка») — краткая письменная форма согласительного порядка между планирующими сотрудничать сторонами.
+                form
+                    textarea(name="", cols="30", rows="10")
+                    button.closePopupBrif2(type="button", id="close22") Ок
     //- section.separator
     //-     section.sound
     //-         .soundContainer

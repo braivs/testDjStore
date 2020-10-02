@@ -1,9 +1,11 @@
 //выезжание бургер меню
 var burgerIcon = document.querySelector('.burgerIcon');
 var burgerMenu = document.querySelector('.burgerMenu');
-burgerIcon.addEventListener('click', () => {
-  burgerMenu.classList.toggle('responsive');
-});
+if (burgerIcon != null) { 
+  burgerIcon.addEventListener('click', () => {
+    burgerMenu.classList.toggle('responsive');
+  });
+}
 
 //изменение значка бургер меню
 var burgerIconSymbol = document.querySelector('.burgerIconSymbol');
@@ -102,114 +104,98 @@ var popupCall = document.querySelector(".popupCall");
 var openPopupCall1 = document.querySelector('.openPopupCall1');
 var openPopupCall2 = document.querySelector('.openPopupCall2');
 var openPopupCall3 = document.querySelector('.openPopupCall3');
-openPopupCall1.onclick = function(event) {
-  event.preventDefault();
-  popupCall.style.display="block";
+if (openPopupCall1 != null) {
+  openPopupCall1.onclick = function(event) {
+    event.preventDefault();
+    popupCall.style.visibility="visible";
+  }
 }
-openPopupCall2.onclick = function(event) {
-  event.preventDefault();
-  popupCall.style.display="block";
+if (openPopupCall2 != null) {
+  openPopupCall2.onclick = function(event) {
+    event.preventDefault();
+    popupCall.style.visibility="visible";
+    // popupConfirm.visibility="visible";  
+  }
 }
-openPopupCall3.onclick = function(event) {
-  event.preventDefault();
-  popupCall.style.display="block";
-}
+if (openPopupCall3!=null){
+  openPopupCall3.onclick = function(event) {
+    event.preventDefault();
+    popupCall.style.visibility="visible";
+  }
+} 
 var closePopupCall = document.querySelector(".closePopupCall");
-closePopupCall.onclick = function(event) {
-  event.preventDefault();
-  popupCall.style.display="none";
+if (closePopupCall!=null) {
+  closePopupCall.onclick = function(event) {
+    event.preventDefault();
+    popupCall.style.visibility="hidden";
+  }
 }
 var sendPopupCall = document.querySelector(".sendPopupCall");
 //popupConfirm
 var popupConfirm = document.querySelector(".popupConfirm");
-sendPopupCall.onsubmit = function(event) {
-  event.preventDefault();
-  popupCall.style.display="none";
-  popupConfirm.style.display="block";    
+if (sendPopupCall !=null) {
+  sendPopupCall.onsubmit = function(event) {
+    event.preventDefault();
+    popupCall.style.visibility="hidden";
+    popupConfirm.style.visibility="visible";    
+  }
 }
 var closePopupConfirm1 = document.querySelector(".closePopupConfirm1");
-closePopupConfirm1.onclick = function(event) {
-  event.preventDefault();
-  popupConfirm.style.display="none";
+if (closePopupConfirm1 != null) {
+  closePopupConfirm1.onclick = function(event) {
+    event.preventDefault();
+    popupConfirm.style.visibility="hidden";
+  }
 }
 var closePopupConfirm2 = document.querySelector(".closePopupConfirm2");
-closePopupConfirm2.onclick = function(event) {
-  event.preventDefault();
-  popupConfirm.style.display="none";
+if (closePopupConfirm2 != null) {
+  closePopupConfirm2.onclick = function(event) {
+    event.preventDefault();
+    popupConfirm.style.visibility="hidden";
+  }
 }
+//popupBrif
+var popupBrif = document.querySelector(".popupBrif");
+var openPopupBrif1 = document.querySelector(".openPopupBrif1");
+if (openPopupBrif1 != null) {
+  openPopupBrif1.onclick = function(event) {
+    event.preventDefault();
+    popupBrif.style.visibility="visible";
+  }
+}
+var openPopupBrif2 = document.querySelector(".openPopupBrif2");
+if (openPopupBrif2 != null) {
+  openPopupBrif2.onclick = function(event) {
+    event.preventDefault();
+    popupBrif.style.visibility="visible";
+  }
+}
+var closePopupBrif1 = document.querySelector(".closePopupBrif1");
+if (closePopupBrif1 != null) {
+  closePopupBrif1.onclick = function(event) {
+    event.preventDefault();
+    popupBrif.style.visibility="hidden";
+  }
+}
+var closePopupBrif2 = document.querySelector(".closePopupBrif2");
+if (closePopupBrif2 != null) {
+  closePopupBrif2.onclick = function(event) {
+    event.preventDefault();
+    popupBrif.style.visibility="hidden";
+  }
+}
+
 
 //for all popups
 addEventListener("keydown", function(event) {
   if (event.keyCode === 27) {
-    popupCall.style.display="none";
-    popupConfirm.style.display="none";
+    popupCall.style.visibility="hidden";
+    popupConfirm.style.visibility="hidden";
+    popupBrif.style.visibility="hidden";
   }
 })
 
 
-// var openClick11 = document.querySelector("#openClick11"); //popup1 
-// var openClick12 = document.querySelector("#openClick12"); //popup1
-// var openClick13 = document.querySelector('#openClick13'); //popup1
-// var openClick31 = document.querySelector("#openClick31"); //popup2
-// var openClick32 = document.querySelector("#openClick32"); //popup2
 
-// var close = document.querySelector('#close'); //закрытие обратный вызов
-// var popupWindow1 = document.querySelector('#popupWindow1'); //Обратный звонок попап
-// var send = document.querySelector('#send');
-// var popupWindow2 = document.querySelector('#popupWindow2'); //Заявка успешно отправлена попап
-// var close2 = document.querySelector('#close2'); //закрытие заявка успешно отправлена крестик
-// var close22 = document.querySelector('#close22'); //закрытие заявка успешно отправлена Ок
-// var close3 = document.querySelector("#close3"); //закрытие попапа колонки
-// var popupWindow3 = document.querySelector("#popupWindow3"); //попап на колонке
-
-// openClick11.onclick = function(event) {
-//   event.preventDefault();
-//   popupWindow1.classList.remove('hidden');
-//   } //popup1
-// openClick12.onclick = function(event) {
-//   event.preventDefault();
-//   popupWindow1.classList.remove('hidden');
-//   } //popup1
-// openClick13.onclick = function(event) {
-//   event.preventDefault();
-//   popupWindow1.classList.remove('hidden');
-//   } //popup1
-// openClick31.onclick = function(event) {
-//   event.preventDefault();
-//   popupWindow3.style.visibility="visible";
-// } //popup3
-// openClick32.onclick = function(event) {
-//   event.preventDefault();
-//   popupWindow3.style.visibility="visible";
-// } //popup3
-
-
-// close.onclick = function(event) {
-//   event.preventDefault();
-//   popupWindow1.classList.add('hidden');
-// }
-// addEventListener("keydown", function(event) {
-//   if (event.keyCode === 27)
-//     popupWindow1.classList.add('hidden');
-//     popupWindow2.classList.add('hidden');
-//     popupWindow3.style.visibility="hidden";
-//   })
-// send.onsubmit = function(event) {
-//   event.preventDefault();
-//   popupWindow1.classList.add('hidden');
-//   popupWindow2.classList.remove('hidden');
-// }
-// close2.onclick = function(event) {
-//   event.preventDefault();
-//   popupWindow2.classList.add('hidden');
-// } //закрытие обратный вызов
-// close22.onclick = function(event) {
-//   event.preventDefault();
-//   popupWindow2.classList.add('hidden');
-// }
-// close3.onclick = function(event) {
-//   event.preventDefault();
-//   popupWindow3.style.visibility="hidden";
-// }
 
 

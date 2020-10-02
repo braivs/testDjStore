@@ -57,7 +57,7 @@
           <div class="imgContainer"><img src="img/m_menu4.png" alt=""/></div>О компании</a><a href="#">
           <div class="imgContainer"><img src="img/m_menu5.png" alt=""/></div>Готовые решения</a><a href="#">
           <div class="imgContainer"><img src="img/m_menu6.png" alt=""/></div>Контакты</a>
-        <button type="button">Заполнить бриф</button>
+        <button class="openPopupBrif1" type="button">Заполнить бриф</button>
         <p>Напишите нам</p><a class="email" href="#">
           <div class="imgContainer"><img src="img/m_menu_mail_icon.png" alt=""/></div>info@sld-store.ru</a>
       </div>
@@ -129,18 +129,18 @@
         </div>
         <div class="buttons">
           <button class="openPopupCall3" type="button">Обратный звонок</button>
-          <button type="button">Заполнить бриф</button>
+          <button class="openPopupBrif2" type="button">Заполнить бриф</button>
         </div>
       </section>
     </main>
-    <section class="popupCall">
-      <div class="popup-container"><a class="closePopupCall" href="#"><img src="img/close_icon.png" alt=""/></a>
+    <section class="popup popupCall">
+      <div class="popup-container"><a class="close closePopupCall" href="#"><img src="img/close_icon.png" alt=""/></a>
         <p>Готовы обсудить проект?</p>
         <p>Заполните форму ниже и мы свяжемся с вами.</p>
         <form class="sendPopupCall">
           <input type="text" placeholder="Имя*" required="required"/>
           <input type="text" placeholder="Телефон*" required="required"/><br>
-          <div class="input">
+          <div class="styledCheckbox">
             <label class="label"> 
               <input class="checkbox" type="checkbox" required="required"/><span class="fake"></span>
 <span class="text">Я согласен с условиями обработки <a href="#">персональных данных</a></span>
@@ -150,14 +150,23 @@
         </form>
       </div>
     </section>
-    <section class="popupConfirm">
-      <div class="popup2-container"><a class="closePopupConfirm1" href="#"><img src="img/close_icon.png" alt=""/></a><img class="check" src="img/check.png" alt=""/>
+    <section class="popup popupConfirm">
+      <div class="popup-container"><a class="close closePopupConfirm1" href="#"><img src="img/close_icon.png" alt=""/></a><img class="check" src="img/check.png" alt=""/>
         <p>
           Ваша заявка успешно отправлена.<br>
           Ожидайте звонка в ближайшее время!
         </p>
         <form>
           <button class="closePopupConfirm2" type="button" id="close22">Ок</button>
+        </form>
+      </div>
+    </section>
+    <section class="popup popupBrif">
+      <div class="popup-container"><a class="close closePopupBrif1" href="#"><img src="img/close_icon.png" alt=""/></a>
+        <p>Бриф (от англ. brief «инструкция, сводка») — краткая письменная форма согласительного порядка между планирующими сотрудничать сторонами.</p>
+        <form>
+          <textarea name="" cols="30" rows="10"></textarea>
+          <button class="closePopupBrif2" type="button" id="close22">Ок</button>
         </form>
       </div>
     </section>

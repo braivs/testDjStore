@@ -199,8 +199,7 @@ body
                         background: #397DFF
                         border: none
                         margin-left: 24px
-    section.popupCall
-        display: none
+    .popup
         position: fixed
         top: 50%
         left: 50% 
@@ -219,7 +218,7 @@ body
             align-items: center
             position: relative
             padding: 35px 0
-            a.closePopupCall
+            a.close
                 position: absolute
                 right: 24px
                 top: 21px
@@ -231,12 +230,28 @@ body
                 &:nth-of-type(2)
                     margin-top: 12px
                     font-size: 16px
-            form 
+            form
                 margin-top: 28px
                 display: flex
                 flex-direction: column
                 align-items: center
                 max-width: 100%
+                button
+                    margin-top: 16px
+                    width: 454px
+                    height: 52px
+                    background: #397DFF
+                    border-radius: 8px
+                    border: none
+                    font-size: 18px
+                    font-weight: 600
+                    color: white
+                    cursor: pointer
+
+    section.popupCall
+        visibility: hidden
+        .popup-container
+            form
                 input
                     width: 420px
                     height: 48px
@@ -250,7 +265,7 @@ body
                         font-size: 16px
                     &:nth-of-type(2)
                         margin-top: 24px
-                .input
+                .styledCheckbox
                     margin-top: 32px
                     position: relative
                     .label
@@ -286,64 +301,32 @@ body
                             font-size: 14px
                             a
                                 color: #397DFF
-                button
-                    margin-top: 16px
-                    width: 454px
-                    height: 52px
-                    background: #397DFF
-                    border-radius: 8px
-                    border: none
-                    font-size: 18px
-                    font-weight: 600
-                    color: white
-                    cursor: pointer
     section.popupConfirm
-        display: none
-        z-index: 3
-        width: 538px
-        height: 407px
-        position: fixed
-        top: 50%
-        left: 50% 
-        transform: translate(-50%, -50%)
-        background: white
-        border-radius: 16px
-        .popup2-container
-            display: flex
-            flex-direction: column
-            align-items: center
-            position: relative
-            width: 100%
-            height: 100%
-            a.closePopupConfirm1
-                position: absolute
-                top: 16px
-                right: 24px
+        visibility: hidden
+        .popup-container
             img.check
                 margin-top: 34px
                 width: 160px
                 height: 160px
                 z-index: 2
             p
-                margin-top: 24px
+                margin-top: 15px
                 &:nth-of-type(1)
                     font-size: 18px
-                    line-height: 162%
                     font-weight: 500
                     text-align: center
-            form 
-                button
+    section.popupBrif
+        visibility: hidden
+        .popup-container
+            p
+                &:nth-of-type(1)
+                    font-weight: 500
+                    width: 90%
+                    font-size: 15px
+            form
+                textarea
+                    resize: none
                     width: 454px
-                    height: 52px
-                    background: #397DFF
-                    border-radius: 8px
-                    border: none
-                    font-size: 18px
-                    font-weight: 600
-                    color: white
-                    margin-top: 32px
-                    margin-bottom: 48px
-                    cursor: pointer
     section.separator 
         width: 100%
         height: 82px
