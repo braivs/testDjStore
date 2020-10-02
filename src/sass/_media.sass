@@ -210,9 +210,28 @@
                     grid-row: 4 / 5
                     align-self: center
                 .sliderRight
-                    grid-row: 1 / 4
+                    grid-row: 2 / 4
                 .control
                     align-self: center
+        .popup
+            // width: 250px
+            height: 320px
+            .popup-container
+                form
+                    button
+                        height: 30px
+        section.popupCall
+            .popup-container
+                form 
+                    input
+                        height: 35px
+                        &:nth-of-type(2)
+                            margin-top: 5px
+        section.popupBrif
+            .popup-container
+                form
+                    textarea
+                        height: 140px 
 // 280 - 349px
 @media (max-width: 349px)
     body
@@ -290,3 +309,35 @@
                         text-align: center
                     p
                         display: none
+        .popup
+            width: 450px
+            height: 260px
+            .popup-container
+                justify-content: center
+                form
+                    button
+                        width: 400px
+        section.popupCall
+            .popup-container
+                form
+                    .styledCheckbox
+                        margin-top: 10px
+                        .label
+                            .text 
+                                width: 400px
+        section.popupConfirm
+            .popup-container
+                img.check
+                    width: 100px
+                    height: 100px
+        section.popupBrif
+            .popup-container
+                form
+                    textarea
+                        height: 100px
+                        width: 400px
+                
+        
+
+        section.popupConfirm
+            

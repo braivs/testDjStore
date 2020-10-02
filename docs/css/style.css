@@ -738,11 +738,21 @@ body {
     grid-row: 4 / 5;
     align-self: center; }
   body main section.sliderContainer .sliderRight {
-    grid-row: 1 / 4; }
+    grid-row: 2 / 4; }
   body main section.sliderContainer .control {
     -webkit-align-self: center;
         -ms-flex-item-align: center;
-            align-self: center; } }
+            align-self: center; }
+  body .popup {
+    height: 320px; }
+    body .popup .popup-container form button {
+      height: 30px; }
+  body section.popupCall .popup-container form input {
+    height: 35px; }
+    body section.popupCall .popup-container form input:nth-of-type(2) {
+      margin-top: 5px; }
+  body section.popupBrif .popup-container form textarea {
+    height: 140px; } }
 
 @media (max-width: 349px) {
   body header .burgerMenu.responsive button {
@@ -792,6 +802,26 @@ body {
     padding: 0;
     text-align: center; }
   body main section.sliderContainer .sliderRight p {
-    display: none; } }
+    display: none; }
+  body .popup {
+    width: 450px;
+    height: 260px; }
+    body .popup .popup-container {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      body .popup .popup-container form button {
+        width: 400px; }
+  body section.popupCall .popup-container form .styledCheckbox {
+    margin-top: 10px; }
+    body section.popupCall .popup-container form .styledCheckbox .label .text {
+      width: 400px; }
+  body section.popupConfirm .popup-container img.check {
+    width: 100px;
+    height: 100px; }
+  body section.popupBrif .popup-container form textarea {
+    height: 100px;
+    width: 400px; } }
 
 /*# sourceMappingURL=style.css.map */
