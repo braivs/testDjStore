@@ -262,6 +262,73 @@ body {
           background: #397DFF;
           border: none;
           margin-left: 24px; }
+  body main section.separator {
+    width: 100%;
+    height: 90px;
+    background: #EBEEF5;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  body main section.sound {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%; }
+    body main section.sound .leftPart img {
+      width: 100%; }
+    body main section.sound .rightPart img {
+      width: 100%; }
+    body main section.sound .rightPart .popup {
+      visibility: hidden;
+      position: absolute;
+      z-index: 1;
+      background: white;
+      width: 352px;
+      height: 180px;
+      bottom: 524px;
+      left: 33px;
+      border-radius: 10px; }
+      body main section.sound .rightPart .popup .popupContainer {
+        position: relative;
+        width: 100%;
+        height: 100%; }
+        body main section.sound .rightPart .popup .popupContainer a.close_icon2 {
+          z-index: 1;
+          position: absolute;
+          top: 12px;
+          right: 16px; }
+        body main section.sound .rightPart .popup .popupContainer img.cartoonSpeaker {
+          position: absolute;
+          top: 16px;
+          right: 44px; }
+        body main section.sound .rightPart .popup .popupContainer .popupContainer2 {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 17px;
+          left: 24px; }
+          body main section.sound .rightPart .popup .popupContainer .popupContainer2 p {
+            font-size: 18px; }
+          body main section.sound .rightPart .popup .popupContainer .popupContainer2 ul {
+            margin-top: 12px;
+            list-style: none; }
+            body main section.sound .rightPart .popup .popupContainer .popupContainer2 ul li {
+              background: url(img/mark.png) no-repeat 0 0;
+              padding-left: 24px;
+              font-size: 12px;
+              margin-bottom: 10px;
+              line-height: 16px; }
+      body main section.sound .rightPart .popup .popupContainer::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -20px;
+        -webkit-transform: translate(-50%, 0);
+            -ms-transform: translate(-50%, 0);
+                transform: translate(-50%, 0);
+        border: 10px solid transparent;
+        border-top: 10px solid white; }
   body .popup {
     position: fixed;
     top: 50%;
@@ -427,115 +494,6 @@ body {
     body section.popupBrif .popup-container form textarea {
       resize: none;
       width: 454px; }
-  body section.separator {
-    width: 100%;
-    height: 82px;
-    background: #EBEEF5; }
-  body section.sound {
-    width: 100%; }
-    body section.sound .soundContainer {
-      display: grid;
-      grid-template-columns: 50% 50%;
-      height: 620px;
-      width: 100%; }
-      body section.sound .soundContainer .leftPart {
-        position: relative;
-        width: 100%; }
-        body section.sound .soundContainer .leftPart img {
-          max-width: 100%;
-          height: auto; }
-        body section.sound .soundContainer .leftPart img:nth-of-type(1) {
-          position: absolute;
-          top: 210px;
-          left: 210px; }
-        body section.sound .soundContainer .leftPart img:nth-of-type(2) {
-          position: absolute;
-          top: 132px;
-          left: 476px; }
-        body section.sound .soundContainer .leftPart img:nth-of-type(3) {
-          position: absolute;
-          top: 413px;
-          left: 232px; }
-      body section.sound .soundContainer .rightPart {
-        width: 100%;
-        position: relative; }
-        body section.sound .soundContainer .rightPart img {
-          max-width: 100%;
-          height: auto; }
-        body section.sound .soundContainer .rightPart img.speakerLeft {
-          position: absolute;
-          top: 10%;
-          left: 19%; }
-        body section.sound .soundContainer .rightPart img.EllipseBigLeft {
-          position: absolute;
-          top: 73px;
-          left: 172px; }
-        body section.sound .soundContainer .rightPart img.crossLeft {
-          position: absolute;
-          top: 96px;
-          left: 195px; }
-        body section.sound .soundContainer .rightPart img.speakerRight {
-          position: absolute;
-          top: 10%;
-          left: 72%; }
-        body section.sound .soundContainer .rightPart img.EllipseBigRight {
-          position: absolute;
-          top: 72px;
-          left: 689px; }
-        body section.sound .soundContainer .rightPart img.EllipseSmallRight {
-          position: absolute;
-          top: 95px;
-          left: 712px; }
-        body section.sound .soundContainer .rightPart .popup {
-          visibility: hidden;
-          position: absolute;
-          z-index: 1;
-          background: white;
-          width: 352px;
-          height: 180px;
-          bottom: 524px;
-          left: 33px;
-          border-radius: 10px; }
-          body section.sound .soundContainer .rightPart .popup .popupContainer {
-            position: relative;
-            width: 100%;
-            height: 100%; }
-            body section.sound .soundContainer .rightPart .popup .popupContainer a.close_icon2 {
-              z-index: 1;
-              position: absolute;
-              top: 12px;
-              right: 16px; }
-            body section.sound .soundContainer .rightPart .popup .popupContainer img.cartoonSpeaker {
-              position: absolute;
-              top: 16px;
-              right: 44px; }
-            body section.sound .soundContainer .rightPart .popup .popupContainer .popupContainer2 {
-              position: absolute;
-              width: 100%;
-              height: 100%;
-              top: 17px;
-              left: 24px; }
-              body section.sound .soundContainer .rightPart .popup .popupContainer .popupContainer2 p {
-                font-size: 18px; }
-              body section.sound .soundContainer .rightPart .popup .popupContainer .popupContainer2 ul {
-                margin-top: 12px;
-                list-style: none; }
-                body section.sound .soundContainer .rightPart .popup .popupContainer .popupContainer2 ul li {
-                  background: url(img/mark.png) no-repeat 0 0;
-                  padding-left: 24px;
-                  font-size: 12px;
-                  margin-bottom: 10px;
-                  line-height: 16px; }
-          body section.sound .soundContainer .rightPart .popup .popupContainer::after {
-            content: '';
-            position: absolute;
-            left: 50%;
-            bottom: -20px;
-            -webkit-transform: translate(-50%, 0);
-                -ms-transform: translate(-50%, 0);
-                    transform: translate(-50%, 0);
-            border: 10px solid transparent;
-            border-top: 10px solid white; }
 
 @media (max-width: 1850px) {
   .wrapper {
@@ -704,6 +662,13 @@ body {
     body main section.sliderContainer .buttons {
       grid-column: 2 / 4;
       grid-row: 3 / 4; }
+  body main section.separator {
+    height: 45px; }
+  body main section.sound {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto; }
+    body main section.sound .rightPart {
+      margin-top: -4px; }
   body .popup {
     width: 320px;
     height: 350px; }
