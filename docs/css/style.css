@@ -335,75 +335,73 @@ body {
           color: white;
           cursor: pointer;
           margin-top: 16px; }
-  body section.popupCall {
-    visibility: hidden; }
-    body section.popupCall .popup-container form input {
-      width: 420px;
-      height: 48px;
-      border: 1px solid rgba(0, 0, 0, 0.2);
-      border-radius: 9px;
-      padding-left: 15.32px; }
-      body section.popupCall .popup-container form input:hover {
-        border: 1px solid #397DFF; }
-      body section.popupCall .popup-container form input::-webkit-input-placeholder {
-        color: rgba(43, 45, 58, 0.5);
-        font-size: 16px; }
-      body section.popupCall .popup-container form input::-moz-placeholder {
-        color: rgba(43, 45, 58, 0.5);
-        font-size: 16px; }
-      body section.popupCall .popup-container form input:-ms-input-placeholder {
-        color: rgba(43, 45, 58, 0.5);
-        font-size: 16px; }
-      body section.popupCall .popup-container form input::-ms-input-placeholder {
-        color: rgba(43, 45, 58, 0.5);
-        font-size: 16px; }
-      body section.popupCall .popup-container form input::placeholder {
-        color: rgba(43, 45, 58, 0.5);
-        font-size: 16px; }
-      body section.popupCall .popup-container form input:nth-of-type(2) {
-        margin-top: 24px; }
-    body section.popupCall .popup-container form .styledCheckbox {
-      margin-top: 32px;
-      position: relative; }
-      body section.popupCall .popup-container form .styledCheckbox .label {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex; }
-        body section.popupCall .popup-container form .styledCheckbox .label .checkbox {
-          width: 16px;
-          height: 16px;
-          position: absolute; }
-        body section.popupCall .popup-container form .styledCheckbox .label .fake {
-          display: inline-block;
-          width: 16px;
-          height: 16px;
-          border: 1px solid #397DFF;
-          border-radius: 2px;
-          background: #EBEEF5;
-          position: relative;
-          margin-right: 8px; }
-          body section.popupCall .popup-container form .styledCheckbox .label .fake::before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-                -ms-transform: translate(-50%, -50%);
-                    transform: translate(-50%, -50%);
-            display: block;
-            width: 12px;
-            height: 12px;
-            background: url("../img/checkbox.png") no-repeat center;
-            opacity: 0;
-            -webkit-transition: .2s;
-            transition: .2s; }
-        body section.popupCall .popup-container form .styledCheckbox .label .checkbox:checked + .fake:before {
-          opacity: 1; }
-        body section.popupCall .popup-container form .styledCheckbox .label .text {
-          font-size: 14px; }
-          body section.popupCall .popup-container form .styledCheckbox .label .text a {
-            color: #397DFF; }
+  body section.popupCall .popup-container form input {
+    width: 420px;
+    height: 48px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 9px;
+    padding-left: 15.32px; }
+    body section.popupCall .popup-container form input:hover {
+      border: 1px solid #397DFF; }
+    body section.popupCall .popup-container form input::-webkit-input-placeholder {
+      color: rgba(43, 45, 58, 0.5);
+      font-size: 16px; }
+    body section.popupCall .popup-container form input::-moz-placeholder {
+      color: rgba(43, 45, 58, 0.5);
+      font-size: 16px; }
+    body section.popupCall .popup-container form input:-ms-input-placeholder {
+      color: rgba(43, 45, 58, 0.5);
+      font-size: 16px; }
+    body section.popupCall .popup-container form input::-ms-input-placeholder {
+      color: rgba(43, 45, 58, 0.5);
+      font-size: 16px; }
+    body section.popupCall .popup-container form input::placeholder {
+      color: rgba(43, 45, 58, 0.5);
+      font-size: 16px; }
+    body section.popupCall .popup-container form input:nth-of-type(2) {
+      margin-top: 24px; }
+  body section.popupCall .popup-container form .styledCheckbox {
+    margin-top: 32px;
+    position: relative; }
+    body section.popupCall .popup-container form .styledCheckbox .label {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      body section.popupCall .popup-container form .styledCheckbox .label .checkbox {
+        width: 16px;
+        height: 16px;
+        position: absolute; }
+      body section.popupCall .popup-container form .styledCheckbox .label .fake {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        border: 1px solid #397DFF;
+        border-radius: 2px;
+        background: #EBEEF5;
+        position: relative;
+        margin-right: 8px; }
+        body section.popupCall .popup-container form .styledCheckbox .label .fake::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%);
+          display: block;
+          width: 12px;
+          height: 12px;
+          background: url("../img/checkbox.png") no-repeat center;
+          opacity: 0;
+          -webkit-transition: .2s;
+          transition: .2s; }
+      body section.popupCall .popup-container form .styledCheckbox .label .checkbox:checked + .fake:before {
+        opacity: 1; }
+      body section.popupCall .popup-container form .styledCheckbox .label .text {
+        font-size: 14px; }
+        body section.popupCall .popup-container form .styledCheckbox .label .text a {
+          color: #397DFF; }
   body section.popupConfirm {
     visibility: hidden; }
     body section.popupConfirm .popup-container img.check {
@@ -815,10 +813,20 @@ body {
               justify-content: center; }
       body .popup .popup-container form button {
         width: 400px; }
-  body section.popupCall .popup-container form .styledCheckbox {
-    margin-top: 10px; }
-    body section.popupCall .popup-container form .styledCheckbox .label .text {
-      width: 400px; }
+  body section.popupCall .popup-container p:nth-of-type(2) {
+    margin-top: 5px; }
+  body section.popupCall .popup-container form {
+    margin-top: 5px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    body section.popupCall .popup-container form .styledCheckbox {
+      margin-top: 5px; }
+      body section.popupCall .popup-container form .styledCheckbox .label .text {
+        width: 400px; }
+    body section.popupCall .popup-container form button {
+      margin-top: 5px; }
   body section.popupConfirm .popup-container img.check {
     width: 100px;
     height: 100px; }
