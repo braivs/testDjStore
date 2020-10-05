@@ -278,15 +278,19 @@ body {
     body main section.sound .leftPart img {
       width: 100%; }
     body main section.sound .rightPart {
-      background: url("../img/rightSoundGroup.jpg");
-      background-size: contain;
       position: relative;
       width: 100%; }
-      body main section.sound .rightPart img {
+      body main section.sound .rightPart svg {
         position: absolute;
-        left: 18%;
-        top: 10%;
-        z-index: 99; }
+        top: 0px;
+        left: 0px;
+        width: 100%; }
+      body main section.sound .rightPart img {
+        width: 100%; }
+      body main section.sound .rightPart path {
+        opacity: 1;
+        fill: orange;
+        cursor: pointer; }
       body main section.sound .rightPart .popup {
         visibility: hidden;
         position: absolute;

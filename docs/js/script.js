@@ -1,3 +1,5 @@
+console.log("hi");
+
 //выезжание бургер меню
 var burgerIcon = document.querySelector('.burgerIcon');
 var burgerMenu = document.querySelector('.burgerMenu');
@@ -5,7 +7,7 @@ if (burgerIcon != null) {
   burgerIcon.addEventListener('click', () => {
     burgerMenu.classList.toggle('responsive');
   });
-}
+};
 
 //изменение значка бургер меню
 var burgerIconSymbol = document.querySelector('.burgerIconSymbol');
@@ -15,7 +17,7 @@ function changeIcon() {
   } else {
     burgerIconSymbol.innerHTML = "☰";
   }
-}
+};
 
 //sliders:
 var nx = document.getElementsByClassName("swiper-next")[0];
@@ -87,27 +89,24 @@ var swiperRight = new Swiper('.sliderRight', {
   touchMoveStopPropagation: true,
 }); 
 
-resize sliders fix
-window.addEventListener(`resize`, event => {
-  swiperBackground.update(true);
-  swiperLeft.update(true);
-  swiperRight.update(true);
-}, false);
+// resize sliders fix
+// // window.addEventListener(`resize`, event => {
+// //   swiperBackground.update();
+// //   swiperLeft.update();
+// //   swiperRight.update();
+// // }, false);
 
-window.onresize = function( event ) {
-  console.log("updated");
-};
+// // window.onresize = function( event ) {
+// //   console.log("updated");
+// // };
 
 
-// if (window.DeviceOrientationEvent) {
-//   // window.addEventListener('orientationchange', function() { location.reload(); }, false);
-//   window.addEventListener('orientationchange', function() { 
-//     location.reload(); 
-//     // swiperBackground.resizeFix();
-//     // swiperLeft.resizeFix();
-//     // swiperRight.resizeFix();
-//   }, false);
-// }
+window.addEventListener('orientationchange', function() { 
+    location.reload(); 
+    swiperBackground.update();
+    swiperLeft.update();
+    swiperRight.update();
+  }, false);
 
 //popups:
 //popupCall
