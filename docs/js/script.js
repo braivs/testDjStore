@@ -87,16 +87,27 @@ var swiperRight = new Swiper('.sliderRight', {
   touchMoveStopPropagation: true,
 }); 
 
-//тестовая перерисовка при повороте телефона
-if (window.DeviceOrientationEvent) {
-  // window.addEventListener('orientationchange', function() { location.reload(); }, false);
-  window.addEventListener('orientationchange', function() { 
-    location.reload(); 
-    // swiperBackground.resizeFix();
-    // swiperLeft.resizeFix();
-    // swiperRight.resizeFix();
-  }, false);
-}
+resize sliders fix
+window.addEventListener(`resize`, event => {
+  swiperBackground.update(true);
+  swiperLeft.update(true);
+  swiperRight.update(true);
+}, false);
+
+window.onresize = function( event ) {
+  console.log("updated");
+};
+
+
+// if (window.DeviceOrientationEvent) {
+//   // window.addEventListener('orientationchange', function() { location.reload(); }, false);
+//   window.addEventListener('orientationchange', function() { 
+//     location.reload(); 
+//     // swiperBackground.resizeFix();
+//     // swiperLeft.resizeFix();
+//     // swiperRight.resizeFix();
+//   }, false);
+// }
 
 //popups:
 //popupCall
