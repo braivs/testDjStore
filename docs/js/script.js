@@ -201,6 +201,11 @@ openPopupSound.onclick = function(event) {
   event.preventDefault();
   popupSound.style.visibility="visible";
 }
+var closePopupSound = document.querySelector(".closePopupSound");
+closePopupSound.onclick = function(event) {
+  event.preventDefault();
+  popupSound.style.visibility="hidden";
+}
 
 //for all popups
 addEventListener("keydown", function(event) {
@@ -208,6 +213,7 @@ addEventListener("keydown", function(event) {
     popupCall.style.visibility="hidden";
     popupConfirm.style.visibility="hidden";
     popupBrif.style.visibility="hidden";
+    popupSound.style.visibility="hidden";
   }
 })
 
