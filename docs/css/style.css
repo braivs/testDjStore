@@ -262,21 +262,17 @@ body {
           background: #397DFF;
           border: none;
           margin-left: 24px; }
-  body main section.separator {
-    width: 100%;
-    height: 90px;
-    background: #EBEEF5;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
   body main section.sound {
     width: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
-    width: 100%; }
-    body main section.sound .leftPart img {
-      width: 100%; }
+    grid-template-rows: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    margin-bottom: -20px; }
+    body main section.sound .leftPart svg rect {
+      fill: #EBEEF5; }
     body main section.sound .rightPart {
       position: relative;
       width: 100%; }
@@ -285,62 +281,17 @@ body {
         top: 0px;
         left: 0px;
         width: 100%; }
-      body main section.sound .rightPart img {
-        width: 100%; }
-      body main section.sound .rightPart path {
-        opacity: 1;
-        fill: orange;
-        cursor: pointer; }
-      body main section.sound .rightPart .popup {
-        visibility: hidden;
-        position: absolute;
-        z-index: 1;
-        background: white;
-        width: 352px;
-        height: 180px;
-        bottom: 524px;
-        left: 33px;
-        border-radius: 10px; }
-        body main section.sound .rightPart .popup .popupContainer {
-          position: relative;
-          width: 100%;
-          height: 100%; }
-          body main section.sound .rightPart .popup .popupContainer a.close_icon2 {
-            z-index: 1;
-            position: absolute;
-            top: 12px;
-            right: 16px; }
-          body main section.sound .rightPart .popup .popupContainer img.cartoonSpeaker {
-            position: absolute;
-            top: 16px;
-            right: 44px; }
-          body main section.sound .rightPart .popup .popupContainer .popupContainer2 {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 17px;
-            left: 24px; }
-            body main section.sound .rightPart .popup .popupContainer .popupContainer2 p {
-              font-size: 18px; }
-            body main section.sound .rightPart .popup .popupContainer .popupContainer2 ul {
-              margin-top: 12px;
-              list-style: none; }
-              body main section.sound .rightPart .popup .popupContainer .popupContainer2 ul li {
-                background: url(img/mark.png) no-repeat 0 0;
-                padding-left: 24px;
-                font-size: 12px;
-                margin-bottom: 10px;
-                line-height: 16px; }
-        body main section.sound .rightPart .popup .popupContainer::after {
-          content: '';
-          position: absolute;
-          left: 50%;
-          bottom: -20px;
-          -webkit-transform: translate(-50%, 0);
-              -ms-transform: translate(-50%, 0);
-                  transform: translate(-50%, 0);
-          border: 10px solid transparent;
-          border-top: 10px solid white; }
+        body main section.sound .rightPart svg rect {
+          fill: #EBEEF5; }
+        body main section.sound .rightPart svg a circle {
+          fill: orange;
+          opacity: 0; }
+        body main section.sound .rightPart svg polygon.soundTriangle {
+          fill: white; }
+        body main section.sound .rightPart svg rect.soundPopup {
+          fill: white; }
+        body main section.sound .rightPart svg img {
+          width: 100%; }
   body .popup {
     position: fixed;
     top: 50%;
