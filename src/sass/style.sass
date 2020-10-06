@@ -204,19 +204,21 @@ body
             display: grid
             grid-template-columns: 50% 50%
             grid-template-rows: auto
+            gap: -1px
             height: auto
             padding: 0
             margin: 0
             margin-bottom: -20px
             .leftPart
+                margin-right: -1px
                 svg
                     rect 
                         fill: #EBEEF5
+
             .rightPart
                 position: relative
                 width: 100%
                 svg
-                    position: absolute
                     top: 0px
                     left: 0px
                     width: 100%
@@ -230,7 +232,6 @@ body
                         fill: white
                     rect.soundPopup
                         fill: white
-                        // visibility: hidden
                     img
                         width: 100% 
                     g.popupSound
@@ -364,6 +365,30 @@ body
                 textarea
                     resize: none
                     width: 454px
+    footer
+        width: 100%
+        background: #EBEEF5
+        padding-top: 100px
+        padding-bottom: 20px
+        display: flex
+        justify-content: center
+        .contacts
+            display: flex
+            justify-content: center
+            align-items: center
+            p
+                padding: 0
+                text-align: left
+                &:nth-of-type(1)
+                    margin-right: 5px
+                &:nth-of-type(2)
+                    margin-left: 5px
+            a  
+                margin-left: 0
+                padding: 0
+            img
+                width: 25px
+                opacity: 0.3
 @import  'media'
 
             
