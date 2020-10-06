@@ -146,33 +146,24 @@ html(lang="ru")
                     svg(viewBox="0 0 960 785")
                         rect(x="0", y="0", width="960", height="165")
                         image(xlink:href="img/rightSoundGroup.jpg", x="0", y="165")
-                        a(href="http://www.google.com")
+                        a.openPopupSound(href="#")
                             circle(r="36.5", cx="217", cy="273")
-                        //-popupSound
-                        polygon.soundTriangle(points="217 273, 210 263, 225 263")
-                        rect.soundPopup(x="40", y="83", width="350", height="180", rx="10", ry="10")
-                        text(x="60" y="113") Electro-Voice
-                        text(x="60" y="138") EVID 4.2
-                        image(xlink:href="img/mark.png", x="60", y="158")
-                        image(xlink:href="img/mark.png", x="60", y="183")
-                        image(xlink:href="img/mark.png", x="60", y="208")
-                        image(xlink:href="img/mark.png", x="60", y="233")
-                        //- text
-                        //- <text x="20" y="35" class="small">Мой</text>
-                        //- polygon(points="217 98, 42 98, 392 98, ")
-                                    //- .popupContainer
-                                    //-     a.close_icon2(href="#",id="close3")
-                                    //-         img(src="img/close_icon2.png", alt="")
-                                    //-     .popup
-                                            //- .popupContainer2
-                                            //-     p Electro-Voice
-                                            //-     p EVID 4.2
-                                            //-     ul
-                                            //-         li Очень мягкое звучание.
-                                            //-         li Чувствительность — 89 дБ.
-                                            //-         li Пиковая мощность — 400 Вт.
-                                            //-         li Степень влагозащищенности IP34.
-                                            //- img.cartoonSpeaker(src="img/cartoonSpeaker.png", alt="")
+                        g.popupSound
+                            polygon.soundTriangle(points="217 273, 210 263, 225 263")
+                            rect.soundPopup(x="40", y="83", width="350", height="180", rx="10", ry="10")
+                            text(x="60", y="113") Electro-Voice
+                            text(x="60", y="138") EVID 4.2
+                            image(xlink:href="img/mark.png", x="60", y="158")
+                            image(xlink:href="img/mark.png", x="60", y="183")
+                            image(xlink:href="img/mark.png", x="60", y="208")
+                            image(xlink:href="img/mark.png", x="60", y="233")
+                            text(x="80", y="172") Очень мягкое звучание.
+                            text(x="80", y="197") Чувствительность — 89 дБ.
+                            text(x="80", y="222") Пиковая мощность — 400 Вт.
+                            text(x="80", y="247") Степень влагозащищенности IP34.
+                            image(xlink:href="img/cartoonSpeaker.png", x="300", y="100")
+                            a.closePopupSound(href="#")
+                                image(xlink:href="img/close_icon.png", x="360", y="100") 
         section.popup.popupCall
             .popup-container
                 a.close.closePopupCall(href="#")

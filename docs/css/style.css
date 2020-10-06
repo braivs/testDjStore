@@ -292,6 +292,8 @@ body {
           fill: white; }
         body main section.sound .rightPart svg img {
           width: 100%; }
+        body main section.sound .rightPart svg g.popupSound {
+          visibility: hidden; }
   body .popup {
     position: fixed;
     top: 50%;

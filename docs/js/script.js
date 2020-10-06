@@ -194,7 +194,13 @@ if (closePopupBrif2 != null) {
     popupBrif.style.visibility="hidden";
   }
 }
-
+//popupSound
+var popupSound = document.querySelector(".popupSound");
+var openPopupSound = document.querySelector(".openPopupSound");
+openPopupSound.onclick = function(event) {
+  event.preventDefault();
+  popupSound.style.visibility="visible";
+}
 
 //for all popups
 addEventListener("keydown", function(event) {
